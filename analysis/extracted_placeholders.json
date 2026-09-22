@@ -1,0 +1,9110 @@
+[
+  {
+    "page": 1,
+    "text": "ASISTEN DEPUTI …… ",
+    "line_text": "ASISTEN DEPUTI …… ",
+    "bbox_top_left": [
+      239.62,
+      301.29,
+      358.72,
+      313.58
+    ],
+    "bbox_pdf": [
+      239.62,
+      528.42,
+      358.72,
+      540.71
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "TAHUN …… ",
+    "line_text": "TAHUN …… ",
+    "bbox_top_left": [
+      266.29,
+      314.95,
+      332.04,
+      327.23
+    ],
+    "bbox_pdf": [
+      266.29,
+      514.77,
+      332.04,
+      527.05
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "REKOMENDASI ALTERNATIF KEBIJAKAN …… ",
+    "line_text": "REKOMENDASI ALTERNATIF KEBIJAKAN …… ",
+    "bbox_top_left": [
+      175.1,
+      355.9,
+      423.24,
+      368.19
+    ],
+    "bbox_pdf": [
+      175.1,
+      473.81,
+      423.24,
+      486.1
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "(……) ",
+    "line_text": "(……) ",
+    "bbox_top_left": [
+      282.99,
+      369.55,
+      315.35,
+      381.84
+    ],
+    "bbox_pdf": [
+      282.99,
+      460.16,
+      315.35,
+      472.45
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "Kebijakan Bidang ",
+    "line_text": "Kebijakan Bidang …… ",
+    "bbox_top_left": [
+      242.34,
+      410.5,
+      330.96,
+      422.79
+    ],
+    "bbox_pdf": [
+      242.34,
+      419.21,
+      330.96,
+      431.5
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "……",
+    "line_text": "Kebijakan Bidang …… ",
+    "bbox_top_left": [
+      330.95,
+      410.5,
+      352.94,
+      422.79
+    ],
+    "bbox_pdf": [
+      330.95,
+      419.21,
+      352.94,
+      431.5
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": " ",
+    "line_text": "Kebijakan Bidang …… ",
+    "bbox_top_left": [
+      352.94,
+      410.5,
+      355.99,
+      422.79
+    ],
+    "bbox_pdf": [
+      352.94,
+      419.21,
+      355.99,
+      431.5
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "(",
+    "line_text": "(……) ",
+    "bbox_top_left": [
+      282.99,
+      424.15,
+      286.65,
+      436.44
+    ],
+    "bbox_pdf": [
+      282.99,
+      405.56,
+      286.65,
+      417.85
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "……",
+    "line_text": "(……) ",
+    "bbox_top_left": [
+      286.65,
+      424.15,
+      308.64,
+      436.44
+    ],
+    "bbox_pdf": [
+      286.65,
+      405.56,
+      308.64,
+      417.85
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": ") ",
+    "line_text": "(……) ",
+    "bbox_top_left": [
+      308.63,
+      424.15,
+      315.35,
+      436.44
+    ],
+    "bbox_pdf": [
+      308.63,
+      405.56,
+      315.35,
+      417.85
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "Kebijakan ",
+    "line_text": "Kebijakan …… ",
+    "bbox_top_left": [
+      260.98,
+      481.1,
+      312.32,
+      493.39
+    ],
+    "bbox_pdf": [
+      260.98,
+      348.61,
+      312.32,
+      360.9
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "……",
+    "line_text": "Kebijakan …… ",
+    "bbox_top_left": [
+      312.31,
+      481.1,
+      334.3,
+      493.39
+    ],
+    "bbox_pdf": [
+      312.31,
+      348.61,
+      334.3,
+      360.9
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": " ",
+    "line_text": "Kebijakan …… ",
+    "bbox_top_left": [
+      334.3,
+      481.1,
+      337.35,
+      493.39
+    ],
+    "bbox_pdf": [
+      334.3,
+      348.61,
+      337.35,
+      360.9
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "(",
+    "line_text": "(……) ",
+    "bbox_top_left": [
+      282.99,
+      494.75,
+      286.65,
+      507.04
+    ],
+    "bbox_pdf": [
+      282.99,
+      334.96,
+      286.65,
+      347.25
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "……",
+    "line_text": "(……) ",
+    "bbox_top_left": [
+      286.65,
+      494.75,
+      308.64,
+      507.04
+    ],
+    "bbox_pdf": [
+      286.65,
+      334.96,
+      308.64,
+      347.25
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": ") ",
+    "line_text": "(……) ",
+    "bbox_top_left": [
+      308.63,
+      494.75,
+      315.35,
+      507.04
+    ],
+    "bbox_pdf": [
+      308.63,
+      334.96,
+      315.35,
+      347.25
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "DEPUTI BIDANG …… ",
+    "line_text": "DEPUTI BIDANG …… ",
+    "bbox_top_left": [
+      241.76,
+      609.36,
+      356.57,
+      621.65
+    ],
+    "bbox_pdf": [
+      241.76,
+      220.35,
+      356.57,
+      232.64
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 1,
+    "text": "TAHUN …… ",
+    "line_text": "TAHUN …… ",
+    "bbox_top_left": [
+      266.29,
+      654.89,
+      332.04,
+      667.18
+    ],
+    "bbox_pdf": [
+      266.29,
+      174.82,
+      332.04,
+      187.11
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "Asisten Deputi ",
+    "line_text": "Asisten Deputi …… ",
+    "bbox_top_left": [
+      245.25,
+      145.4,
+      319.18,
+      157.69
+    ],
+    "bbox_pdf": [
+      245.25,
+      684.31,
+      319.18,
+      696.6
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Asisten Deputi …… ",
+    "bbox_top_left": [
+      319.18,
+      145.4,
+      341.17,
+      157.69
+    ],
+    "bbox_pdf": [
+      319.18,
+      684.31,
+      341.17,
+      696.6
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "Asisten Deputi …… ",
+    "bbox_top_left": [
+      341.16,
+      145.4,
+      344.22,
+      157.69
+    ],
+    "bbox_pdf": [
+      341.16,
+      684.31,
+      344.22,
+      696.6
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "menyerasikan kebijakan Bidang ",
+    "line_text": "menyerasikan kebijakan Bidang …… ",
+    "bbox_top_left": [
+      245.25,
+      221.29,
+      403.51,
+      233.58
+    ],
+    "bbox_pdf": [
+      245.25,
+      608.42,
+      403.51,
+      620.71
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "menyerasikan kebijakan Bidang …… ",
+    "bbox_top_left": [
+      403.51,
+      221.29,
+      425.5,
+      233.58
+    ],
+    "bbox_pdf": [
+      403.51,
+      608.42,
+      425.5,
+      620.71
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "menyerasikan kebijakan Bidang …… ",
+    "bbox_top_left": [
+      425.49,
+      221.29,
+      428.55,
+      233.58
+    ],
+    "bbox_pdf": [
+      425.49,
+      608.42,
+      428.55,
+      620.71
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Jumlah Rekomendasi Kebijakan di Bidang …… yang ",
+    "bbox_top_left": [
+      484.23,
+      240.27,
+      506.22,
+      252.56
+    ],
+    "bbox_pdf": [
+      484.23,
+      589.44,
+      506.22,
+      601.73
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " yang ",
+    "line_text": "Jumlah Rekomendasi Kebijakan di Bidang …… yang ",
+    "bbox_top_left": [
+      506.21,
+      240.27,
+      542.16,
+      252.56
+    ],
+    "bbox_pdf": [
+      506.21,
+      589.44,
+      542.16,
+      601.73
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "Kebijakan ",
+    "line_text": "Kebijakan …… (……) ",
+    "bbox_top_left": [
+      245.25,
+      278.21,
+      296.59,
+      290.5
+    ],
+    "bbox_pdf": [
+      245.25,
+      551.5,
+      296.59,
+      563.79
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "…… ",
+    "line_text": "Kebijakan …… (……) ",
+    "bbox_top_left": [
+      296.58,
+      278.21,
+      321.63,
+      290.5
+    ],
+    "bbox_pdf": [
+      296.58,
+      551.5,
+      321.63,
+      563.79
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "(",
+    "line_text": "Kebijakan …… (……) ",
+    "bbox_top_left": [
+      321.62,
+      278.21,
+      325.28,
+      290.5
+    ],
+    "bbox_pdf": [
+      321.62,
+      551.5,
+      325.28,
+      563.79
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Kebijakan …… (……) ",
+    "bbox_top_left": [
+      325.28,
+      278.21,
+      347.27,
+      290.5
+    ],
+    "bbox_pdf": [
+      325.28,
+      551.5,
+      347.27,
+      563.79
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": ") ",
+    "line_text": "Kebijakan …… (……) ",
+    "bbox_top_left": [
+      347.27,
+      278.21,
+      353.98,
+      290.5
+    ],
+    "bbox_pdf": [
+      347.27,
+      551.5,
+      353.98,
+      563.79
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "Tersusunnya Kebijakan Bidang ",
+    "line_text": "Tersusunnya Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      245.25,
+      297.19,
+      399.25,
+      309.48
+    ],
+    "bbox_pdf": [
+      245.25,
+      532.52,
+      399.25,
+      544.81
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Tersusunnya Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      399.24,
+      297.19,
+      421.23,
+      309.48
+    ],
+    "bbox_pdf": [
+      399.24,
+      532.52,
+      421.23,
+      544.81
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " (",
+    "line_text": "Tersusunnya Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      421.23,
+      297.19,
+      427.94,
+      309.48
+    ],
+    "bbox_pdf": [
+      421.23,
+      532.52,
+      427.94,
+      544.81
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Tersusunnya Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      427.94,
+      297.19,
+      449.93,
+      309.48
+    ],
+    "bbox_pdf": [
+      427.94,
+      532.52,
+      449.93,
+      544.81
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": ") ",
+    "line_text": "Tersusunnya Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      449.92,
+      297.19,
+      456.64,
+      309.48
+    ],
+    "bbox_pdf": [
+      449.92,
+      532.52,
+      456.64,
+      544.81
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "Kebijakan Bidang ",
+    "line_text": "Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      245.25,
+      316.16,
+      333.87,
+      328.45
+    ],
+    "bbox_pdf": [
+      245.25,
+      513.55,
+      333.87,
+      525.84
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "…… ",
+    "line_text": "Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      333.86,
+      316.16,
+      358.91,
+      328.45
+    ],
+    "bbox_pdf": [
+      333.86,
+      513.55,
+      358.91,
+      525.84
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "(",
+    "line_text": "Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      358.9,
+      316.16,
+      362.57,
+      328.45
+    ],
+    "bbox_pdf": [
+      358.9,
+      513.55,
+      362.57,
+      525.84
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      362.56,
+      316.16,
+      384.55,
+      328.45
+    ],
+    "bbox_pdf": [
+      362.56,
+      513.55,
+      384.55,
+      525.84
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": ") ",
+    "line_text": "Kebijakan Bidang …… (……) ",
+    "bbox_top_left": [
+      384.55,
+      316.16,
+      391.27,
+      328.45
+    ],
+    "bbox_pdf": [
+      384.55,
+      513.55,
+      391.27,
+      525.84
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "Rekomendasi Alternatif Kebijakan ",
+    "line_text": "Rekomendasi Alternatif Kebijakan …… (……) ",
+    "bbox_top_left": [
+      245.25,
+      335.13,
+      413.28,
+      347.42
+    ],
+    "bbox_pdf": [
+      245.25,
+      494.58,
+      413.28,
+      506.87
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Rekomendasi Alternatif Kebijakan …… (……) ",
+    "bbox_top_left": [
+      413.28,
+      335.13,
+      435.27,
+      347.42
+    ],
+    "bbox_pdf": [
+      413.28,
+      494.58,
+      435.27,
+      506.87
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " (",
+    "line_text": "Rekomendasi Alternatif Kebijakan …… (……) ",
+    "bbox_top_left": [
+      435.26,
+      335.13,
+      441.98,
+      347.42
+    ],
+    "bbox_pdf": [
+      435.26,
+      494.58,
+      441.98,
+      506.87
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Rekomendasi Alternatif Kebijakan …… (……) ",
+    "bbox_top_left": [
+      441.98,
+      335.13,
+      463.97,
+      347.42
+    ],
+    "bbox_pdf": [
+      441.98,
+      494.58,
+      463.97,
+      506.87
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": ") ",
+    "line_text": "Rekomendasi Alternatif Kebijakan …… (……) ",
+    "bbox_top_left": [
+      463.96,
+      335.13,
+      470.68,
+      347.42
+    ],
+    "bbox_pdf": [
+      463.96,
+      494.58,
+      470.68,
+      506.87
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "Jumlah Rekomendasi Alternatif Kebijakan ",
+    "line_text": "Jumlah Rekomendasi Alternatif Kebijakan …… ",
+    "bbox_top_left": [
+      245.25,
+      354.11,
+      451.77,
+      366.4
+    ],
+    "bbox_pdf": [
+      245.25,
+      475.6,
+      451.77,
+      487.89
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Jumlah Rekomendasi Alternatif Kebijakan …… ",
+    "bbox_top_left": [
+      451.77,
+      354.11,
+      473.76,
+      366.4
+    ],
+    "bbox_pdf": [
+      451.77,
+      475.6,
+      473.76,
+      487.89
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "Jumlah Rekomendasi Alternatif Kebijakan …… ",
+    "bbox_top_left": [
+      473.75,
+      354.11,
+      476.81,
+      366.4
+    ],
+    "bbox_pdf": [
+      473.75,
+      475.6,
+      476.81,
+      487.89
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "…… Rekomendasi Alternatif Kebijakan ",
+    "bbox_top_left": [
+      245.25,
+      373.08,
+      267.24,
+      385.37
+    ],
+    "bbox_pdf": [
+      245.25,
+      456.63,
+      267.24,
+      468.92
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " Rekomendasi Alternatif Kebijakan ",
+    "line_text": "…… Rekomendasi Alternatif Kebijakan ",
+    "bbox_top_left": [
+      267.23,
+      373.08,
+      438.32,
+      385.37
+    ],
+    "bbox_pdf": [
+      267.23,
+      456.63,
+      438.32,
+      468.92
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "…… diantaranya yaitu: ",
+    "bbox_top_left": [
+      93.0,
+      481.6,
+      114.99,
+      493.89
+    ],
+    "bbox_pdf": [
+      93.0,
+      348.11,
+      114.99,
+      360.4
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " diantaranya yaitu: ",
+    "line_text": "…… diantaranya yaitu: ",
+    "bbox_top_left": [
+      114.98,
+      481.6,
+      207.87,
+      493.89
+    ],
+    "bbox_pdf": [
+      114.98,
+      348.11,
+      207.87,
+      360.4
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "…… ",
+    "bbox_top_left": [
+      129.0,
+      500.57,
+      150.99,
+      512.86
+    ],
+    "bbox_pdf": [
+      129.0,
+      329.14,
+      150.99,
+      341.43
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "…… ",
+    "bbox_top_left": [
+      150.98,
+      500.57,
+      154.04,
+      512.86
+    ],
+    "bbox_pdf": [
+      150.98,
+      329.14,
+      154.04,
+      341.43
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "…… ",
+    "bbox_top_left": [
+      129.0,
+      519.54,
+      150.99,
+      531.83
+    ],
+    "bbox_pdf": [
+      129.0,
+      310.17,
+      150.99,
+      322.46
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "…… ",
+    "bbox_top_left": [
+      150.98,
+      519.54,
+      154.04,
+      531.83
+    ],
+    "bbox_pdf": [
+      150.98,
+      310.17,
+      154.04,
+      322.46
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "3)​",
+    "line_text": "3)​",
+    "bbox_top_left": [
+      107.25,
+      538.52,
+      120.08,
+      550.81
+    ],
+    "bbox_pdf": [
+      107.25,
+      291.19,
+      120.08,
+      303.48
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "…… ",
+    "line_text": "…… dst ",
+    "bbox_top_left": [
+      129.0,
+      538.52,
+      154.04,
+      550.81
+    ],
+    "bbox_pdf": [
+      129.0,
+      291.19,
+      154.04,
+      303.48
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "dst ",
+    "line_text": "…… dst ",
+    "bbox_top_left": [
+      154.04,
+      538.52,
+      171.76,
+      550.81
+    ],
+    "bbox_pdf": [
+      154.04,
+      291.19,
+      171.76,
+      303.48
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "Cantumkan Undang-undang, PP, Perpres, Inpres, Permen, dan peraturan ",
+    "line_text": "Cantumkan Undang-undang, PP, Perpres, Inpres, Permen, dan peraturan ",
+    "bbox_top_left": [
+      126.0,
+      557.49,
+      525.93,
+      569.78
+    ],
+    "bbox_pdf": [
+      126.0,
+      272.22,
+      525.93,
+      284.51
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "perundangan lainnya yang berkaitan dengan RO. ",
+    "line_text": "perundangan lainnya yang berkaitan dengan RO. ",
+    "bbox_top_left": [
+      126.0,
+      570.14,
+      369.23,
+      582.43
+    ],
+    "bbox_pdf": [
+      126.0,
+      259.57,
+      369.23,
+      271.86
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Berdasarkan Peraturan Presiden Nomor …… (1) tentang …… (2) antara lain ",
+    "bbox_top_left": [
+      324.43,
+      620.74,
+      346.42,
+      633.02
+    ],
+    "bbox_pdf": [
+      324.43,
+      208.98,
+      346.42,
+      221.26
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "Berdasarkan Peraturan Presiden Nomor …… (1) tentang …… (2) antara lain ",
+    "bbox_top_left": [
+      346.41,
+      620.74,
+      349.47,
+      633.02
+    ],
+    "bbox_pdf": [
+      346.41,
+      208.98,
+      349.47,
+      221.26
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "(1)",
+    "line_text": "Berdasarkan Peraturan Presiden Nomor …… (1) tentang …… (2) antara lain ",
+    "bbox_top_left": [
+      353.97,
+      620.74,
+      367.4,
+      633.02
+    ],
+    "bbox_pdf": [
+      353.97,
+      208.98,
+      367.4,
+      221.26
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "Berdasarkan Peraturan Presiden Nomor …… (1) tentang …… (2) antara lain ",
+    "bbox_top_left": [
+      418.43,
+      620.74,
+      440.43,
+      633.02
+    ],
+    "bbox_pdf": [
+      418.43,
+      208.98,
+      440.43,
+      221.26
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "Berdasarkan Peraturan Presiden Nomor …… (1) tentang …… (2) antara lain ",
+    "bbox_top_left": [
+      440.42,
+      620.74,
+      443.48,
+      633.02
+    ],
+    "bbox_pdf": [
+      440.42,
+      208.98,
+      443.48,
+      221.26
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "(2)",
+    "line_text": "Berdasarkan Peraturan Presiden Nomor …… (1) tentang …… (2) antara lain ",
+    "bbox_top_left": [
+      447.22,
+      620.74,
+      460.66,
+      633.02
+    ],
+    "bbox_pdf": [
+      447.22,
+      208.98,
+      460.66,
+      221.26
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 2,
+    "text": "……",
+    "line_text": "pemerintahan di bidang …… (3) untuk membantu Presiden dalam menyelenggarakan ",
+    "bbox_top_left": [
+      215.45,
+      677.66,
+      237.44,
+      689.94
+    ],
+    "bbox_pdf": [
+      215.45,
+      152.06,
+      237.44,
+      164.34
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "pemerintahan di bidang …… (3) untuk membantu Presiden dalam menyelenggarakan ",
+    "bbox_top_left": [
+      237.43,
+      677.66,
+      240.49,
+      689.94
+    ],
+    "bbox_pdf": [
+      237.43,
+      152.06,
+      240.49,
+      164.34
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "(3)",
+    "line_text": "pemerintahan di bidang …… (3) untuk membantu Presiden dalam menyelenggarakan ",
+    "bbox_top_left": [
+      241.98,
+      677.66,
+      255.42,
+      689.94
+    ],
+    "bbox_pdf": [
+      241.98,
+      152.06,
+      255.42,
+      164.34
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 2,
+    "text": "…… (4)",
+    "line_text": "pemerintahan negara. Dalam menjalankan tugas tersebut, Deputi Bidang …… (4) ",
+    "bbox_top_left": [
+      481.69,
+      696.63,
+      523.17,
+      708.92
+    ],
+    "bbox_pdf": [
+      481.69,
+      133.08,
+      523.17,
+      145.37
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "pemerintahan negara. Dalam menjalankan tugas tersebut, Deputi Bidang …… (4) ",
+    "bbox_top_left": [
+      523.16,
+      696.63,
+      526.22,
+      708.92
+    ],
+    "bbox_pdf": [
+      523.16,
+      133.08,
+      526.22,
+      145.37
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "…… (5) ",
+    "line_text": "menyelenggarakan fungsi …… (5) kebijakan di bidang ….. (6). Untuk mendukung ",
+    "bbox_top_left": [
+      229.44,
+      715.6,
+      274.72,
+      727.89
+    ],
+    "bbox_pdf": [
+      229.44,
+      114.11,
+      274.72,
+      126.4
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "kebijakan di bidang ",
+    "line_text": "menyelenggarakan fungsi …… (5) kebijakan di bidang ….. (6). Untuk mendukung ",
+    "bbox_top_left": [
+      278.46,
+      715.6,
+      381.64,
+      727.89
+    ],
+    "bbox_pdf": [
+      278.46,
+      114.11,
+      381.64,
+      126.4
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "….. (6)",
+    "line_text": "menyelenggarakan fungsi …… (5) kebijakan di bidang ….. (6). Untuk mendukung ",
+    "bbox_top_left": [
+      384.63,
+      715.6,
+      421.22,
+      727.89
+    ],
+    "bbox_pdf": [
+      384.63,
+      114.11,
+      421.22,
+      126.4
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": ". Untuk mendukung ",
+    "line_text": "menyelenggarakan fungsi …… (5) kebijakan di bidang ….. (6). Untuk mendukung ",
+    "bbox_top_left": [
+      421.22,
+      715.6,
+      525.6,
+      727.89
+    ],
+    "bbox_pdf": [
+      421.22,
+      114.11,
+      525.6,
+      126.4
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "…… (7)",
+    "line_text": "pelaksanaan fungsi tersebut, Asisten Deputi …… (7) juga menjalankan fungsi ……(8) ",
+    "bbox_top_left": [
+      318.04,
+      734.58,
+      358.01,
+      746.86
+    ],
+    "bbox_pdf": [
+      318.04,
+      95.14,
+      358.01,
+      107.42
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " juga menjalankan fungsi ",
+    "line_text": "pelaksanaan fungsi tersebut, Asisten Deputi …… (7) juga menjalankan fungsi ……(8) ",
+    "bbox_top_left": [
+      358.01,
+      734.58,
+      486.42,
+      746.86
+    ],
+    "bbox_pdf": [
+      358.01,
+      95.14,
+      486.42,
+      107.42
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……(8) ",
+    "line_text": "pelaksanaan fungsi tersebut, Asisten Deputi …… (7) juga menjalankan fungsi ……(8) ",
+    "bbox_top_left": [
+      487.17,
+      734.58,
+      525.65,
+      746.86
+    ],
+    "bbox_pdf": [
+      487.17,
+      95.14,
+      525.65,
+      107.42
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "dengan seluruh Kementerian/Lembaga dibawah koordinasi Asisten Deputi ",
+    "line_text": "dengan seluruh Kementerian/Lembaga dibawah koordinasi Asisten Deputi ……(9) ",
+    "bbox_top_left": [
+      93.0,
+      753.55,
+      483.45,
+      765.84
+    ],
+    "bbox_pdf": [
+      93.0,
+      76.16,
+      483.45,
+      88.45
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": "……(9)",
+    "line_text": "dengan seluruh Kementerian/Lembaga dibawah koordinasi Asisten Deputi ……(9) ",
+    "bbox_top_left": [
+      487.2,
+      753.55,
+      522.62,
+      765.84
+    ],
+    "bbox_pdf": [
+      487.2,
+      76.16,
+      522.62,
+      88.45
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 2,
+    "text": " ",
+    "line_text": "dengan seluruh Kementerian/Lembaga dibawah koordinasi Asisten Deputi ……(9) ",
+    "bbox_top_left": [
+      522.62,
+      753.55,
+      525.67,
+      765.84
+    ],
+    "bbox_pdf": [
+      522.62,
+      76.16,
+      525.67,
+      88.45
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "antara lain ",
+    "line_text": "antara lain …… (10). ",
+    "bbox_top_left": [
+      93.0,
+      72.36,
+      147.39,
+      84.65
+    ],
+    "bbox_pdf": [
+      93.0,
+      757.35,
+      147.39,
+      769.64
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "antara lain …… (10). ",
+    "bbox_top_left": [
+      147.39,
+      72.36,
+      169.38,
+      84.65
+    ],
+    "bbox_pdf": [
+      147.39,
+      757.35,
+      169.38,
+      769.64
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " ",
+    "line_text": "antara lain …… (10). ",
+    "bbox_top_left": [
+      169.37,
+      72.36,
+      172.43,
+      84.65
+    ],
+    "bbox_pdf": [
+      169.37,
+      757.35,
+      172.43,
+      769.64
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "(10)",
+    "line_text": "antara lain …… (10). ",
+    "bbox_top_left": [
+      172.42,
+      72.36,
+      191.98,
+      84.65
+    ],
+    "bbox_pdf": [
+      172.42,
+      757.35,
+      191.98,
+      769.64
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 3,
+    "text": "Program kerja Asisten Deputi ",
+    "line_text": "Program kerja Asisten Deputi …… (11) berdasarkan Rencana Pembangunan Jangka ",
+    "bbox_top_left": [
+      107.25,
+      91.33,
+      254.77,
+      103.62
+    ],
+    "bbox_pdf": [
+      107.25,
+      738.38,
+      254.77,
+      750.67
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "…… (11) ",
+    "line_text": "Program kerja Asisten Deputi …… (11) berdasarkan Rencana Pembangunan Jangka ",
+    "bbox_top_left": [
+      254.76,
+      91.33,
+      301.8,
+      103.62
+    ],
+    "bbox_pdf": [
+      254.76,
+      738.38,
+      301.8,
+      750.67
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……(12) ",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      93.0,
+      129.28,
+      137.59,
+      141.57
+    ],
+    "bbox_pdf": [
+      93.0,
+      700.43,
+      137.59,
+      712.72
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "yaitu ",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      140.59,
+      129.28,
+      166.86,
+      141.57
+    ],
+    "bbox_pdf": [
+      140.59,
+      700.43,
+      166.86,
+      712.72
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……(13)",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      169.86,
+      129.28,
+      211.39,
+      141.57
+    ],
+    "bbox_pdf": [
+      169.86,
+      700.43,
+      211.39,
+      712.72
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". Sasaran utama PN ",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      211.39,
+      129.28,
+      320.18,
+      141.57
+    ],
+    "bbox_pdf": [
+      211.39,
+      700.43,
+      320.18,
+      712.72
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……(14)",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      322.42,
+      129.28,
+      363.96,
+      141.57
+    ],
+    "bbox_pdf": [
+      322.42,
+      700.43,
+      363.96,
+      712.72
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " yaitu ",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      363.95,
+      129.28,
+      395.54,
+      141.57
+    ],
+    "bbox_pdf": [
+      363.95,
+      700.43,
+      395.54,
+      712.72
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……(15)",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      397.78,
+      129.28,
+      439.32,
+      141.57
+    ],
+    "bbox_pdf": [
+      397.78,
+      700.43,
+      439.32,
+      712.72
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". Rencana Kerja ",
+    "line_text": "……(12) yaitu ……(13). Sasaran utama PN ……(14) yaitu ……(15). Rencana Kerja ",
+    "bbox_top_left": [
+      439.31,
+      129.28,
+      525.7,
+      141.57
+    ],
+    "bbox_pdf": [
+      439.31,
+      700.43,
+      525.7,
+      712.72
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "Pemerintah (RKP) …… sebagai turunan dari RPJMN 2025-2029 menyebutkan bahwa ",
+    "bbox_top_left": [
+      188.24,
+      148.25,
+      210.23,
+      160.54
+    ],
+    "bbox_pdf": [
+      188.24,
+      681.46,
+      210.23,
+      693.75
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " sebagai turunan dari RPJMN 2025-2029 menyebutkan bahwa ",
+    "line_text": "Pemerintah (RKP) …… sebagai turunan dari RPJMN 2025-2029 menyebutkan bahwa ",
+    "bbox_top_left": [
+      210.23,
+      148.25,
+      525.84,
+      160.54
+    ],
+    "bbox_pdf": [
+      210.23,
+      681.46,
+      525.84,
+      693.75
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "arah kebijakan dalam rangka mewujudkan sasaran pembangunan PN …… yaitu ……. ",
+    "bbox_top_left": [
+      444.8,
+      167.23,
+      466.79,
+      179.52
+    ],
+    "bbox_pdf": [
+      444.8,
+      662.48,
+      466.79,
+      674.77
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " yaitu ",
+    "line_text": "arah kebijakan dalam rangka mewujudkan sasaran pembangunan PN …… yaitu ……. ",
+    "bbox_top_left": [
+      466.79,
+      167.23,
+      496.87,
+      179.52
+    ],
+    "bbox_pdf": [
+      466.79,
+      662.48,
+      496.87,
+      674.77
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "arah kebijakan dalam rangka mewujudkan sasaran pembangunan PN …… yaitu ……. ",
+    "bbox_top_left": [
+      497.61,
+      167.23,
+      519.61,
+      179.52
+    ],
+    "bbox_pdf": [
+      497.61,
+      662.48,
+      519.61,
+      674.77
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". ",
+    "line_text": "arah kebijakan dalam rangka mewujudkan sasaran pembangunan PN …… yaitu ……. ",
+    "bbox_top_left": [
+      519.6,
+      167.23,
+      525.71,
+      179.52
+    ],
+    "bbox_pdf": [
+      519.6,
+      662.48,
+      525.71,
+      674.77
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Intervensi kebijakan bidang ",
+    "line_text": "Intervensi kebijakan bidang …… yang menjadi fokus yaitu ……. ",
+    "bbox_top_left": [
+      93.0,
+      186.2,
+      229.27,
+      198.49
+    ],
+    "bbox_pdf": [
+      93.0,
+      643.51,
+      229.27,
+      655.8
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "Intervensi kebijakan bidang …… yang menjadi fokus yaitu ……. ",
+    "bbox_top_left": [
+      229.27,
+      186.2,
+      251.26,
+      198.49
+    ],
+    "bbox_pdf": [
+      229.27,
+      643.51,
+      251.26,
+      655.8
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " yang menjadi fokus yaitu ",
+    "line_text": "Intervensi kebijakan bidang …… yang menjadi fokus yaitu ……. ",
+    "bbox_top_left": [
+      251.25,
+      186.2,
+      378.35,
+      198.49
+    ],
+    "bbox_pdf": [
+      251.25,
+      643.51,
+      378.35,
+      655.8
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "Intervensi kebijakan bidang …… yang menjadi fokus yaitu ……. ",
+    "bbox_top_left": [
+      378.35,
+      186.2,
+      400.34,
+      198.49
+    ],
+    "bbox_pdf": [
+      378.35,
+      643.51,
+      400.34,
+      655.8
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". ",
+    "line_text": "Intervensi kebijakan bidang …… yang menjadi fokus yaitu ……. ",
+    "bbox_top_left": [
+      400.33,
+      186.2,
+      406.44,
+      198.49
+    ],
+    "bbox_pdf": [
+      400.33,
+      643.51,
+      406.44,
+      655.8
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "Program dan indikator merujuk RPJMN yang dikawal di tahun …… (\"Indikator ",
+    "bbox_top_left": [
+      444.04,
+      205.17,
+      466.03,
+      217.46
+    ],
+    "bbox_pdf": [
+      444.04,
+      624.54,
+      466.03,
+      636.83
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " (\"Indikator ",
+    "line_text": "Program dan indikator merujuk RPJMN yang dikawal di tahun …… (\"Indikator ",
+    "bbox_top_left": [
+      466.02,
+      205.17,
+      525.61,
+      217.46
+    ],
+    "bbox_pdf": [
+      466.02,
+      624.54,
+      525.61,
+      636.83
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "berdasarkan Lampiran III RPJMN 2025-2029\") diantaranya yaitu ",
+    "line_text": "berdasarkan Lampiran III RPJMN 2025-2029\") diantaranya yaitu …… 1)..... 2).... 3) dst.  ",
+    "bbox_top_left": [
+      93.0,
+      224.15,
+      409.13,
+      236.44
+    ],
+    "bbox_pdf": [
+      93.0,
+      605.56,
+      409.13,
+      617.85
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "…… 1)..... 2).... 3) dst.  ",
+    "line_text": "berdasarkan Lampiran III RPJMN 2025-2029\") diantaranya yaitu …… 1)..... 2).... 3) dst.  ",
+    "bbox_top_left": [
+      409.13,
+      224.15,
+      525.79,
+      236.44
+    ],
+    "bbox_pdf": [
+      409.13,
+      605.56,
+      525.79,
+      617.85
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "…… (",
+    "line_text": "yaitu …… (Opsional) ",
+    "bbox_top_left": [
+      119.27,
+      300.04,
+      147.97,
+      312.33
+    ],
+    "bbox_pdf": [
+      119.27,
+      529.67,
+      147.97,
+      541.96
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 3,
+    "text": "…… ",
+    "line_text": "Data terbaru terkait program …… menyatakan bahwa …… (narasi berisi: 1) Isu-isu ",
+    "bbox_top_left": [
+      254.38,
+      319.01,
+      279.42,
+      331.3
+    ],
+    "bbox_pdf": [
+      254.38,
+      510.7,
+      279.42,
+      522.99
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "menyatakan bahwa ",
+    "line_text": "Data terbaru terkait program …… menyatakan bahwa …… (narasi berisi: 1) Isu-isu ",
+    "bbox_top_left": [
+      280.92,
+      319.01,
+      380.05,
+      331.3
+    ],
+    "bbox_pdf": [
+      280.92,
+      510.7,
+      380.05,
+      522.99
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "…… ",
+    "line_text": "Data terbaru terkait program …… menyatakan bahwa …… (narasi berisi: 1) Isu-isu ",
+    "bbox_top_left": [
+      380.8,
+      319.01,
+      405.84,
+      331.3
+    ],
+    "bbox_pdf": [
+      380.8,
+      510.7,
+      405.84,
+      522.99
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "(narasi berisi: 1)",
+    "line_text": "Data terbaru terkait program …… menyatakan bahwa …… (narasi berisi: 1) Isu-isu ",
+    "bbox_top_left": [
+      406.59,
+      319.01,
+      486.89,
+      331.3
+    ],
+    "bbox_pdf": [
+      406.59,
+      510.7,
+      486.89,
+      522.99
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " ",
+    "line_text": "Data terbaru terkait program …… menyatakan bahwa …… (narasi berisi: 1) Isu-isu ",
+    "bbox_top_left": [
+      486.89,
+      319.01,
+      489.95,
+      331.3
+    ],
+    "bbox_pdf": [
+      486.89,
+      510.7,
+      489.95,
+      522.99
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Isu-isu ",
+    "line_text": "Data terbaru terkait program …… menyatakan bahwa …… (narasi berisi: 1) Isu-isu ",
+    "bbox_top_left": [
+      490.69,
+      319.01,
+      526.13,
+      331.3
+    ],
+    "bbox_pdf": [
+      490.69,
+      510.7,
+      526.13,
+      522.99
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "strategis yang melatarbelakangi usulan rencana SKP (Permasalahan objek SKP saat ",
+    "line_text": "strategis yang melatarbelakangi usulan rencana SKP (Permasalahan objek SKP saat ",
+    "bbox_top_left": [
+      93.0,
+      337.99,
+      526.09,
+      350.28
+    ],
+    "bbox_pdf": [
+      93.0,
+      491.72,
+      526.09,
+      504.01
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "ini, Kondisi eksisting obyek SKP, Pencapaian obyek SKP saat ini dibandingkan terhadap ",
+    "line_text": "ini, Kondisi eksisting obyek SKP, Pencapaian obyek SKP saat ini dibandingkan terhadap ",
+    "bbox_top_left": [
+      93.0,
+      356.96,
+      526.19,
+      369.25
+    ],
+    "bbox_pdf": [
+      93.0,
+      472.75,
+      526.19,
+      485.04
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "target yang ditetapkan); 2)lengkapi dengan data indikator dan kewilayahannya); 3) ",
+    "line_text": "target yang ditetapkan); 2)lengkapi dengan data indikator dan kewilayahannya); 3) ",
+    "bbox_top_left": [
+      93.0,
+      375.93,
+      526.32,
+      388.22
+    ],
+    "bbox_pdf": [
+      93.0,
+      453.78,
+      526.32,
+      466.07
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Narasikan gap analysis terkait kondisi terkini dengan target yang akan dicapai sesuai ",
+    "line_text": "Narasikan gap analysis terkait kondisi terkini dengan target yang akan dicapai sesuai ",
+    "bbox_top_left": [
+      93.0,
+      394.91,
+      526.23,
+      407.2
+    ],
+    "bbox_pdf": [
+      93.0,
+      434.8,
+      526.23,
+      447.09
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "RKP dan RPJMN. Tambahkan data kuantitatif maupun infografis; 4) Narasi terkait ",
+    "line_text": "RKP dan RPJMN. Tambahkan data kuantitatif maupun infografis; 4) Narasi terkait ",
+    "bbox_top_left": [
+      93.0,
+      413.88,
+      525.79,
+      426.17
+    ],
+    "bbox_pdf": [
+      93.0,
+      415.83,
+      525.79,
+      428.12
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "kewilayahan (provinsi/kabupaten/kota) yang menjadi konsentrasi SKP berdasarkan isu ",
+    "line_text": "kewilayahan (provinsi/kabupaten/kota) yang menjadi konsentrasi SKP berdasarkan isu ",
+    "bbox_top_left": [
+      93.0,
+      432.85,
+      526.05,
+      445.14
+    ],
+    "bbox_pdf": [
+      93.0,
+      396.86,
+      526.05,
+      409.15
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "strategis)  ",
+    "line_text": "strategis)  ",
+    "bbox_top_left": [
+      93.0,
+      451.83,
+      144.32,
+      464.12
+    ],
+    "bbox_pdf": [
+      93.0,
+      377.88,
+      144.32,
+      390.17
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "Asisten Deputi …… memiliki program prioritas lainnya yang harus dikoordinasikan ",
+    "bbox_top_left": [
+      185.68,
+      470.8,
+      207.67,
+      483.09
+    ],
+    "bbox_pdf": [
+      185.68,
+      358.91,
+      207.67,
+      371.2
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " memiliki program prioritas lainnya yang harus dikoordinasikan ",
+    "line_text": "Asisten Deputi …… memiliki program prioritas lainnya yang harus dikoordinasikan ",
+    "bbox_top_left": [
+      207.66,
+      470.8,
+      525.61,
+      483.09
+    ],
+    "bbox_pdf": [
+      207.66,
+      358.91,
+      525.61,
+      371.2
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "…… ",
+    "line_text": "yaitu …… (merujuk pada perundang-undangan dan/atau regulasi yang ditetapkan oleh ",
+    "bbox_top_left": [
+      120.77,
+      489.77,
+      145.82,
+      502.06
+    ],
+    "bbox_pdf": [
+      120.77,
+      339.94,
+      145.82,
+      352.23
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "(",
+    "line_text": "yaitu …… (merujuk pada perundang-undangan dan/atau regulasi yang ditetapkan oleh ",
+    "bbox_top_left": [
+      147.31,
+      489.77,
+      150.97,
+      502.06
+    ],
+    "bbox_pdf": [
+      147.31,
+      339.94,
+      150.97,
+      352.23
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "merujuk pada perundang-undangan dan/atau regulasi yang ditetapkan oleh ",
+    "line_text": "yaitu …… (merujuk pada perundang-undangan dan/atau regulasi yang ditetapkan oleh ",
+    "bbox_top_left": [
+      150.97,
+      489.77,
+      525.97,
+      502.06
+    ],
+    "bbox_pdf": [
+      150.97,
+      339.94,
+      525.97,
+      352.23
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Presiden untuk dilaksanakan di tahun tersebut, contoh seperti PKPN). ",
+    "line_text": "Presiden untuk dilaksanakan di tahun tersebut, contoh seperti PKPN). ",
+    "bbox_top_left": [
+      93.0,
+      508.75,
+      436.41,
+      521.04
+    ],
+    "bbox_pdf": [
+      93.0,
+      320.96,
+      436.41,
+      333.25
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "…… , output yang akan dihasilkan pada rencana kerja tahun anggaran …. adalah: ",
+    "bbox_top_left": [
+      93.0,
+      546.69,
+      114.99,
+      558.98
+    ],
+    "bbox_pdf": [
+      93.0,
+      283.02,
+      114.99,
+      295.31
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " , ",
+    "line_text": "…… , output yang akan dihasilkan pada rencana kerja tahun anggaran …. adalah: ",
+    "bbox_top_left": [
+      114.98,
+      546.69,
+      124.15,
+      558.98
+    ],
+    "bbox_pdf": [
+      114.98,
+      283.02,
+      124.15,
+      295.31
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "yang akan dihasilkan pada rencana kerja tahun anggaran …. adalah: ",
+    "line_text": "…… , output yang akan dihasilkan pada rencana kerja tahun anggaran …. adalah: ",
+    "bbox_top_left": [
+      157.76,
+      546.69,
+      496.93,
+      558.98
+    ],
+    "bbox_pdf": [
+      157.76,
+      283.02,
+      496.93,
+      295.31
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Rekomendasi Alternatif Kebijakan …… ",
+    "line_text": "1)​ Rekomendasi Alternatif Kebijakan …… ",
+    "bbox_top_left": [
+      121.5,
+      565.67,
+      327.36,
+      577.96
+    ],
+    "bbox_pdf": [
+      121.5,
+      264.04,
+      327.36,
+      276.33
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "Rekomendasi alternatif kebijakan ini bertujuan untuk ……. Rekomendasi ",
+    "bbox_top_left": [
+      420.61,
+      584.64,
+      442.6,
+      596.93
+    ],
+    "bbox_pdf": [
+      420.61,
+      245.07,
+      442.6,
+      257.36
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". Rekomendasi ",
+    "line_text": "Rekomendasi alternatif kebijakan ini bertujuan untuk ……. Rekomendasi ",
+    "bbox_top_left": [
+      442.59,
+      584.64,
+      525.72,
+      596.93
+    ],
+    "bbox_pdf": [
+      442.59,
+      245.07,
+      525.72,
+      257.36
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "difokuskan pada ",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      121.5,
+      603.61,
+      204.62,
+      615.9
+    ],
+    "bbox_pdf": [
+      121.5,
+      226.1,
+      204.62,
+      238.39
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      204.61,
+      603.61,
+      226.6,
+      615.9
+    ],
+    "bbox_pdf": [
+      204.61,
+      226.1,
+      226.6,
+      238.39
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". Melalui kebijakan ini diharapkan ",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      226.6,
+      603.61,
+      391.58,
+      615.9
+    ],
+    "bbox_pdf": [
+      226.6,
+      226.1,
+      391.58,
+      238.39
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      391.58,
+      603.61,
+      413.57,
+      615.9
+    ],
+    "bbox_pdf": [
+      391.58,
+      226.1,
+      413.57,
+      238.39
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". ",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      413.56,
+      603.61,
+      419.67,
+      615.9
+    ],
+    "bbox_pdf": [
+      413.56,
+      226.1,
+      419.67,
+      238.39
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Rekomendasi Alternatif Kebijakan …… ",
+    "line_text": "2)​ Rekomendasi Alternatif Kebijakan …… ",
+    "bbox_top_left": [
+      121.5,
+      622.59,
+      327.36,
+      634.88
+    ],
+    "bbox_pdf": [
+      121.5,
+      207.12,
+      327.36,
+      219.41
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "Rekomendasi alternatif kebijakan ini bertujuan untuk ……. Rekomendasi ",
+    "bbox_top_left": [
+      420.61,
+      641.56,
+      442.6,
+      653.85
+    ],
+    "bbox_pdf": [
+      420.61,
+      188.15,
+      442.6,
+      200.44
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". Rekomendasi ",
+    "line_text": "Rekomendasi alternatif kebijakan ini bertujuan untuk ……. Rekomendasi ",
+    "bbox_top_left": [
+      442.59,
+      641.56,
+      525.72,
+      653.85
+    ],
+    "bbox_pdf": [
+      442.59,
+      188.15,
+      525.72,
+      200.44
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "difokuskan pada ",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      121.5,
+      660.53,
+      204.62,
+      672.82
+    ],
+    "bbox_pdf": [
+      121.5,
+      169.18,
+      204.62,
+      181.47
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      204.61,
+      660.53,
+      226.6,
+      672.82
+    ],
+    "bbox_pdf": [
+      204.61,
+      169.18,
+      226.6,
+      181.47
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". Melalui kebijakan ini diharapkan ",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      226.6,
+      660.53,
+      391.58,
+      672.82
+    ],
+    "bbox_pdf": [
+      226.6,
+      169.18,
+      391.58,
+      181.47
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "……",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      391.58,
+      660.53,
+      413.57,
+      672.82
+    ],
+    "bbox_pdf": [
+      391.58,
+      169.18,
+      413.57,
+      181.47
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": ". ",
+    "line_text": "difokuskan pada ……. Melalui kebijakan ini diharapkan ……. ",
+    "bbox_top_left": [
+      413.56,
+      660.53,
+      419.67,
+      672.82
+    ],
+    "bbox_pdf": [
+      413.56,
+      169.18,
+      419.67,
+      181.47
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Rekomendasi Alternatif Kebijakan ……",
+    "line_text": "3)​ Rekomendasi Alternatif Kebijakan ……  ",
+    "bbox_top_left": [
+      121.5,
+      679.51,
+      324.31,
+      691.8
+    ],
+    "bbox_pdf": [
+      121.5,
+      150.2,
+      324.31,
+      162.49
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": " ",
+    "line_text": "3)​ Rekomendasi Alternatif Kebijakan ……  ",
+    "bbox_top_left": [
+      324.3,
+      679.51,
+      327.36,
+      691.8
+    ],
+    "bbox_pdf": [
+      324.3,
+      150.2,
+      327.36,
+      162.49
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 3,
+    "text": "Koordinasi …. (",
+    "line_text": "4)​ Koordinasi …. (Opsional) ",
+    "bbox_top_left": [
+      121.5,
+      698.48,
+      197.26,
+      710.77
+    ],
+    "bbox_pdf": [
+      121.5,
+      131.23,
+      197.26,
+      143.52
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 4,
+    "text": "…… ",
+    "line_text": "Terhadap pelaksanaan Reformasi Birokrasi (RB), Asisten Deputi …… mendapatkan ",
+    "bbox_top_left": [
+      430.61,
+      97.33,
+      455.66,
+      109.62
+    ],
+    "bbox_pdf": [
+      430.61,
+      732.38,
+      455.66,
+      744.67
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "mandat pengawalan indikator RB yaitu ",
+    "line_text": "mandat pengawalan indikator RB yaitu …… 1)..... 2).... 3) dst.  ",
+    "bbox_top_left": [
+      93.0,
+      116.31,
+      284.26,
+      128.6
+    ],
+    "bbox_pdf": [
+      93.0,
+      713.4,
+      284.26,
+      725.69
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "…… 1)..... 2).... 3) dst.  ",
+    "line_text": "mandat pengawalan indikator RB yaitu …… 1)..... 2).... 3) dst.  ",
+    "bbox_top_left": [
+      284.26,
+      116.31,
+      400.92,
+      128.6
+    ],
+    "bbox_pdf": [
+      284.26,
+      713.4,
+      400.92,
+      725.69
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "Catatan narasi terkait RB yang disusun pada penjelasan pelaksanaan tugas fungsi ",
+    "line_text": "Catatan narasi terkait RB yang disusun pada penjelasan pelaksanaan tugas fungsi ",
+    "bbox_top_left": [
+      108.0,
+      141.28,
+      525.9,
+      153.57
+    ],
+    "bbox_pdf": [
+      108.0,
+      688.43,
+      525.9,
+      700.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "UKE harus memuat: ",
+    "line_text": "UKE harus memuat: ",
+    "bbox_top_left": [
+      108.0,
+      153.93,
+      210.03,
+      166.22
+    ],
+    "bbox_pdf": [
+      108.0,
+      675.78,
+      210.03,
+      688.07
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "●​",
+    "line_text": "●​ regulasi/peraturan perundangan yang mendasari,  ",
+    "bbox_top_left": [
+      126.0,
+      172.58,
+      135.7,
+      184.87
+    ],
+    "bbox_pdf": [
+      126.0,
+      657.13,
+      135.7,
+      669.42
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "●​ regulasi/peraturan perundangan yang mendasari,  ",
+    "bbox_top_left": [
+      135.7,
+      172.58,
+      144.0,
+      184.87
+    ],
+    "bbox_pdf": [
+      135.7,
+      657.13,
+      144.0,
+      669.42
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "regulasi/peraturan perundangan yang mendasari,  ",
+    "line_text": "●​ regulasi/peraturan perundangan yang mendasari,  ",
+    "bbox_top_left": [
+      144.0,
+      172.58,
+      390.88,
+      184.87
+    ],
+    "bbox_pdf": [
+      144.0,
+      657.13,
+      390.88,
+      669.42
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "●​",
+    "line_text": "●​ kondisi capaian indikator terkini dan target yang diharapkan, ",
+    "bbox_top_left": [
+      126.0,
+      185.23,
+      135.7,
+      197.52
+    ],
+    "bbox_pdf": [
+      126.0,
+      644.48,
+      135.7,
+      656.77
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "●​ kondisi capaian indikator terkini dan target yang diharapkan, ",
+    "bbox_top_left": [
+      135.7,
+      185.23,
+      144.0,
+      197.52
+    ],
+    "bbox_pdf": [
+      135.7,
+      644.48,
+      144.0,
+      656.77
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "kondisi capaian indikator terkini dan target yang diharapkan, ",
+    "line_text": "●​ kondisi capaian indikator terkini dan target yang diharapkan, ",
+    "bbox_top_left": [
+      144.0,
+      185.23,
+      439.76,
+      197.52
+    ],
+    "bbox_pdf": [
+      144.0,
+      644.48,
+      439.76,
+      656.77
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "●​",
+    "line_text": "●​ isu strategis yang harus dikawal,  ",
+    "bbox_top_left": [
+      126.0,
+      197.88,
+      135.7,
+      210.16
+    ],
+    "bbox_pdf": [
+      126.0,
+      631.84,
+      135.7,
+      644.12
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "●​ isu strategis yang harus dikawal,  ",
+    "bbox_top_left": [
+      135.7,
+      197.88,
+      144.0,
+      210.16
+    ],
+    "bbox_pdf": [
+      135.7,
+      631.84,
+      144.0,
+      644.12
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "isu strategis yang harus dikawal,  ",
+    "line_text": "●​ isu strategis yang harus dikawal,  ",
+    "bbox_top_left": [
+      144.0,
+      197.88,
+      308.97,
+      210.16
+    ],
+    "bbox_pdf": [
+      144.0,
+      631.84,
+      308.97,
+      644.12
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "●​",
+    "line_text": "●​ faktor penghambat yang harus dientaskan dan faktor pendorong yang perlu ",
+    "bbox_top_left": [
+      126.0,
+      210.52,
+      135.7,
+      222.81
+    ],
+    "bbox_pdf": [
+      126.0,
+      619.19,
+      135.7,
+      631.48
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "●​ faktor penghambat yang harus dientaskan dan faktor pendorong yang perlu ",
+    "bbox_top_left": [
+      135.7,
+      210.52,
+      144.0,
+      222.81
+    ],
+    "bbox_pdf": [
+      135.7,
+      619.19,
+      144.0,
+      631.48
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "faktor penghambat yang harus dientaskan dan faktor pendorong yang perlu ",
+    "line_text": "●​ faktor penghambat yang harus dientaskan dan faktor pendorong yang perlu ",
+    "bbox_top_left": [
+      144.0,
+      210.52,
+      526.33,
+      222.81
+    ],
+    "bbox_pdf": [
+      144.0,
+      619.19,
+      526.33,
+      631.48
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "diperkuat baik dari aspek regulasi-data-koordinasi-penguatan kebijakan ",
+    "line_text": "diperkuat baik dari aspek regulasi-data-koordinasi-penguatan kebijakan ",
+    "bbox_top_left": [
+      144.0,
+      223.17,
+      526.25,
+      235.46
+    ],
+    "bbox_pdf": [
+      144.0,
+      606.54,
+      526.25,
+      618.83
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "fiskal-pelibatan multistakeholder-dan aspek lainnya  ",
+    "line_text": "fiskal-pelibatan multistakeholder-dan aspek lainnya  ",
+    "bbox_top_left": [
+      144.0,
+      235.82,
+      398.6,
+      248.11
+    ],
+    "bbox_pdf": [
+      144.0,
+      593.89,
+      398.6,
+      606.18
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "●​",
+    "line_text": "●​ keterhubungan dengan Reformasi birokrasi general/tematik ",
+    "bbox_top_left": [
+      126.0,
+      248.47,
+      135.7,
+      260.76
+    ],
+    "bbox_pdf": [
+      126.0,
+      581.24,
+      135.7,
+      593.53
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "●​ keterhubungan dengan Reformasi birokrasi general/tematik ",
+    "bbox_top_left": [
+      135.7,
+      248.47,
+      144.0,
+      260.76
+    ],
+    "bbox_pdf": [
+      135.7,
+      581.24,
+      144.0,
+      593.53
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "keterhubungan dengan Reformasi birokrasi general/tematik ",
+    "line_text": "●​ keterhubungan dengan Reformasi birokrasi general/tematik ",
+    "bbox_top_left": [
+      144.0,
+      248.47,
+      436.08,
+      260.76
+    ],
+    "bbox_pdf": [
+      144.0,
+      581.24,
+      436.08,
+      593.53
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "●​",
+    "line_text": "●​ pelibatan stakeholder disebutkan K/L dan pemerintah daerah, kelompok ",
+    "bbox_top_left": [
+      126.0,
+      261.12,
+      135.7,
+      273.41
+    ],
+    "bbox_pdf": [
+      126.0,
+      568.59,
+      135.7,
+      580.88
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "●​ pelibatan stakeholder disebutkan K/L dan pemerintah daerah, kelompok ",
+    "bbox_top_left": [
+      135.7,
+      261.12,
+      144.0,
+      273.41
+    ],
+    "bbox_pdf": [
+      135.7,
+      568.59,
+      144.0,
+      580.88
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "pelibatan stakeholder disebutkan K/L dan pemerintah daerah, kelompok ",
+    "line_text": "●​ pelibatan stakeholder disebutkan K/L dan pemerintah daerah, kelompok ",
+    "bbox_top_left": [
+      144.0,
+      261.12,
+      525.71,
+      273.41
+    ],
+    "bbox_pdf": [
+      144.0,
+      568.59,
+      525.71,
+      580.88
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "masyarakat, masyarakat, organisasi dalam/dan luar negeri yang terlibat ",
+    "line_text": "masyarakat, masyarakat, organisasi dalam/dan luar negeri yang terlibat ",
+    "bbox_top_left": [
+      144.0,
+      273.77,
+      526.07,
+      286.06
+    ],
+    "bbox_pdf": [
+      144.0,
+      555.94,
+      526.07,
+      568.23
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "dalam pelaksanaan tugas fungsi UKE  ",
+    "line_text": "dalam pelaksanaan tugas fungsi UKE  ",
+    "bbox_top_left": [
+      144.0,
+      286.42,
+      333.43,
+      298.71
+    ],
+    "bbox_pdf": [
+      144.0,
+      543.29,
+      333.43,
+      555.58
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "Asisten Deputi …… telah mengintegrasikan perspektif gender dalam pelaksanaan ",
+    "line_text": "Asisten Deputi …… telah mengintegrasikan perspektif gender dalam pelaksanaan ",
+    "bbox_top_left": [
+      114.75,
+      327.72,
+      525.81,
+      340.01
+    ],
+    "bbox_pdf": [
+      114.75,
+      501.99,
+      525.81,
+      514.28
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "terdapat kesenjangan dalam pelaksanaan kebijakan bidang ……, antara lain …… yang ",
+    "line_text": "terdapat kesenjangan dalam pelaksanaan kebijakan bidang ……, antara lain …… yang ",
+    "bbox_top_left": [
+      93.0,
+      384.64,
+      526.14,
+      396.93
+    ],
+    "bbox_pdf": [
+      93.0,
+      445.07,
+      526.14,
+      457.36
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "dipengaruhi oleh faktor ……. . Untuk mengatasi kesenjangan tersebut, Kemenko PMK ",
+    "line_text": "dipengaruhi oleh faktor ……. . Untuk mengatasi kesenjangan tersebut, Kemenko PMK ",
+    "bbox_top_left": [
+      93.0,
+      403.61,
+      525.72,
+      415.9
+    ],
+    "bbox_pdf": [
+      93.0,
+      426.1,
+      525.72,
+      438.39
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "melalui Asisten Deputi …… melakukan intervensi melalui ….. Diharapkan program dan ",
+    "line_text": "melalui Asisten Deputi …… melakukan intervensi melalui ….. Diharapkan program dan ",
+    "bbox_top_left": [
+      93.0,
+      422.58,
+      525.59,
+      434.87
+    ],
+    "bbox_pdf": [
+      93.0,
+      407.13,
+      525.59,
+      419.42
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "……",
+    "line_text": "yang ada dalam pelaksanaan program pada Asisten Deputi …… yang perlu ",
+    "bbox_top_left": [
+      434.59,
+      584.05,
+      456.58,
+      596.33
+    ],
+    "bbox_pdf": [
+      434.59,
+      245.67,
+      456.58,
+      257.95
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " yang perlu ",
+    "line_text": "yang ada dalam pelaksanaan program pada Asisten Deputi …… yang perlu ",
+    "bbox_top_left": [
+      456.58,
+      584.05,
+      526.02,
+      596.33
+    ],
+    "bbox_pdf": [
+      456.58,
+      245.67,
+      526.02,
+      257.95
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "penegasan peran dan tanggung jawab stakeholder.",
+    "line_text": "penegasan peran dan tanggung jawab stakeholder. (prinsip penulisan isi risiko → hasil ",
+    "bbox_top_left": [
+      93.0,
+      621.99,
+      347.47,
+      634.28
+    ],
+    "bbox_pdf": [
+      93.0,
+      207.72,
+      347.47,
+      220.01
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " (prinsip penulisan isi risiko → hasil ",
+    "line_text": "penegasan peran dan tanggung jawab stakeholder. (prinsip penulisan isi risiko → hasil ",
+    "bbox_top_left": [
+      347.47,
+      621.99,
+      526.08,
+      634.28
+    ],
+    "bbox_pdf": [
+      347.47,
+      207.72,
+      526.08,
+      220.01
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "analisis → upaya mitigasi). Matriks profil risiko terlampir pada lampiran 2 KAK",
+    "line_text": "analisis → upaya mitigasi). Matriks profil risiko terlampir pada lampiran 2 KAK ",
+    "bbox_top_left": [
+      93.0,
+      640.97,
+      470.54,
+      653.25
+    ],
+    "bbox_pdf": [
+      93.0,
+      188.75,
+      470.54,
+      201.03
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "analisis → upaya mitigasi). Matriks profil risiko terlampir pada lampiran 2 KAK ",
+    "bbox_top_left": [
+      470.53,
+      640.97,
+      473.59,
+      653.25
+    ],
+    "bbox_pdf": [
+      470.53,
+      188.75,
+      473.59,
+      201.03
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "1.​ …… ",
+    "bbox_top_left": [
+      104.48,
+      722.86,
+      110.25,
+      735.15
+    ],
+    "bbox_pdf": [
+      104.48,
+      106.85,
+      110.25,
+      119.14
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "……",
+    "line_text": "1.​ …… ",
+    "bbox_top_left": [
+      110.25,
+      722.86,
+      132.24,
+      735.15
+    ],
+    "bbox_pdf": [
+      110.25,
+      106.85,
+      132.24,
+      119.14
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "1.​ …… ",
+    "bbox_top_left": [
+      132.23,
+      722.86,
+      135.29,
+      735.15
+    ],
+    "bbox_pdf": [
+      132.23,
+      106.85,
+      135.29,
+      119.14
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "2.​ …… ",
+    "bbox_top_left": [
+      104.48,
+      747.83,
+      110.25,
+      760.12
+    ],
+    "bbox_pdf": [
+      104.48,
+      81.88,
+      110.25,
+      94.17
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": "……",
+    "line_text": "2.​ …… ",
+    "bbox_top_left": [
+      110.25,
+      747.83,
+      132.24,
+      760.12
+    ],
+    "bbox_pdf": [
+      110.25,
+      81.88,
+      132.24,
+      94.17
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 4,
+    "text": " ",
+    "line_text": "2.​ …… ",
+    "bbox_top_left": [
+      132.23,
+      747.83,
+      135.29,
+      760.12
+    ],
+    "bbox_pdf": [
+      132.23,
+      81.88,
+      135.29,
+      94.17
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": " ",
+    "line_text": "3.​ …… dst ",
+    "bbox_top_left": [
+      104.48,
+      72.36,
+      110.25,
+      84.65
+    ],
+    "bbox_pdf": [
+      104.48,
+      757.35,
+      110.25,
+      769.64
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "…… ",
+    "line_text": "3.​ …… dst ",
+    "bbox_top_left": [
+      110.25,
+      72.36,
+      135.29,
+      84.65
+    ],
+    "bbox_pdf": [
+      110.25,
+      757.35,
+      135.29,
+      769.64
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "dst ",
+    "line_text": "3.​ …… dst ",
+    "bbox_top_left": [
+      135.29,
+      72.36,
+      153.01,
+      84.65
+    ],
+    "bbox_pdf": [
+      135.29,
+      757.35,
+      153.01,
+      769.64
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "1.​",
+    "line_text": "1.​ …. ",
+    "bbox_top_left": [
+      90.0,
+      134.63,
+      102.23,
+      146.92
+    ],
+    "bbox_pdf": [
+      90.0,
+      695.08,
+      102.23,
+      707.37
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": " ",
+    "line_text": "1.​ …. ",
+    "bbox_top_left": [
+      102.23,
+      134.63,
+      108.0,
+      146.92
+    ],
+    "bbox_pdf": [
+      102.23,
+      695.08,
+      108.0,
+      707.37
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "…. ",
+    "line_text": "1.​ …. ",
+    "bbox_top_left": [
+      108.0,
+      134.63,
+      125.1,
+      146.92
+    ],
+    "bbox_pdf": [
+      108.0,
+      695.08,
+      125.1,
+      707.37
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "Ditambahkan ",
+    "line_text": "Ditambahkan ",
+    "bbox_top_left": [
+      93.0,
+      156.28,
+      160.82,
+      168.57
+    ],
+    "bbox_pdf": [
+      93.0,
+      673.43,
+      160.82,
+      685.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "informasi ",
+    "line_text": "informasi ",
+    "bbox_top_left": [
+      179.57,
+      156.28,
+      227.22,
+      168.57
+    ],
+    "bbox_pdf": [
+      179.57,
+      673.43,
+      227.22,
+      685.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "mengenai ",
+    "line_text": "mengenai ",
+    "bbox_top_left": [
+      245.97,
+      156.28,
+      297.3,
+      168.57
+    ],
+    "bbox_pdf": [
+      245.97,
+      673.43,
+      297.3,
+      685.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "data ",
+    "line_text": "data ",
+    "bbox_top_left": [
+      316.05,
+      156.28,
+      340.5,
+      168.57
+    ],
+    "bbox_pdf": [
+      316.05,
+      673.43,
+      340.5,
+      685.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "terpilah ",
+    "line_text": "terpilah ",
+    "bbox_top_left": [
+      359.25,
+      156.28,
+      398.36,
+      168.57
+    ],
+    "bbox_pdf": [
+      359.25,
+      673.43,
+      398.36,
+      685.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "berdasarkan ",
+    "line_text": "berdasarkan ",
+    "bbox_top_left": [
+      417.1,
+      156.28,
+      481.27,
+      168.57
+    ],
+    "bbox_pdf": [
+      417.1,
+      673.43,
+      481.27,
+      685.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "jenis ",
+    "line_text": "jenis ",
+    "bbox_top_left": [
+      500.01,
+      156.28,
+      525.68,
+      168.57
+    ],
+    "bbox_pdf": [
+      500.01,
+      673.43,
+      525.68,
+      685.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "kelamin/daerah/kelompok umur. ",
+    "line_text": "kelamin/daerah/kelompok umur. ",
+    "bbox_top_left": [
+      93.0,
+      169.93,
+      252.06,
+      182.22
+    ],
+    "bbox_pdf": [
+      93.0,
+      659.78,
+      252.06,
+      672.07
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "……",
+    "line_text": "Metode pelaksanaan yang digunakan dalam menghasilkan …… output Rekomendasi ",
+    "bbox_top_left": [
+      393.91,
+      229.53,
+      415.9,
+      241.82
+    ],
+    "bbox_pdf": [
+      393.91,
+      600.18,
+      415.9,
+      612.47
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": " ",
+    "line_text": "Metode pelaksanaan yang digunakan dalam menghasilkan …… output Rekomendasi ",
+    "bbox_top_left": [
+      415.9,
+      229.53,
+      418.95,
+      241.82
+    ],
+    "bbox_pdf": [
+      415.9,
+      600.18,
+      418.95,
+      612.47
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "RAK 1: …… ",
+    "line_text": "RAK 1: …… ",
+    "bbox_top_left": [
+      114.75,
+      273.48,
+      177.67,
+      285.77
+    ],
+    "bbox_pdf": [
+      114.75,
+      556.23,
+      177.67,
+      568.52
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "b.​",
+    "line_text": "b.​",
+    "bbox_top_left": [
+      93.0,
+      292.45,
+      105.23,
+      304.74
+    ],
+    "bbox_pdf": [
+      93.0,
+      537.26,
+      105.23,
+      549.55
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "RAK 2: …… ",
+    "line_text": "RAK 2: …… ",
+    "bbox_top_left": [
+      114.75,
+      292.45,
+      177.67,
+      304.74
+    ],
+    "bbox_pdf": [
+      114.75,
+      537.26,
+      177.67,
+      549.55
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "c.​",
+    "line_text": "c.​",
+    "bbox_top_left": [
+      93.0,
+      311.42,
+      104.61,
+      323.71
+    ],
+    "bbox_pdf": [
+      93.0,
+      518.29,
+      104.61,
+      530.58
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "RAK 3: …… dst ",
+    "line_text": "RAK 3: …… dst ",
+    "bbox_top_left": [
+      114.75,
+      311.42,
+      195.39,
+      323.71
+    ],
+    "bbox_pdf": [
+      114.75,
+      518.29,
+      195.39,
+      530.58
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "Diisi dengan cara pelaksanaannya berupa kontraktual atau swakelola. ",
+    "line_text": "Diisi dengan cara pelaksanaannya berupa kontraktual atau swakelola. ",
+    "bbox_top_left": [
+      108.0,
+      330.4,
+      452.04,
+      342.69
+    ],
+    "bbox_pdf": [
+      108.0,
+      499.31,
+      452.04,
+      511.6
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "……",
+    "line_text": "Tahapan pelaksanaan kegiatan yang akan dilakukan pada tahun ……, diantaranya ",
+    "bbox_top_left": [
+      434.33,
+      368.35,
+      456.32,
+      380.63
+    ],
+    "bbox_pdf": [
+      434.33,
+      461.37,
+      456.32,
+      473.65
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": ", diantaranya ",
+    "line_text": "Tahapan pelaksanaan kegiatan yang akan dilakukan pada tahun ……, diantaranya ",
+    "bbox_top_left": [
+      456.32,
+      368.35,
+      525.93,
+      380.63
+    ],
+    "bbox_pdf": [
+      456.32,
+      461.37,
+      525.93,
+      473.65
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "2.1 RAK …. ",
+    "line_text": "2.1 RAK …. ",
+    "bbox_top_left": [
+      93.0,
+      399.44,
+      154.09,
+      411.73
+    ],
+    "bbox_pdf": [
+      93.0,
+      430.27,
+      154.09,
+      442.56
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 5,
+    "text": "051 Sinkronisasi, Koordinasi dan Pengendalian Bidang …. ",
+    "line_text": "2.1.1 Sub Komponen 051 Sinkronisasi, Koordinasi dan Pengendalian Bidang …. ",
+    "bbox_top_left": [
+      199.34,
+      415.98,
+      507.19,
+      428.27
+    ],
+    "bbox_pdf": [
+      199.34,
+      413.73,
+      507.19,
+      426.02
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 5,
+    "text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "line_text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "bbox_top_left": [
+      114.75,
+      453.08,
+      392.81,
+      465.37
+    ],
+    "bbox_pdf": [
+      114.75,
+      376.63,
+      392.81,
+      388.92
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "Sebagai koordinator bidang pembangunan manusia dan kebudayaan, Kemenko ",
+    "line_text": "Sebagai koordinator bidang pembangunan manusia dan kebudayaan, Kemenko ",
+    "bbox_top_left": [
+      114.75,
+      473.62,
+      525.85,
+      485.91
+    ],
+    "bbox_pdf": [
+      114.75,
+      356.09,
+      525.85,
+      368.38
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "PMK melalui Asisten Deputi … berperan menghimpun informasi lintas sektor terkait ",
+    "line_text": "PMK melalui Asisten Deputi … berperan menghimpun informasi lintas sektor terkait ",
+    "bbox_top_left": [
+      114.75,
+      488.17,
+      525.72,
+      500.46
+    ],
+    "bbox_pdf": [
+      114.75,
+      341.54,
+      525.72,
+      353.83
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "isu … di daerah. Identifikasi dilakukan dengan mengintegrasikan masukan dari ",
+    "line_text": "isu … di daerah. Identifikasi dilakukan dengan mengintegrasikan masukan dari ",
+    "bbox_top_left": [
+      114.75,
+      502.72,
+      525.68,
+      515.0
+    ],
+    "bbox_pdf": [
+      114.75,
+      327.0,
+      525.68,
+      339.28
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "kementerian/lembaga teknis yaitu…. (sebutkan K/L terkait), pemerintah daerah, ",
+    "line_text": "kementerian/lembaga teknis yaitu…. (sebutkan K/L terkait), pemerintah daerah, ",
+    "bbox_top_left": [
+      114.75,
+      517.26,
+      526.32,
+      529.55
+    ],
+    "bbox_pdf": [
+      114.75,
+      312.45,
+      526.32,
+      324.74
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "serta mitra pembangunan. Selain memetakan permasalahan tata kelola, identifikasi ",
+    "line_text": "serta mitra pembangunan. Selain memetakan permasalahan tata kelola, identifikasi ",
+    "bbox_top_left": [
+      114.75,
+      531.81,
+      525.78,
+      544.1
+    ],
+    "bbox_pdf": [
+      114.75,
+      297.9,
+      525.78,
+      310.19
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "juga dilakukan menggunakan data terpilah menurut jenis kelamin, usia, disabilitas, ",
+    "line_text": "juga dilakukan menggunakan data terpilah menurut jenis kelamin, usia, disabilitas, ",
+    "bbox_top_left": [
+      114.75,
+      546.35,
+      526.29,
+      558.64
+    ],
+    "bbox_pdf": [
+      114.75,
+      283.36,
+      526.29,
+      295.65
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "dan kelompok rentan lainnya untuk mengetahui dampak bencana terhadap ",
+    "line_text": "dan kelompok rentan lainnya untuk mengetahui dampak bencana terhadap ",
+    "bbox_top_left": [
+      114.75,
+      560.9,
+      526.14,
+      573.19
+    ],
+    "bbox_pdf": [
+      114.75,
+      268.81,
+      526.14,
+      281.1
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "perempuan, laki-laki, anak, lansia, ibu hamil, penyandang disabilitas, serta ",
+    "line_text": "perempuan, laki-laki, anak, lansia, ibu hamil, penyandang disabilitas, serta ",
+    "bbox_top_left": [
+      114.75,
+      575.45,
+      526.04,
+      587.74
+    ],
+    "bbox_pdf": [
+      114.75,
+      254.26,
+      526.04,
+      266.55
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "kelompok rentan lainnya. Analisis tersebut digunakan untuk mengidentifikasi ",
+    "line_text": "kelompok rentan lainnya. Analisis tersebut digunakan untuk mengidentifikasi ",
+    "bbox_top_left": [
+      114.75,
+      589.99,
+      526.07,
+      602.28
+    ],
+    "bbox_pdf": [
+      114.75,
+      239.72,
+      526.07,
+      252.01
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "kesenjangan akses terhadap layanan dasar, bantuan kemanusiaan, layanan ",
+    "line_text": "kesenjangan akses terhadap layanan dasar, bantuan kemanusiaan, layanan ",
+    "bbox_top_left": [
+      114.75,
+      604.54,
+      526.26,
+      616.83
+    ],
+    "bbox_pdf": [
+      114.75,
+      225.17,
+      526.26,
+      237.46
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "kesehatan, perlindungan sosial, serta mekanisme perlindungan dari kekerasan ",
+    "line_text": "kesehatan, perlindungan sosial, serta mekanisme perlindungan dari kekerasan ",
+    "bbox_top_left": [
+      114.75,
+      619.09,
+      525.69,
+      631.37
+    ],
+    "bbox_pdf": [
+      114.75,
+      210.63,
+      525.69,
+      222.91
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "berbasis gender di lokasi bencana. Dengan demikian, isu yang diidentifikasi tidak ",
+    "line_text": "berbasis gender di lokasi bencana. Dengan demikian, isu yang diidentifikasi tidak ",
+    "bbox_top_left": [
+      114.75,
+      633.63,
+      526.04,
+      645.92
+    ],
+    "bbox_pdf": [
+      114.75,
+      196.08,
+      526.04,
+      208.37
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "hanya bersifat sektoral, tetapi juga memperhatikan kebutuhan spesifik kelompok ",
+    "line_text": "hanya bersifat sektoral, tetapi juga memperhatikan kebutuhan spesifik kelompok ",
+    "bbox_top_left": [
+      114.75,
+      648.18,
+      526.25,
+      660.47
+    ],
+    "bbox_pdf": [
+      114.75,
+      181.53,
+      526.25,
+      193.82
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "rentan sehingga menjadi dasar penyusunan kebijakan yang lebih inklusif dan ",
+    "line_text": "rentan sehingga menjadi dasar penyusunan kebijakan yang lebih inklusif dan ",
+    "bbox_top_left": [
+      114.75,
+      662.72,
+      526.16,
+      675.01
+    ],
+    "bbox_pdf": [
+      114.75,
+      166.99,
+      526.16,
+      179.28
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "responsif gender.  ",
+    "line_text": "responsif gender.  ",
+    "bbox_top_left": [
+      114.75,
+      677.27,
+      205.39,
+      689.56
+    ],
+    "bbox_pdf": [
+      114.75,
+      152.44,
+      205.39,
+      164.73
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "Sebutkan kegiatan terkait upaya pencapaian output dan kegiatan tindak ",
+    "line_text": "Sebutkan kegiatan terkait upaya pencapaian output dan kegiatan tindak ",
+    "bbox_top_left": [
+      114.75,
+      718.36,
+      526.02,
+      730.65
+    ],
+    "bbox_pdf": [
+      114.75,
+      111.35,
+      526.02,
+      123.64
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "pengendalian risiko ataupun kegiatan penyelesaian masalah yang terjadi  ",
+    "line_text": "pengendalian risiko ataupun kegiatan penyelesaian masalah yang terjadi  ",
+    "bbox_top_left": [
+      114.75,
+      732.91,
+      475.31,
+      745.2
+    ],
+    "bbox_pdf": [
+      114.75,
+      96.8,
+      475.31,
+      109.09
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 5,
+    "text": "Rapat Koordinasi Identifikasi Permasalahan …. ",
+    "line_text": "1.​ Rapat Koordinasi Identifikasi Permasalahan …. ",
+    "bbox_top_left": [
+      129.0,
+      753.46,
+      362.41,
+      765.74
+    ],
+    "bbox_pdf": [
+      129.0,
+      76.26,
+      362.41,
+      88.54
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Lokasi : Prov … Kab/Kota … ",
+    "line_text": "a.​ Lokasi : Prov … Kab/Kota … ",
+    "bbox_top_left": [
+      150.0,
+      72.36,
+      292.97,
+      84.65
+    ],
+    "bbox_pdf": [
+      150.0,
+      757.35,
+      292.97,
+      769.64
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Waktu : Bulan … Tahun …  ",
+    "line_text": "b.​ Waktu : Bulan … Tahun …  ",
+    "bbox_top_left": [
+      150.0,
+      86.91,
+      285.23,
+      99.2
+    ],
+    "bbox_pdf": [
+      150.0,
+      742.8,
+      285.23,
+      755.09
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Peserta :  …. (",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      150.0,
+      101.45,
+      220.86,
+      113.74
+    ],
+    "bbox_pdf": [
+      150.0,
+      728.26,
+      220.86,
+      740.55
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "K/L terkait atau peserta rapat yang terundang",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      220.86,
+      101.45,
+      442.07,
+      113.74
+    ],
+    "bbox_pdf": [
+      220.86,
+      728.26,
+      442.07,
+      740.55
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": ") ",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      442.07,
+      101.45,
+      448.79,
+      113.74
+    ],
+    "bbox_pdf": [
+      442.07,
+      728.26,
+      448.79,
+      740.55
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Jumlah Peserta : … orang ",
+    "line_text": "d.​ Jumlah Peserta : … orang ",
+    "bbox_top_left": [
+      150.0,
+      116.0,
+      280.75,
+      128.29
+    ],
+    "bbox_pdf": [
+      150.0,
+      713.71,
+      280.75,
+      726.0
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 6,
+    "text": "Narasumber : … ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      150.0,
+      130.54,
+      233.69,
+      142.83
+    ],
+    "bbox_pdf": [
+      150.0,
+      699.17,
+      233.69,
+      711.46
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "(ada/tidak ada)",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      233.69,
+      130.54,
+      307.02,
+      142.83
+    ],
+    "bbox_pdf": [
+      233.69,
+      699.17,
+      307.02,
+      711.46
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": " ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      307.01,
+      130.54,
+      310.07,
+      142.83
+    ],
+    "bbox_pdf": [
+      307.01,
+      699.17,
+      310.07,
+      711.46
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Kesepakatan lintas sektor mengenai strategi yang responsif gender; ",
+    "line_text": "Kesepakatan lintas sektor mengenai strategi yang responsif gender; ",
+    "bbox_top_left": [
+      150.0,
+      174.18,
+      526.25,
+      186.47
+    ],
+    "bbox_pdf": [
+      150.0,
+      655.53,
+      526.25,
+      667.82
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Rencana aksi bersama yang mengakomodasi kebutuhan kelompok rentan; ",
+    "line_text": "Rencana aksi bersama yang mengakomodasi kebutuhan kelompok rentan; ",
+    "bbox_top_left": [
+      150.0,
+      188.73,
+      526.1,
+      201.02
+    ],
+    "bbox_pdf": [
+      150.0,
+      640.98,
+      526.1,
+      653.27
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Kesepakatan penggunaan indikator dan data terpilah dalam pelaksanaan ",
+    "line_text": "Kesepakatan penggunaan indikator dan data terpilah dalam pelaksanaan ",
+    "bbox_top_left": [
+      150.0,
+      203.28,
+      525.85,
+      215.57
+    ],
+    "bbox_pdf": [
+      150.0,
+      626.43,
+      525.85,
+      638.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "program.",
+    "line_text": "program. ",
+    "bbox_top_left": [
+      150.0,
+      217.82,
+      193.99,
+      230.11
+    ],
+    "bbox_pdf": [
+      150.0,
+      611.89,
+      193.99,
+      624.18
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": " ",
+    "line_text": "program. ",
+    "bbox_top_left": [
+      193.98,
+      217.82,
+      197.04,
+      230.11
+    ],
+    "bbox_pdf": [
+      193.98,
+      611.89,
+      197.04,
+      624.18
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Alasan pemilihan lokasi : ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      150.0,
+      232.37,
+      274.04,
+      244.66
+    ],
+    "bbox_pdf": [
+      150.0,
+      597.34,
+      274.04,
+      609.63
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "(jelaskan bila dilakukan diluar DKI Jakarta",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      274.03,
+      232.37,
+      478.1,
+      244.66
+    ],
+    "bbox_pdf": [
+      274.03,
+      597.34,
+      478.1,
+      609.63
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": ") ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      478.1,
+      232.37,
+      484.82,
+      244.66
+    ],
+    "bbox_pdf": [
+      478.1,
+      597.34,
+      484.82,
+      609.63
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal ",
+    "line_text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal ",
+    "bbox_top_left": [
+      108.0,
+      282.01,
+      463.43,
+      294.3
+    ],
+    "bbox_pdf": [
+      108.0,
+      547.7,
+      463.43,
+      559.99
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Buat kalimat pendahuluan adapun seperti contoh berikut",
+    "line_text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "bbox_top_left": [
+      114.75,
+      343.65,
+      389.75,
+      355.94
+    ],
+    "bbox_pdf": [
+      114.75,
+      486.06,
+      389.75,
+      498.35
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": " ",
+    "line_text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "bbox_top_left": [
+      389.75,
+      343.65,
+      392.81,
+      355.94
+    ],
+    "bbox_pdf": [
+      389.75,
+      486.06,
+      392.81,
+      498.35
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Tahap ini merupakan mandat utama Kemenko PMK dalam memastikan ",
+    "line_text": "Tahap ini merupakan mandat utama Kemenko PMK dalam memastikan ",
+    "bbox_top_left": [
+      114.75,
+      364.19,
+      525.8,
+      376.48
+    ],
+    "bbox_pdf": [
+      114.75,
+      465.52,
+      525.8,
+      477.81
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "keterpaduan kebijakan lintas sektor. Sinkronisasi dilakukan dengan memastikan ",
+    "line_text": "keterpaduan kebijakan lintas sektor. Sinkronisasi dilakukan dengan memastikan ",
+    "bbox_top_left": [
+      114.75,
+      378.74,
+      526.12,
+      391.03
+    ],
+    "bbox_pdf": [
+      114.75,
+      450.97,
+      526.12,
+      463.26
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "program kementerian/lembaga dan pemerintah daerah telah mengakomodasi ",
+    "line_text": "program kementerian/lembaga dan pemerintah daerah telah mengakomodasi ",
+    "bbox_top_left": [
+      114.75,
+      393.29,
+      526.32,
+      405.57
+    ],
+    "bbox_pdf": [
+      114.75,
+      436.43,
+      526.32,
+      448.71
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "kebutuhan ",
+    "line_text": "kebutuhan ",
+    "bbox_top_left": [
+      114.75,
+      407.83,
+      169.15,
+      420.12
+    ],
+    "bbox_pdf": [
+      114.75,
+      421.88,
+      169.15,
+      434.17
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "perempuan ",
+    "line_text": "perempuan ",
+    "bbox_top_left": [
+      178.15,
+      407.83,
+      236.82,
+      420.12
+    ],
+    "bbox_pdf": [
+      178.15,
+      421.88,
+      236.82,
+      434.17
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "dan ",
+    "line_text": "dan ",
+    "bbox_top_left": [
+      245.81,
+      407.83,
+      267.21,
+      420.12
+    ],
+    "bbox_pdf": [
+      245.81,
+      421.88,
+      267.21,
+      434.17
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "laki-laki ",
+    "line_text": "laki-laki ",
+    "bbox_top_left": [
+      276.21,
+      407.83,
+      315.91,
+      420.12
+    ],
+    "bbox_pdf": [
+      276.21,
+      421.88,
+      315.91,
+      434.17
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "secara setara serta memperhatikan ",
+    "line_text": "secara setara serta memperhatikan ",
+    "bbox_top_left": [
+      324.91,
+      407.83,
+      525.62,
+      420.12
+    ],
+    "bbox_pdf": [
+      324.91,
+      421.88,
+      525.62,
+      434.17
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "perlindungan kelompok rentan pada seluruh tahapan penanggulangan bencana. ",
+    "line_text": "perlindungan kelompok rentan pada seluruh tahapan penanggulangan bencana. ",
+    "bbox_top_left": [
+      114.75,
+      422.38,
+      525.6,
+      434.67
+    ],
+    "bbox_pdf": [
+      114.75,
+      407.33,
+      525.6,
+      419.62
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Koordinasi juga mendorong pemanfaatan data terpilah sebagai dasar perencanaan, ",
+    "line_text": "Koordinasi juga mendorong pemanfaatan data terpilah sebagai dasar perencanaan, ",
+    "bbox_top_left": [
+      114.75,
+      436.92,
+      526.17,
+      449.21
+    ],
+    "bbox_pdf": [
+      114.75,
+      392.79,
+      526.17,
+      405.08
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "penganggaran, dan pengambilan keputusan, termasuk penyediaan layanan ",
+    "line_text": "penganggaran, dan pengambilan keputusan, termasuk penyediaan layanan ",
+    "bbox_top_left": [
+      114.75,
+      451.47,
+      526.21,
+      463.76
+    ],
+    "bbox_pdf": [
+      114.75,
+      378.24,
+      526.21,
+      390.53
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "pengungsian yang aman, akses sanitasi yang memadai, layanan kesehatan ",
+    "line_text": "pengungsian yang aman, akses sanitasi yang memadai, layanan kesehatan ",
+    "bbox_top_left": [
+      114.75,
+      466.02,
+      525.9,
+      478.31
+    ],
+    "bbox_pdf": [
+      114.75,
+      363.69,
+      525.9,
+      375.98
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "reproduksi, perlindungan anak, serta aksesibilitas bagi penyandang disabilitas. ",
+    "line_text": "reproduksi, perlindungan anak, serta aksesibilitas bagi penyandang disabilitas. ",
+    "bbox_top_left": [
+      114.75,
+      480.56,
+      525.83,
+      492.85
+    ],
+    "bbox_pdf": [
+      114.75,
+      349.15,
+      525.83,
+      361.44
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Pengendalian dilakukan melalui penyepakatan indikator capaian yang mengukur ",
+    "line_text": "Pengendalian dilakukan melalui penyepakatan indikator capaian yang mengukur ",
+    "bbox_top_left": [
+      114.75,
+      495.11,
+      526.02,
+      507.4
+    ],
+    "bbox_pdf": [
+      114.75,
+      334.6,
+      526.02,
+      346.89
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "kebermanfaatan program bagi seluruh kelompok masyarakat secara inklusif.  ",
+    "line_text": "kebermanfaatan program bagi seluruh kelompok masyarakat secara inklusif.  ",
+    "bbox_top_left": [
+      114.75,
+      509.66,
+      492.95,
+      521.94
+    ],
+    "bbox_pdf": [
+      114.75,
+      320.06,
+      492.95,
+      332.34
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Sebutkan kegiatan terkait upaya pencapaian output dan kegiatan tindak ",
+    "line_text": "Sebutkan kegiatan terkait upaya pencapaian output dan kegiatan tindak ",
+    "bbox_top_left": [
+      114.75,
+      550.75,
+      526.02,
+      563.04
+    ],
+    "bbox_pdf": [
+      114.75,
+      278.96,
+      526.02,
+      291.25
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "pengendalian risiko ataupun kegiatan penyelesaian masalah yang terjadi  ",
+    "line_text": "pengendalian risiko ataupun kegiatan penyelesaian masalah yang terjadi  ",
+    "bbox_top_left": [
+      114.75,
+      565.29,
+      475.31,
+      577.58
+    ],
+    "bbox_pdf": [
+      114.75,
+      264.42,
+      475.31,
+      276.71
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Lokasi : Prov … Kab/Kota … ",
+    "line_text": "a.​ Lokasi : Prov … Kab/Kota … ",
+    "bbox_top_left": [
+      150.0,
+      600.39,
+      292.97,
+      612.68
+    ],
+    "bbox_pdf": [
+      150.0,
+      229.32,
+      292.97,
+      241.61
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Waktu : Bulan … Tahun …  ",
+    "line_text": "b.​ Waktu : Bulan … Tahun …  ",
+    "bbox_top_left": [
+      150.0,
+      614.93,
+      285.23,
+      627.22
+    ],
+    "bbox_pdf": [
+      150.0,
+      214.78,
+      285.23,
+      227.07
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Peserta :  …. (",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      150.0,
+      629.48,
+      220.86,
+      641.77
+    ],
+    "bbox_pdf": [
+      150.0,
+      200.23,
+      220.86,
+      212.52
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "K/L terkait atau peserta rapat yang terundang",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      220.86,
+      629.48,
+      442.07,
+      641.77
+    ],
+    "bbox_pdf": [
+      220.86,
+      200.23,
+      442.07,
+      212.52
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": ") ",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      442.07,
+      629.48,
+      448.79,
+      641.77
+    ],
+    "bbox_pdf": [
+      442.07,
+      200.23,
+      448.79,
+      212.52
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Jumlah Peserta : … orang ",
+    "line_text": "d.​ Jumlah Peserta : … orang ",
+    "bbox_top_left": [
+      150.0,
+      644.03,
+      280.75,
+      656.31
+    ],
+    "bbox_pdf": [
+      150.0,
+      185.69,
+      280.75,
+      197.97
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 6,
+    "text": "Narasumber : … ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      150.0,
+      658.57,
+      233.69,
+      670.86
+    ],
+    "bbox_pdf": [
+      150.0,
+      171.14,
+      233.69,
+      183.43
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "(ada/tidak ada)",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      233.69,
+      658.57,
+      307.02,
+      670.86
+    ],
+    "bbox_pdf": [
+      233.69,
+      171.14,
+      307.02,
+      183.43
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": " ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      307.01,
+      658.57,
+      310.07,
+      670.86
+    ],
+    "bbox_pdf": [
+      307.01,
+      171.14,
+      310.07,
+      183.43
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Kesepakatan lintas sektor mengenai strategi ",
+    "line_text": "Output yang akan dicapai : Kesepakatan lintas sektor mengenai strategi ",
+    "bbox_top_left": [
+      297.33,
+      673.12,
+      525.69,
+      685.41
+    ],
+    "bbox_pdf": [
+      297.33,
+      156.59,
+      525.69,
+      168.88
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "yang responsif gender; Rencana aksi bersama yang mengakomodasi ",
+    "line_text": "yang responsif gender; Rencana aksi bersama yang mengakomodasi ",
+    "bbox_top_left": [
+      150.0,
+      687.66,
+      526.21,
+      699.95
+    ],
+    "bbox_pdf": [
+      150.0,
+      142.05,
+      526.21,
+      154.34
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "kebutuhan kelompok rentan; Kesepakatan penggunaan indikator dan data ",
+    "line_text": "kebutuhan kelompok rentan; Kesepakatan penggunaan indikator dan data ",
+    "bbox_top_left": [
+      150.0,
+      702.21,
+      525.63,
+      714.5
+    ],
+    "bbox_pdf": [
+      150.0,
+      127.5,
+      525.63,
+      139.79
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "terpilah dalam pelaksanaan program.",
+    "line_text": "terpilah dalam pelaksanaan program. ",
+    "bbox_top_left": [
+      150.0,
+      716.76,
+      331.48,
+      729.05
+    ],
+    "bbox_pdf": [
+      150.0,
+      112.95,
+      331.48,
+      125.24
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": " ",
+    "line_text": "terpilah dalam pelaksanaan program. ",
+    "bbox_top_left": [
+      331.48,
+      716.76,
+      334.54,
+      729.05
+    ],
+    "bbox_pdf": [
+      331.48,
+      112.95,
+      334.54,
+      125.24
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Alasan pemilihan lokasi : ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      150.0,
+      731.3,
+      274.04,
+      743.59
+    ],
+    "bbox_pdf": [
+      150.0,
+      98.41,
+      274.04,
+      110.7
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "(jelaskan bila dilakukan diluar DKI Jakarta",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      274.03,
+      731.3,
+      478.1,
+      743.59
+    ],
+    "bbox_pdf": [
+      274.03,
+      98.41,
+      478.1,
+      110.7
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": ") ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      478.1,
+      731.3,
+      484.82,
+      743.59
+    ],
+    "bbox_pdf": [
+      478.1,
+      98.41,
+      484.82,
+      110.7
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "2.​",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      111.0,
+      745.85,
+      123.23,
+      758.14
+    ],
+    "bbox_pdf": [
+      111.0,
+      83.86,
+      123.23,
+      96.15
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": " ",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      123.23,
+      745.85,
+      129.0,
+      758.14
+    ],
+    "bbox_pdf": [
+      123.23,
+      83.86,
+      129.0,
+      96.15
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 6,
+    "text": "Dst.. ",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      129.0,
+      745.85,
+      154.65,
+      758.14
+    ],
+    "bbox_pdf": [
+      129.0,
+      83.86,
+      154.65,
+      96.15
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "3.​",
+    "line_text": "3.​ Dst ",
+    "bbox_top_left": [
+      111.0,
+      72.36,
+      123.23,
+      84.65
+    ],
+    "bbox_pdf": [
+      111.0,
+      757.35,
+      123.23,
+      769.64
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": " ",
+    "line_text": "3.​ Dst ",
+    "bbox_top_left": [
+      123.23,
+      72.36,
+      129.0,
+      84.65
+    ],
+    "bbox_pdf": [
+      123.23,
+      757.35,
+      129.0,
+      769.64
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Dst ",
+    "line_text": "3.​ Dst ",
+    "bbox_top_left": [
+      129.0,
+      72.36,
+      148.55,
+      84.65
+    ],
+    "bbox_pdf": [
+      129.0,
+      757.35,
+      148.55,
+      769.64
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal, Perjalanan ",
+    "line_text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal, Perjalanan ",
+    "bbox_top_left": [
+      107.25,
+      92.91,
+      525.85,
+      105.2
+    ],
+    "bbox_pdf": [
+      107.25,
+      736.8,
+      525.85,
+      749.09
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Dinas PAket Meeting, Perjalanan Dinas Biasa, Belanja Jasa Lainnya (PJP), Belanja ",
+    "line_text": "Dinas PAket Meeting, Perjalanan Dinas Biasa, Belanja Jasa Lainnya (PJP), Belanja ",
+    "bbox_top_left": [
+      107.25,
+      107.45,
+      526.18,
+      119.74
+    ],
+    "bbox_pdf": [
+      107.25,
+      722.26,
+      526.18,
+      734.55
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Jasa Konsultan.  ",
+    "line_text": "Jasa Konsultan.  ",
+    "bbox_top_left": [
+      107.25,
+      122.0,
+      191.58,
+      134.29
+    ],
+    "bbox_pdf": [
+      107.25,
+      707.71,
+      191.58,
+      720.0
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Buat kalimat pendahuluan adapun seperti contoh berikut",
+    "line_text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "bbox_top_left": [
+      114.75,
+      183.64,
+      389.75,
+      195.93
+    ],
+    "bbox_pdf": [
+      114.75,
+      646.07,
+      389.75,
+      658.36
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": " ",
+    "line_text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "bbox_top_left": [
+      389.75,
+      183.64,
+      392.81,
+      195.93
+    ],
+    "bbox_pdf": [
+      389.75,
+      646.07,
+      392.81,
+      658.36
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Sebagai koordinator, Kemenko PMK melakukan monitoring dan evaluasi terhadap ",
+    "line_text": "Sebagai koordinator, Kemenko PMK melakukan monitoring dan evaluasi terhadap ",
+    "bbox_top_left": [
+      114.75,
+      204.18,
+      525.82,
+      216.47
+    ],
+    "bbox_pdf": [
+      114.75,
+      625.53,
+      525.82,
+      637.82
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "pelaksanaan kebijakan … dengan menilai efektivitas koordinasi lintas sektor ",
+    "line_text": "pelaksanaan kebijakan … dengan menilai efektivitas koordinasi lintas sektor ",
+    "bbox_top_left": [
+      114.75,
+      218.73,
+      525.59,
+      231.02
+    ],
+    "bbox_pdf": [
+      114.75,
+      610.98,
+      525.59,
+      623.27
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "sekaligus mengukur kebermanfaatan program bagi perempuan, laki-laki, anak, ",
+    "line_text": "sekaligus mengukur kebermanfaatan program bagi perempuan, laki-laki, anak, ",
+    "bbox_top_left": [
+      114.75,
+      233.28,
+      525.8,
+      245.57
+    ],
+    "bbox_pdf": [
+      114.75,
+      596.43,
+      525.8,
+      608.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "lansia, penyandang disabilitas, dan kelompok rentan lainnya. Monitoring dilakukan ",
+    "line_text": "lansia, penyandang disabilitas, dan kelompok rentan lainnya. Monitoring dilakukan ",
+    "bbox_top_left": [
+      114.75,
+      247.82,
+      526.31,
+      260.11
+    ],
+    "bbox_pdf": [
+      114.75,
+      581.89,
+      526.31,
+      594.18
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "melalui verifikasi lapangan terhadap pemanfaatan layanan, akses terhadap ",
+    "line_text": "melalui verifikasi lapangan terhadap pemanfaatan layanan, akses terhadap ",
+    "bbox_top_left": [
+      114.75,
+      262.37,
+      525.98,
+      274.66
+    ],
+    "bbox_pdf": [
+      114.75,
+      567.34,
+      525.98,
+      579.63
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "bantuan, perlindungan kelompok rentan di lokasi pengungsian, serta penerapan ",
+    "line_text": "bantuan, perlindungan kelompok rentan di lokasi pengungsian, serta penerapan ",
+    "bbox_top_left": [
+      114.75,
+      276.92,
+      525.98,
+      289.2
+    ],
+    "bbox_pdf": [
+      114.75,
+      552.8,
+      525.98,
+      565.08
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "kebijakan yang responsif gender. Evaluasi juga mengidentifikasi hambatan yang ",
+    "line_text": "kebijakan yang responsif gender. Evaluasi juga mengidentifikasi hambatan yang ",
+    "bbox_top_left": [
+      114.75,
+      291.46,
+      525.87,
+      303.75
+    ],
+    "bbox_pdf": [
+      114.75,
+      538.25,
+      525.87,
+      550.54
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "menyebabkan kelompok tertentu belum memperoleh manfaat program secara ",
+    "line_text": "menyebabkan kelompok tertentu belum memperoleh manfaat program secara ",
+    "bbox_top_left": [
+      114.75,
+      306.01,
+      525.74,
+      318.3
+    ],
+    "bbox_pdf": [
+      114.75,
+      523.7,
+      525.74,
+      535.99
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "optimal sehingga menjadi dasar penyempurnaan kebijakan.  ",
+    "line_text": "optimal sehingga menjadi dasar penyempurnaan kebijakan.  ",
+    "bbox_top_left": [
+      114.75,
+      320.55,
+      411.12,
+      332.84
+    ],
+    "bbox_pdf": [
+      114.75,
+      509.16,
+      411.12,
+      521.45
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Sebutkan kegiatan untuk memantau dan mengevaluasi: upaya terkait pencapaian ",
+    "line_text": "Sebutkan kegiatan untuk memantau dan mengevaluasi: upaya terkait pencapaian ",
+    "bbox_top_left": [
+      114.75,
+      361.65,
+      526.27,
+      373.94
+    ],
+    "bbox_pdf": [
+      114.75,
+      468.06,
+      526.27,
+      480.35
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "output, pelaksanaan tindak pengendalian risiko, penyelesaian masalah yang terjadi, ",
+    "line_text": "output, pelaksanaan tindak pengendalian risiko, penyelesaian masalah yang terjadi, ",
+    "bbox_top_left": [
+      114.75,
+      376.19,
+      526.16,
+      388.48
+    ],
+    "bbox_pdf": [
+      114.75,
+      453.52,
+      526.16,
+      465.81
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "dan tindak lanjut rekomendasi kebijakan oleh K/L/pemerintah daerah/mitra ",
+    "line_text": "dan tindak lanjut rekomendasi kebijakan oleh K/L/pemerintah daerah/mitra ",
+    "bbox_top_left": [
+      114.75,
+      390.74,
+      526.05,
+      403.03
+    ],
+    "bbox_pdf": [
+      114.75,
+      438.97,
+      526.05,
+      451.26
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "pembangunan lainnya  ",
+    "line_text": "pembangunan lainnya  ",
+    "bbox_top_left": [
+      114.75,
+      405.29,
+      229.04,
+      417.57
+    ],
+    "bbox_pdf": [
+      114.75,
+      424.43,
+      229.04,
+      436.71
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "pelaksanaan program …. ",
+    "line_text": "pelaksanaan program …. ",
+    "bbox_top_left": [
+      129.0,
+      440.38,
+      255.48,
+      452.67
+    ],
+    "bbox_pdf": [
+      129.0,
+      389.33,
+      255.48,
+      401.62
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 7,
+    "text": "Lokasi : Prov … Kab/Kota … ",
+    "line_text": "a.​ Lokasi : Prov … Kab/Kota … ",
+    "bbox_top_left": [
+      150.0,
+      454.92,
+      292.97,
+      467.21
+    ],
+    "bbox_pdf": [
+      150.0,
+      374.79,
+      292.97,
+      387.08
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Waktu : Bulan … Tahun …  ",
+    "line_text": "b.​ Waktu : Bulan … Tahun …  ",
+    "bbox_top_left": [
+      150.0,
+      469.47,
+      285.23,
+      481.76
+    ],
+    "bbox_pdf": [
+      150.0,
+      360.24,
+      285.23,
+      372.53
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Peserta :  …. (",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      150.0,
+      484.02,
+      220.86,
+      496.31
+    ],
+    "bbox_pdf": [
+      150.0,
+      345.69,
+      220.86,
+      357.98
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "K/L terkait atau peserta rapat yang terundang",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      220.86,
+      484.02,
+      442.07,
+      496.31
+    ],
+    "bbox_pdf": [
+      220.86,
+      345.69,
+      442.07,
+      357.98
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": ") ",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      442.07,
+      484.02,
+      448.79,
+      496.31
+    ],
+    "bbox_pdf": [
+      442.07,
+      345.69,
+      448.79,
+      357.98
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Jumlah Peserta : … orang ",
+    "line_text": "d.​ Jumlah Peserta : … orang ",
+    "bbox_top_left": [
+      150.0,
+      498.56,
+      280.75,
+      510.85
+    ],
+    "bbox_pdf": [
+      150.0,
+      331.15,
+      280.75,
+      343.44
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 7,
+    "text": "Narasumber : … ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      150.0,
+      513.11,
+      233.69,
+      525.4
+    ],
+    "bbox_pdf": [
+      150.0,
+      316.6,
+      233.69,
+      328.89
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "(ada/tidak ada)",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      233.69,
+      513.11,
+      307.02,
+      525.4
+    ],
+    "bbox_pdf": [
+      233.69,
+      316.6,
+      307.02,
+      328.89
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": " ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      307.01,
+      513.11,
+      310.07,
+      525.4
+    ],
+    "bbox_pdf": [
+      307.01,
+      316.6,
+      310.07,
+      328.89
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Output yang akan dicapai : ",
+    "line_text": "Output yang akan dicapai : bukti riil pelaksanaan program, hasil review risiko ",
+    "bbox_top_left": [
+      150.0,
+      527.66,
+      283.83,
+      539.94
+    ],
+    "bbox_pdf": [
+      150.0,
+      302.06,
+      283.83,
+      314.34
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "bukti riil pelaksanaan program, hasil review risiko ",
+    "line_text": "Output yang akan dicapai : bukti riil pelaksanaan program, hasil review risiko ",
+    "bbox_top_left": [
+      283.83,
+      527.66,
+      525.76,
+      539.94
+    ],
+    "bbox_pdf": [
+      283.83,
+      302.06,
+      525.76,
+      314.34
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "yang dipantau, dan/atau temuan permasalahan lapangan yang dapat ",
+    "line_text": "yang dipantau, dan/atau temuan permasalahan lapangan yang dapat ",
+    "bbox_top_left": [
+      150.0,
+      542.2,
+      525.94,
+      554.49
+    ],
+    "bbox_pdf": [
+      150.0,
+      287.51,
+      525.94,
+      299.8
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "ditindaklanjuti dengan rapat koordinasi lintas sektor.",
+    "line_text": "ditindaklanjuti dengan rapat koordinasi lintas sektor. ",
+    "bbox_top_left": [
+      150.0,
+      556.75,
+      401.96,
+      569.04
+    ],
+    "bbox_pdf": [
+      150.0,
+      272.96,
+      401.96,
+      285.25
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": " ",
+    "line_text": "ditindaklanjuti dengan rapat koordinasi lintas sektor. ",
+    "bbox_top_left": [
+      401.96,
+      556.75,
+      405.01,
+      569.04
+    ],
+    "bbox_pdf": [
+      401.96,
+      272.96,
+      405.01,
+      285.25
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Alasan pemilihan lokasi : ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      150.0,
+      571.29,
+      274.04,
+      583.58
+    ],
+    "bbox_pdf": [
+      150.0,
+      258.42,
+      274.04,
+      270.71
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "(jelaskan bila dilakukan diluar DKI Jakarta",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      274.03,
+      571.29,
+      478.1,
+      583.58
+    ],
+    "bbox_pdf": [
+      274.03,
+      258.42,
+      478.1,
+      270.71
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": ") ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      478.1,
+      571.29,
+      484.82,
+      583.58
+    ],
+    "bbox_pdf": [
+      478.1,
+      258.42,
+      484.82,
+      270.71
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "2.​",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      111.0,
+      585.84,
+      123.23,
+      598.13
+    ],
+    "bbox_pdf": [
+      111.0,
+      243.87,
+      123.23,
+      256.16
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": " ",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      123.23,
+      585.84,
+      129.0,
+      598.13
+    ],
+    "bbox_pdf": [
+      123.23,
+      243.87,
+      129.0,
+      256.16
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Dst.. ",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      129.0,
+      585.84,
+      154.65,
+      598.13
+    ],
+    "bbox_pdf": [
+      129.0,
+      243.87,
+      154.65,
+      256.16
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "3.​",
+    "line_text": "3.​ Dst.. ",
+    "bbox_top_left": [
+      111.0,
+      600.39,
+      123.23,
+      612.68
+    ],
+    "bbox_pdf": [
+      111.0,
+      229.32,
+      123.23,
+      241.61
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": " ",
+    "line_text": "3.​ Dst.. ",
+    "bbox_top_left": [
+      123.23,
+      600.39,
+      129.0,
+      612.68
+    ],
+    "bbox_pdf": [
+      123.23,
+      229.32,
+      129.0,
+      241.61
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Dst.. ",
+    "line_text": "3.​ Dst.. ",
+    "bbox_top_left": [
+      129.0,
+      600.39,
+      154.65,
+      612.68
+    ],
+    "bbox_pdf": [
+      129.0,
+      229.32,
+      154.65,
+      241.61
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal, Perjalanan ",
+    "line_text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal, Perjalanan ",
+    "bbox_top_left": [
+      107.25,
+      620.93,
+      525.85,
+      633.22
+    ],
+    "bbox_pdf": [
+      107.25,
+      208.78,
+      525.85,
+      221.07
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Dinas Paket Meeting, Perjalanan Dinas Biasa ",
+    "line_text": "Dinas Paket Meeting, Perjalanan Dinas Biasa ",
+    "bbox_top_left": [
+      107.25,
+      635.48,
+      332.11,
+      647.77
+    ],
+    "bbox_pdf": [
+      107.25,
+      194.23,
+      332.11,
+      206.52
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Buat kalimat pendahuluan adapun seperti contoh berikut",
+    "line_text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "bbox_top_left": [
+      114.75,
+      697.12,
+      389.75,
+      709.41
+    ],
+    "bbox_pdf": [
+      114.75,
+      132.59,
+      389.75,
+      144.88
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": " ",
+    "line_text": "Buat kalimat pendahuluan adapun seperti contoh berikut ",
+    "bbox_top_left": [
+      389.75,
+      697.12,
+      392.81,
+      709.41
+    ],
+    "bbox_pdf": [
+      389.75,
+      132.59,
+      392.81,
+      144.88
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "Tahap akhir berupa penyusunan rekomendasi kebijakan berdasarkan hasil ",
+    "line_text": "Tahap akhir berupa penyusunan rekomendasi kebijakan berdasarkan hasil ",
+    "bbox_top_left": [
+      114.75,
+      717.66,
+      526.13,
+      729.95
+    ],
+    "bbox_pdf": [
+      114.75,
+      112.05,
+      526.13,
+      124.34
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "identifikasi, koordinasi, serta monitoring dan evaluasi. Rekomendasi disusun ",
+    "line_text": "identifikasi, koordinasi, serta monitoring dan evaluasi. Rekomendasi disusun ",
+    "bbox_top_left": [
+      114.75,
+      732.21,
+      526.05,
+      744.5
+    ],
+    "bbox_pdf": [
+      114.75,
+      97.5,
+      526.05,
+      109.79
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 7,
+    "text": "dengan mempertimbangkan hasil analisis kesenjangan gender dan kebutuhan ",
+    "line_text": "dengan mempertimbangkan hasil analisis kesenjangan gender dan kebutuhan ",
+    "bbox_top_left": [
+      114.75,
+      746.76,
+      526.28,
+      759.05
+    ],
+    "bbox_pdf": [
+      114.75,
+      82.95,
+      526.28,
+      95.24
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "kelompok rentan agar kebijakan … lebih inklusif. Rekomendasi mencakup ",
+    "line_text": "kelompok rentan agar kebijakan … lebih inklusif. Rekomendasi mencakup ",
+    "bbox_top_left": [
+      114.75,
+      72.36,
+      525.69,
+      84.65
+    ],
+    "bbox_pdf": [
+      114.75,
+      757.35,
+      525.69,
+      769.64
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "penguatan penggunaan data terpilah, peningkatan kapasitas pemerintah daerah ",
+    "line_text": "penguatan penggunaan data terpilah, peningkatan kapasitas pemerintah daerah ",
+    "bbox_top_left": [
+      114.75,
+      86.91,
+      525.59,
+      99.2
+    ],
+    "bbox_pdf": [
+      114.75,
+      742.8,
+      525.59,
+      755.09
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "dalam perencanaan responsif gender, penguatan mekanisme perlindungan ",
+    "line_text": "dalam perencanaan responsif gender, penguatan mekanisme perlindungan ",
+    "bbox_top_left": [
+      114.75,
+      101.45,
+      526.0,
+      113.74
+    ],
+    "bbox_pdf": [
+      114.75,
+      728.26,
+      526.0,
+      740.55
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "perempuan dan anak pada situasi bencana, peningkatan akses layanan bagi ",
+    "line_text": "perempuan dan anak pada situasi bencana, peningkatan akses layanan bagi ",
+    "bbox_top_left": [
+      114.75,
+      116.0,
+      526.32,
+      128.29
+    ],
+    "bbox_pdf": [
+      114.75,
+      713.71,
+      526.32,
+      726.0
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "penyandang disabilitas dan lansia, serta penyempurnaan indikator monitoring yang ",
+    "line_text": "penyandang disabilitas dan lansia, serta penyempurnaan indikator monitoring yang ",
+    "bbox_top_left": [
+      114.75,
+      130.54,
+      526.23,
+      142.83
+    ],
+    "bbox_pdf": [
+      114.75,
+      699.17,
+      526.23,
+      711.46
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "mampu mengukur manfaat kebijakan bagi seluruh kelompok masyarakat.  ",
+    "line_text": "mampu mengukur manfaat kebijakan bagi seluruh kelompok masyarakat.  ",
+    "bbox_top_left": [
+      114.75,
+      145.09,
+      477.68,
+      157.38
+    ],
+    "bbox_pdf": [
+      114.75,
+      684.62,
+      477.68,
+      696.91
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Sebutkan kegiatan untuk penyusunan rekomendasi kebijakan: upaya terkait ",
+    "line_text": "Sebutkan kegiatan untuk penyusunan rekomendasi kebijakan: upaya terkait ",
+    "bbox_top_left": [
+      114.75,
+      186.18,
+      526.04,
+      198.47
+    ],
+    "bbox_pdf": [
+      114.75,
+      643.53,
+      526.04,
+      655.82
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "pencapaian output, pelaksanaan tindak pengendalian risiko, penyelesaian masalah ",
+    "line_text": "pencapaian output, pelaksanaan tindak pengendalian risiko, penyelesaian masalah ",
+    "bbox_top_left": [
+      114.75,
+      200.73,
+      526.12,
+      213.02
+    ],
+    "bbox_pdf": [
+      114.75,
+      628.98,
+      526.12,
+      641.27
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "yang terjadi",
+    "line_text": "yang terjadi ",
+    "bbox_top_left": [
+      114.75,
+      215.28,
+      171.58,
+      227.56
+    ],
+    "bbox_pdf": [
+      114.75,
+      614.44,
+      171.58,
+      626.72
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": " ",
+    "line_text": "yang terjadi ",
+    "bbox_top_left": [
+      171.58,
+      215.28,
+      174.64,
+      227.56
+    ],
+    "bbox_pdf": [
+      171.58,
+      614.44,
+      174.64,
+      626.72
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Lokasi : Prov … Kab/Kota … ",
+    "line_text": "a.​ Lokasi : Prov … Kab/Kota … ",
+    "bbox_top_left": [
+      150.0,
+      279.46,
+      292.97,
+      291.75
+    ],
+    "bbox_pdf": [
+      150.0,
+      550.25,
+      292.97,
+      562.54
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Waktu : Bulan … Tahun …  ",
+    "line_text": "b.​ Waktu : Bulan … Tahun …  ",
+    "bbox_top_left": [
+      150.0,
+      294.01,
+      285.23,
+      306.3
+    ],
+    "bbox_pdf": [
+      150.0,
+      535.7,
+      285.23,
+      547.99
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Peserta :  …. (",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      150.0,
+      308.55,
+      220.86,
+      320.84
+    ],
+    "bbox_pdf": [
+      150.0,
+      521.16,
+      220.86,
+      533.45
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "K/L terkait atau peserta rapat yang terundang",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      220.86,
+      308.55,
+      442.07,
+      320.84
+    ],
+    "bbox_pdf": [
+      220.86,
+      521.16,
+      442.07,
+      533.45
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": ") ",
+    "line_text": "c.​ Peserta :  …. (K/L terkait atau peserta rapat yang terundang) ",
+    "bbox_top_left": [
+      442.07,
+      308.55,
+      448.79,
+      320.84
+    ],
+    "bbox_pdf": [
+      442.07,
+      521.16,
+      448.79,
+      533.45
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Jumlah Peserta : … orang ",
+    "line_text": "d.​ Jumlah Peserta : … orang ",
+    "bbox_top_left": [
+      150.0,
+      323.1,
+      280.75,
+      335.39
+    ],
+    "bbox_pdf": [
+      150.0,
+      506.61,
+      280.75,
+      518.9
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 8,
+    "text": "Narasumber : … ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      150.0,
+      337.65,
+      233.69,
+      349.94
+    ],
+    "bbox_pdf": [
+      150.0,
+      492.06,
+      233.69,
+      504.35
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "(ada/tidak ada)",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      233.69,
+      337.65,
+      307.02,
+      349.94
+    ],
+    "bbox_pdf": [
+      233.69,
+      492.06,
+      307.02,
+      504.35
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": " ",
+    "line_text": "e.​ Narasumber : … (ada/tidak ada) ",
+    "bbox_top_left": [
+      307.01,
+      337.65,
+      310.07,
+      349.94
+    ],
+    "bbox_pdf": [
+      307.01,
+      492.06,
+      310.07,
+      504.35
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Kesepakatan lintas sektor mengenai strategi ",
+    "line_text": "Output yang akan dicapai : Kesepakatan lintas sektor mengenai strategi ",
+    "bbox_top_left": [
+      297.33,
+      352.19,
+      525.69,
+      364.48
+    ],
+    "bbox_pdf": [
+      297.33,
+      477.52,
+      525.69,
+      489.81
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "yang responsif gender; Rencana aksi bersama yang mengakomodasi ",
+    "line_text": "yang responsif gender; Rencana aksi bersama yang mengakomodasi ",
+    "bbox_top_left": [
+      150.0,
+      366.74,
+      526.21,
+      379.03
+    ],
+    "bbox_pdf": [
+      150.0,
+      462.97,
+      526.21,
+      475.26
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "kebutuhan kelompok rentan; Kesepakatan penggunaan indikator dan data ",
+    "line_text": "kebutuhan kelompok rentan; Kesepakatan penggunaan indikator dan data ",
+    "bbox_top_left": [
+      150.0,
+      381.29,
+      525.63,
+      393.57
+    ],
+    "bbox_pdf": [
+      150.0,
+      448.43,
+      525.63,
+      460.71
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "terpilah dalam pelaksanaan program.",
+    "line_text": "terpilah dalam pelaksanaan program. ",
+    "bbox_top_left": [
+      150.0,
+      395.83,
+      331.48,
+      408.12
+    ],
+    "bbox_pdf": [
+      150.0,
+      433.88,
+      331.48,
+      446.17
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": " ",
+    "line_text": "terpilah dalam pelaksanaan program. ",
+    "bbox_top_left": [
+      331.48,
+      395.83,
+      334.54,
+      408.12
+    ],
+    "bbox_pdf": [
+      331.48,
+      433.88,
+      334.54,
+      446.17
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Alasan pemilihan lokasi : ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      150.0,
+      410.38,
+      274.04,
+      422.67
+    ],
+    "bbox_pdf": [
+      150.0,
+      419.33,
+      274.04,
+      431.62
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "(jelaskan bila dilakukan diluar DKI Jakarta",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      274.03,
+      410.38,
+      478.1,
+      422.67
+    ],
+    "bbox_pdf": [
+      274.03,
+      419.33,
+      478.1,
+      431.62
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": ") ",
+    "line_text": "g.​ Alasan pemilihan lokasi : (jelaskan bila dilakukan diluar DKI Jakarta) ",
+    "bbox_top_left": [
+      478.1,
+      410.38,
+      484.82,
+      422.67
+    ],
+    "bbox_pdf": [
+      478.1,
+      419.33,
+      484.82,
+      431.62
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "2.​",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      111.0,
+      424.92,
+      123.23,
+      437.21
+    ],
+    "bbox_pdf": [
+      111.0,
+      404.79,
+      123.23,
+      417.08
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": " ",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      123.23,
+      424.92,
+      129.0,
+      437.21
+    ],
+    "bbox_pdf": [
+      123.23,
+      404.79,
+      129.0,
+      417.08
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Dst.. ",
+    "line_text": "2.​ Dst.. ",
+    "bbox_top_left": [
+      129.0,
+      424.92,
+      154.65,
+      437.21
+    ],
+    "bbox_pdf": [
+      129.0,
+      404.79,
+      154.65,
+      417.08
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "3.​",
+    "line_text": "3.​ Dst.. ",
+    "bbox_top_left": [
+      111.0,
+      439.47,
+      123.23,
+      451.76
+    ],
+    "bbox_pdf": [
+      111.0,
+      390.24,
+      123.23,
+      402.53
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": " ",
+    "line_text": "3.​ Dst.. ",
+    "bbox_top_left": [
+      123.23,
+      439.47,
+      129.0,
+      451.76
+    ],
+    "bbox_pdf": [
+      123.23,
+      390.24,
+      129.0,
+      402.53
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Dst.. ",
+    "line_text": "3.​ Dst.. ",
+    "bbox_top_left": [
+      129.0,
+      439.47,
+      154.65,
+      451.76
+    ],
+    "bbox_pdf": [
+      129.0,
+      390.24,
+      154.65,
+      402.53
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal, ",
+    "line_text": "*akun yang diperkenankan Belanja Bahan, Narasumber, Transport Lokal, ",
+    "bbox_top_left": [
+      114.75,
+      460.02,
+      525.74,
+      472.31
+    ],
+    "bbox_pdf": [
+      114.75,
+      369.69,
+      525.74,
+      381.98
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Perjalanan Dinas Paket Meeting, Perjalanan Dinas Biasa ",
+    "line_text": "Perjalanan Dinas Paket Meeting, Perjalanan Dinas Biasa ",
+    "bbox_top_left": [
+      114.75,
+      474.56,
+      395.22,
+      486.85
+    ],
+    "bbox_pdf": [
+      114.75,
+      355.15,
+      395.22,
+      367.44
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Anggaran yang dibutuhkan untuk menghasilkan output ini adalah sebesar ",
+    "line_text": "Anggaran yang dibutuhkan untuk menghasilkan output ini adalah sebesar Rp.xxxxx ",
+    "bbox_top_left": [
+      93.0,
+      495.11,
+      454.17,
+      507.4
+    ],
+    "bbox_pdf": [
+      93.0,
+      334.6,
+      454.17,
+      346.89
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "Rp.xxxxx ",
+    "line_text": "Anggaran yang dibutuhkan untuk menghasilkan output ini adalah sebesar Rp.xxxxx ",
+    "bbox_top_left": [
+      454.17,
+      495.11,
+      505.5,
+      507.4
+    ],
+    "bbox_pdf": [
+      454.17,
+      334.6,
+      505.5,
+      346.89
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "2.2 RAK …. ",
+    "line_text": "2.2 RAK …. ",
+    "bbox_top_left": [
+      93.0,
+      536.2,
+      154.09,
+      548.49
+    ],
+    "bbox_pdf": [
+      93.0,
+      293.51,
+      154.09,
+      305.8
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 8,
+    "text": "052 Sinkronisasi, Koordinasi dan Pengendalian Bidang …. ",
+    "line_text": "2.2.1 Sub Komponen 052 Sinkronisasi, Koordinasi dan Pengendalian Bidang …. ",
+    "bbox_top_left": [
+      199.34,
+      552.75,
+      507.19,
+      565.04
+    ],
+    "bbox_pdf": [
+      199.34,
+      276.96,
+      507.19,
+      289.25
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 8,
+    "text": "Dan seterusnya ",
+    "line_text": "Dan seterusnya ",
+    "bbox_top_left": [
+      93.0,
+      569.29,
+      177.93,
+      581.58
+    ],
+    "bbox_pdf": [
+      93.0,
+      260.42,
+      177.93,
+      272.71
+    ],
+    "font": "Arial-BoldItalicMT",
+    "size": 11.0,
+    "flags": 18,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 8,
+    "text": "RAK … ",
+    "line_text": "RAK … ",
+    "bbox_top_left": [
+      105.0,
+      710.53,
+      145.92,
+      722.82
+    ],
+    "bbox_pdf": [
+      105.0,
+      119.18,
+      145.92,
+      131.47
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 9,
+    "text": "Subkomponen… ",
+    "line_text": "Subkomponen… ",
+    "bbox_top_left": [
+      105.0,
+      122.56,
+      195.38,
+      134.85
+    ],
+    "bbox_pdf": [
+      105.0,
+      707.15,
+      195.38,
+      719.44
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 9,
+    "text": "Subkomponen… ",
+    "line_text": "Subkomponen… ",
+    "bbox_top_left": [
+      105.0,
+      347.57,
+      195.38,
+      359.86
+    ],
+    "bbox_pdf": [
+      105.0,
+      482.14,
+      195.38,
+      494.43
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": false
+  },
+  {
+    "page": 9,
+    "text": "……",
+    "line_text": "Asisten Deputi …… pada Tahun Anggaran …… untuk menghasilkan …… output ",
+    "bbox_top_left": [
+      157.93,
+      605.68,
+      179.92,
+      617.96
+    ],
+    "bbox_pdf": [
+      157.93,
+      224.04,
+      179.92,
+      236.32
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": " pada Tahun Anggaran ",
+    "line_text": "Asisten Deputi …… pada Tahun Anggaran …… untuk menghasilkan …… output ",
+    "bbox_top_left": [
+      179.91,
+      605.68,
+      312.21,
+      617.96
+    ],
+    "bbox_pdf": [
+      179.91,
+      224.04,
+      312.21,
+      236.32
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "……",
+    "line_text": "Asisten Deputi …… pada Tahun Anggaran …… untuk menghasilkan …… output ",
+    "bbox_top_left": [
+      318.2,
+      605.68,
+      340.2,
+      617.96
+    ],
+    "bbox_pdf": [
+      318.2,
+      224.04,
+      340.2,
+      236.32
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": " untuk menghasilkan ",
+    "line_text": "Asisten Deputi …… pada Tahun Anggaran …… untuk menghasilkan …… output ",
+    "bbox_top_left": [
+      340.19,
+      605.68,
+      456.07,
+      617.96
+    ],
+    "bbox_pdf": [
+      340.19,
+      224.04,
+      456.07,
+      236.32
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "…… ",
+    "line_text": "Asisten Deputi …… pada Tahun Anggaran …… untuk menghasilkan …… output ",
+    "bbox_top_left": [
+      462.07,
+      605.68,
+      487.11,
+      617.96
+    ],
+    "bbox_pdf": [
+      462.07,
+      224.04,
+      487.11,
+      236.32
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "memerlukan anggaran sebesar ",
+    "line_text": "memerlukan anggaran sebesar …… (narasi rupiah). ",
+    "bbox_top_left": [
+      72.0,
+      618.32,
+      227.2,
+      630.61
+    ],
+    "bbox_pdf": [
+      72.0,
+      211.39,
+      227.2,
+      223.68
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "……",
+    "line_text": "memerlukan anggaran sebesar …… (narasi rupiah). ",
+    "bbox_top_left": [
+      227.2,
+      618.32,
+      249.19,
+      630.61
+    ],
+    "bbox_pdf": [
+      227.2,
+      211.39,
+      249.19,
+      223.68
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": " (",
+    "line_text": "memerlukan anggaran sebesar …… (narasi rupiah). ",
+    "bbox_top_left": [
+      249.18,
+      618.32,
+      255.9,
+      630.61
+    ],
+    "bbox_pdf": [
+      249.18,
+      211.39,
+      255.9,
+      223.68
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "narasi rupiah",
+    "line_text": "memerlukan anggaran sebesar …… (narasi rupiah). ",
+    "bbox_top_left": [
+      255.9,
+      618.32,
+      319.45,
+      630.61
+    ],
+    "bbox_pdf": [
+      255.9,
+      211.39,
+      319.45,
+      223.68
+    ],
+    "font": "Arial-ItalicMT",
+    "size": 11.0,
+    "flags": 2,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "). ",
+    "line_text": "memerlukan anggaran sebesar …… (narasi rupiah). ",
+    "bbox_top_left": [
+      319.45,
+      618.32,
+      329.22,
+      630.61
+    ],
+    "bbox_pdf": [
+      319.45,
+      211.39,
+      329.22,
+      223.68
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "Jakarta, ",
+    "line_text": "Jakarta, …… ",
+    "bbox_top_left": [
+      375.44,
+      638.97,
+      417.6,
+      651.26
+    ],
+    "bbox_pdf": [
+      375.44,
+      190.74,
+      417.6,
+      203.03
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "……",
+    "line_text": "Jakarta, …… ",
+    "bbox_top_left": [
+      417.6,
+      638.97,
+      439.59,
+      651.26
+    ],
+    "bbox_pdf": [
+      417.6,
+      190.74,
+      439.59,
+      203.03
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": " ",
+    "line_text": "Jakarta, …… ",
+    "bbox_top_left": [
+      439.58,
+      638.97,
+      442.64,
+      651.26
+    ],
+    "bbox_pdf": [
+      439.58,
+      190.74,
+      442.64,
+      203.03
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "Asisten Deputi ",
+    "line_text": "Asisten Deputi ……, ",
+    "bbox_top_left": [
+      358.03,
+      653.52,
+      431.96,
+      665.81
+    ],
+    "bbox_pdf": [
+      358.03,
+      176.19,
+      431.96,
+      188.48
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "……",
+    "line_text": "Asisten Deputi ……, ",
+    "bbox_top_left": [
+      431.96,
+      653.52,
+      453.95,
+      665.81
+    ],
+    "bbox_pdf": [
+      431.96,
+      176.19,
+      453.95,
+      188.48
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": ", ",
+    "line_text": "Asisten Deputi ……, ",
+    "bbox_top_left": [
+      453.94,
+      653.52,
+      460.05,
+      665.81
+    ],
+    "bbox_pdf": [
+      453.94,
+      176.19,
+      460.05,
+      188.48
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "…… ",
+    "line_text": "…… ",
+    "bbox_top_left": [
+      396.0,
+      724.98,
+      421.04,
+      737.27
+    ],
+    "bbox_pdf": [
+      396.0,
+      104.73,
+      421.04,
+      117.02
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 9,
+    "text": "NIP ",
+    "line_text": "NIP ",
+    "bbox_top_left": [
+      396.0,
+      749.96,
+      417.38,
+      762.25
+    ],
+    "bbox_pdf": [
+      396.0,
+      79.75,
+      417.38,
+      92.04
+    ],
+    "font": "Arial-BoldMT",
+    "size": 11.0,
+    "flags": 16,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 11,
+    "text": " ",
+    "line_text": " ",
+    "bbox_top_left": [
+      587.25,
+      289.54,
+      590.31,
+      301.83
+    ],
+    "bbox_pdf": [
+      587.25,
+      540.17,
+      590.31,
+      552.46
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  },
+  {
+    "page": 11,
+    "text": "Detai ada pada link https://bit.ly/PedomanBersamaKPMK  ",
+    "line_text": "Detai ada pada link https://bit.ly/PedomanBersamaKPMK  ",
+    "bbox_top_left": [
+      107.25,
+      314.51,
+      391.37,
+      326.8
+    ],
+    "bbox_pdf": [
+      107.25,
+      515.2,
+      391.37,
+      527.49
+    ],
+    "font": "ArialMT",
+    "size": 11.0,
+    "flags": 0,
+    "color": "0x0",
+    "is_highlighted": true
+  }
+]
