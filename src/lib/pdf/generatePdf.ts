@@ -78,9 +78,17 @@ function maskAndDrawText(
 
   if (!text || !text.trim()) return;
 
-  const textWidth = font.widthOfTextAtSize(text, fontSize);
+  let currentFontSize = fontSize;
+  let textWidth = font.widthOfTextAtSize(text, currentFontSize);
+  const maxW = maskW - 4;
+
+  if (textWidth > maxW && currentFontSize > 7) {
+    currentFontSize = Math.max(7, (maxW / textWidth) * currentFontSize);
+    textWidth = font.widthOfTextAtSize(text, currentFontSize);
+  }
+
   let tx = options.textX ?? maskX;
-  const ty = options.textY ?? (maskY + (maskH - fontSize) / 2);
+  const ty = options.textY ?? (maskY + (maskH - currentFontSize) / 2);
 
   if (align === 'center') {
     tx = maskX + (maskW - textWidth) / 2;
@@ -91,10 +99,132 @@ function maskAndDrawText(
   page.drawText(text, {
     x: tx,
     y: ty,
-    size: fontSize,
+    size: currentFontSize,
     font,
     color: rgb(color.r, color.g, color.b),
   });
+}
+
+/**
+ * Helper to mask out a single table row cell on Page 2 and adaptively draw 1 or 2 lines
+ * so it never overshoots the right margin and stays cleanly formatted.
+ */
+function maskAndDrawTableCell(
+  page: PDFPage,
+  font: PDFFont,
+  text: string,
+  options: {
+    maskX: number;
+    maskY: number; // PDF coordinates (bottom-left)
+    maskW: number;
+    maskH: number;
+    fontSize?: number;
+    color?: { r: number; g: number; b: number };
+  }
+) {
+  const {
+    maskX,
+    maskY,
+    maskW,
+    maskH,
+    fontSize = 9,
+    color = { r: 0, g: 0, b: 0 },
+  } = options;
+
+  // Mask area with clean white rectangle
+  page.drawRectangle({
+    x: maskX,
+    y: maskY,
+    width: maskW,
+    height: maskH,
+    color: rgb(1, 1, 1),
+  });
+
+  if (!text || !text.trim()) return;
+
+  const cleanText = text.trim();
+  const innerW = maskW - 6;
+
+  // 1. Fits in 1 line at standard font size
+  const wDefault = font.widthOfTextAtSize(cleanText, fontSize);
+  if (wDefault <= innerW) {
+    const ty = maskY + (maskH - fontSize) / 2 + 1;
+    page.drawText(cleanText, {
+      x: maskX + 2,
+      y: ty,
+      size: fontSize,
+      font,
+      color: rgb(color.r, color.g, color.b),
+    });
+    return;
+  }
+
+  // 2. Fits in 1 line with a slightly smaller font size (8.5pt)
+  const w85 = font.widthOfTextAtSize(cleanText, 8.5);
+  if (w85 <= innerW) {
+    const ty = maskY + (maskH - 8.5) / 2 + 1;
+    page.drawText(cleanText, {
+      x: maskX + 2,
+      y: ty,
+      size: 8.5,
+      font,
+      color: rgb(color.r, color.g, color.b),
+    });
+    return;
+  }
+
+  // 3. Otherwise wrap into 2 lines at 8pt (or 7.5pt if needed)
+  let useSize = 8;
+  let lines = wrapText(cleanText, font, useSize, innerW);
+
+  if (lines.length > 2) {
+    useSize = 7.5;
+    lines = wrapText(cleanText, font, useSize, innerW);
+  }
+
+  if (lines.length === 2) {
+    // 2 lines inside maskH (18pt):
+    page.drawText(lines[0], {
+      x: maskX + 2,
+      y: maskY + 9.5,
+      size: useSize,
+      font,
+      color: rgb(color.r, color.g, color.b),
+    });
+    page.drawText(lines[1], {
+      x: maskX + 2,
+      y: maskY + 1.2,
+      size: useSize,
+      font,
+      color: rgb(color.r, color.g, color.b),
+    });
+  } else if (lines.length > 2) {
+    // 3 lines if text is extremely long: compact 7pt
+    const tinySize = 7;
+    const tinyLines = wrapText(cleanText, font, tinySize, innerW);
+    const lineStep = 6.0;
+    let currY = maskY + maskH - 7;
+    for (const line of tinyLines.slice(0, 3)) {
+      page.drawText(line, {
+        x: maskX + 2,
+        y: currY,
+        size: tinySize,
+        font,
+        color: rgb(color.r, color.g, color.b),
+      });
+      currY -= lineStep;
+    }
+  } else {
+    // Single line fallback
+    const ty = maskY + (maskH - useSize) / 2 + 1;
+    page.drawText(lines[0], {
+      x: maskX + 2,
+      y: ty,
+      size: useSize,
+      font,
+      color: rgb(color.r, color.g, color.b),
+    });
+  }
 }
 
 /**
@@ -272,76 +402,124 @@ export async function generateKAKPdf(
     //   y_pdf 488 = "RINCIAN OUTPUT (RO):" label
     //   y_pdf 474 = "REKOMENDASI ALTERNATIF KEBIJAKAN ……"
     //   y_pdf 460 = "(……)" kode RO
-    // We mask the entire block (y=447 to y=505) and redraw all 3 rows.
-    const roNameUpper = data.ro_nama ? data.ro_nama.toUpperCase() : '……';
-    const roFullTitle = `REKOMENDASI ALTERNATIF KEBIJAKAN ${roNameUpper}`;
+    // We mask the entire block (y=446 to y=508) and dynamically position all rows
+    // so that label, multi-line title, and code never collide regardless of length.
+    let cleanRoName = (data.ro_nama || '').trim();
+    cleanRoName = cleanRoName.replace(/^rincian\s+output\s*(\(ro\))?\s*:\s*/i, '').trim();
+
+    let roFullTitle = '';
+    if (!cleanRoName) {
+      roFullTitle = 'REKOMENDASI ALTERNATIF KEBIJAKAN ……';
+    } else if (/^rekomendasi\s+alternatif\s+kebijakan/i.test(cleanRoName)) {
+      roFullTitle = cleanRoName.toUpperCase();
+    } else {
+      roFullTitle = `REKOMENDASI ALTERNATIF KEBIJAKAN ${cleanRoName.toUpperCase()}`;
+    }
     const roCode = `(${data.ro_kode || '……'})`;
 
-    // Step 1: Mask the full block with white
+    // Step 1: Clean white mask over the entire RO block
     p1.drawRectangle({
-      x: 50,
-      y: 447,   // y_pdf bottom of code row
-      width: 496,
-      height: 60, // covers up through label row top (447+60=507)
+      x: 45,
+      y: 446,
+      width: 506,
+      height: 62, // covers y=446 to y=508
       color: rgb(1, 1, 1),
     });
 
-    // Step 2: Re-draw "RINCIAN OUTPUT (RO):" label centered
+    // Step 2: Determine appropriate font size and wrap lines for title
+    const maxTitleW = 466;
+    let titleFontSize = 10.5;
+    let titleLines = wrapText(roFullTitle, fontBold, titleFontSize, maxTitleW);
+
+    if (titleLines.length === 2) {
+      titleFontSize = 10;
+      titleLines = wrapText(roFullTitle, fontBold, titleFontSize, maxTitleW);
+    } else if (titleLines.length === 3) {
+      titleFontSize = 9;
+      titleLines = wrapText(roFullTitle, fontBold, titleFontSize, maxTitleW);
+    } else if (titleLines.length > 3) {
+      titleFontSize = 8;
+      titleLines = wrapText(roFullTitle, fontBold, titleFontSize, maxTitleW);
+    }
+
+    const nTitle = titleLines.length;
+
+    // Step 3: Compute vertical baseline positions with generous, non-overlapping spacing
+    let labelY = 489;
+    let labelFontSize = 11;
+    let codeY = 461;
+    let codeFontSize = 10.5;
+    let titleYPositions: number[] = [];
+
+    if (nTitle <= 1) {
+      // 1-line title (standard template layout)
+      labelY = 489;
+      labelFontSize = 11;
+      titleYPositions = [475];
+      codeY = 461;
+      codeFontSize = 10.5;
+    } else if (nTitle === 2) {
+      // 2-line title (e.g. 80-120 chars)
+      // Label at 494, Line 1 at 480 (14pt gap), Line 2 at 467 (13pt gap), Code at 453 (14pt gap)
+      labelY = 494;
+      labelFontSize = 10.5;
+      titleYPositions = [480, 467];
+      codeY = 453;
+      codeFontSize = 10;
+    } else if (nTitle === 3) {
+      // 3-line title (e.g. 120-180 chars)
+      // Equal 11.5pt spacing across 5 rows
+      labelY = 496;
+      labelFontSize = 9.5;
+      titleYPositions = [484.5, 473, 461.5];
+      codeY = 450;
+      codeFontSize = 9.5;
+    } else {
+      // 4+ lines (extreme long title)
+      labelFontSize = 8.5;
+      codeFontSize = 8.5;
+      const topY = 497;
+      const bottomY = 449;
+      const totalRows = nTitle + 2;
+      const step = (topY - bottomY) / (totalRows - 1);
+      labelY = topY;
+      titleYPositions = [];
+      for (let i = 0; i < nTitle; i++) {
+        titleYPositions.push(topY - step * (i + 1));
+      }
+      codeY = bottomY;
+    }
+
+    // Step 4: Draw "RINCIAN OUTPUT (RO):"
     const roLabel = 'RINCIAN OUTPUT (RO):';
-    const roLabelW = fontBold.widthOfTextAtSize(roLabel, 11);
+    const roLabelW = fontBold.widthOfTextAtSize(roLabel, labelFontSize);
     p1.drawText(roLabel, {
       x: 298 - roLabelW / 2,
-      y: 488,
-      size: 11,
+      y: labelY,
+      size: labelFontSize,
       font: fontBold,
       color: rgb(0, 0, 0),
     });
 
-    // Step 3: Draw the title - either 1 or 2 lines, always centered
-    const titleFontSize = 10.5;
-    const titleLineHeight = 13;
-    const titleMaxW = 456;
-    const titleLines = wrapText(roFullTitle, fontBold, titleFontSize, titleMaxW);
-
-    if (titleLines.length <= 1) {
-      // Single line - center it at y=474
-      const tw = fontBold.widthOfTextAtSize(roFullTitle, titleFontSize);
-      p1.drawText(roFullTitle, {
-        x: 298 - tw / 2,
-        y: 474,
+    // Step 5: Draw Title lines
+    for (let i = 0; i < titleLines.length; i++) {
+      const line = titleLines[i];
+      const lw = fontBold.widthOfTextAtSize(line, titleFontSize);
+      p1.drawText(line, {
+        x: 298 - lw / 2,
+        y: titleYPositions[i],
         size: titleFontSize,
         font: fontBold,
         color: rgb(0, 0, 0),
       });
-    } else {
-      // Multi-line - render from y=475 downwards (max 2 lines = 26pt tall)
-      // Use smaller font if more than 2 lines needed
-      const useFontSize = titleLines.length > 2 ? 9 : titleFontSize;
-      const useLineH = titleLines.length > 2 ? 12 : titleLineHeight;
-      const finalLines = wrapText(roFullTitle, fontBold, useFontSize, titleMaxW);
-      const blockH = finalLines.length * useLineH;
-      // Center the block between label (y=488) and code (y=460), midpoint ~474
-      // Start from top of block
-      let currY = 475 + (blockH - useLineH) / 2;
-      for (const line of finalLines.slice(0, 3)) {
-        const lw = fontBold.widthOfTextAtSize(line, useFontSize);
-        p1.drawText(line, {
-          x: 298 - lw / 2,
-          y: currY,
-          size: useFontSize,
-          font: fontBold,
-          color: rgb(0, 0, 0),
-        });
-        currY -= useLineH;
-      }
     }
 
-    // Step 4: Re-draw kode RO "(……)" centered
-    const codeW = fontBold.widthOfTextAtSize(roCode, 10.5);
+    // Step 6: Draw Kode RO
+    const codeW = fontBold.widthOfTextAtSize(roCode, codeFontSize);
     p1.drawText(roCode, {
       x: 298 - codeW / 2,
-      y: 451,
-      size: 10.5,
+      y: codeY,
+      size: codeFontSize,
       font: fontBold,
       color: rgb(0, 0, 0),
     });
@@ -419,88 +597,118 @@ export async function generateKAKPdf(
   {
     const p2 = pages[1];
 
-    // Identitas KAK (Right column from x=245 to 542)
+    // Identitas KAK (Right column from x=242 to 546)
     // Unit Eselon II : Asisten Deputi ……
-    maskAndDrawText(p2, fontRegular, `Asisten Deputi ${data.asisten_deputi || '……'}`, {
-      maskX: 244,
+    maskAndDrawTableCell(p2, fontRegular, `Asisten Deputi ${data.asisten_deputi || '……'}`, {
+      maskX: 242,
       maskY: 683,
-      maskW: 300,
-      maskH: 16,
-      fontSize: 9.5,
+      maskW: 304,
+      maskH: 18,
+      fontSize: 9,
     });
 
     // Sasaran Program
     maskAndDrawMultiline(p2, fontRegular, `Meningkatnya koordinasi dalam mengembangkan dan menyerasikan kebijakan Bidang ${data.sasaran_program_bidang || '……'}`, {
-      maskX: 244,
+      maskX: 242,
       maskY: 605,
-      maskW: 300,
+      maskW: 304,
       maskH: 35,
-      fontSize: 9.5,
-      lineHeight: 13,
+      fontSize: 9,
+      lineHeight: 12.5,
     });
 
     // IKP
     maskAndDrawMultiline(p2, fontRegular, `Jumlah Rekomendasi Kebijakan di Bidang ${data.ikp_bidang || '……'} yang dihasilkan`, {
-      maskX: 244,
+      maskX: 242,
       maskY: 568,
-      maskW: 300,
+      maskW: 304,
       maskH: 35,
-      fontSize: 9.5,
-      lineHeight: 13,
+      fontSize: 9,
+      lineHeight: 12.5,
     });
 
     // Kegiatan
-    maskAndDrawText(p2, fontRegular, `Kebijakan ${data.kegiatan_nama || '……'} (${data.kegiatan_kode || '……'})`, {
-      maskX: 244,
+    let kegP2 = (data.kegiatan_nama || '').trim();
+    if (!kegP2) kegP2 = '……';
+    if (!/^kebijakan/i.test(kegP2)) {
+      kegP2 = `Kebijakan ${kegP2}`;
+    }
+    const kegFullP2 = `${kegP2} (${data.kegiatan_kode || '……'})`;
+    maskAndDrawTableCell(p2, fontRegular, kegFullP2, {
+      maskX: 242,
       maskY: 550,
-      maskW: 300,
-      maskH: 15,
-      fontSize: 9.5,
+      maskW: 304,
+      maskH: 18,
+      fontSize: 9,
     });
 
     // Sasaran Kegiatan
-    maskAndDrawText(p2, fontRegular, `Tersusunnya Kebijakan Bidang ${data.sasaran_kegiatan_bidang || '……'} (${data.sasaran_kegiatan_kode || '……'})`, {
-      maskX: 244,
+    let sasaranKegP2 = (data.sasaran_kegiatan_bidang || '').trim();
+    if (!sasaranKegP2) sasaranKegP2 = '……';
+    if (!/^tersusunnya\s+kebijakan\s+bidang/i.test(sasaranKegP2)) {
+      sasaranKegP2 = `Tersusunnya Kebijakan Bidang ${sasaranKegP2}`;
+    }
+    const sasaranKegFullP2 = `${sasaranKegP2} (${data.sasaran_kegiatan_kode || '……'})`;
+    maskAndDrawTableCell(p2, fontRegular, sasaranKegFullP2, {
+      maskX: 242,
       maskY: 531,
-      maskW: 300,
-      maskH: 15,
-      fontSize: 9.5,
+      maskW: 304,
+      maskH: 18,
+      fontSize: 9,
     });
 
     // KRO
-    maskAndDrawText(p2, fontRegular, `Kebijakan Bidang ${data.kro_nama || '……'} (${data.kro_kode || '……'})`, {
-      maskX: 244,
+    let kroP2 = (data.kro_nama || '').trim();
+    if (!kroP2) kroP2 = '……';
+    if (!/^kebijakan\s+bidang/i.test(kroP2)) {
+      kroP2 = `Kebijakan Bidang ${kroP2}`;
+    }
+    const kroFullP2 = `${kroP2} (${data.kro_kode || '……'})`;
+    maskAndDrawTableCell(p2, fontRegular, kroFullP2, {
+      maskX: 242,
       maskY: 512,
-      maskW: 300,
-      maskH: 15,
-      fontSize: 9.5,
+      maskW: 304,
+      maskH: 18,
+      fontSize: 9,
     });
 
     // RO
-    maskAndDrawText(p2, fontRegular, `Rekomendasi Alternatif Kebijakan ${data.ro_nama || '……'} (${data.ro_kode || '……'})`, {
-      maskX: 244,
+    let roP2 = (data.ro_nama || '').trim();
+    roP2 = roP2.replace(/^rincian\s+output\s*(\(ro\))?\s*:\s*/i, '').trim();
+    if (!roP2) roP2 = '……';
+    if (!/^rekomendasi\s+alternatif\s+kebijakan/i.test(roP2)) {
+      roP2 = `Rekomendasi Alternatif Kebijakan ${roP2}`;
+    }
+    const roFullP2 = `${roP2} (${data.ro_kode || '……'})`;
+    maskAndDrawTableCell(p2, fontRegular, roFullP2, {
+      maskX: 242,
       maskY: 493,
-      maskW: 300,
-      maskH: 15,
-      fontSize: 9.5,
+      maskW: 304,
+      maskH: 18,
+      fontSize: 9,
     });
 
     // Indikator RO
-    maskAndDrawText(p2, fontRegular, `Jumlah Rekomendasi Alternatif Kebijakan ${data.indikator_ro || '……'}`, {
-      maskX: 244,
+    let indP2 = (data.indikator_ro || '').trim();
+    if (!indP2) indP2 = '……';
+    if (!/^jumlah\s+rekomendasi\s+alternatif\s+kebijakan/i.test(indP2)) {
+      indP2 = `Jumlah Rekomendasi Alternatif Kebijakan ${indP2}`;
+    }
+    maskAndDrawTableCell(p2, fontRegular, indP2, {
+      maskX: 242,
       maskY: 474,
-      maskW: 300,
-      maskH: 15,
-      fontSize: 9.5,
+      maskW: 304,
+      maskH: 18,
+      fontSize: 9,
     });
 
     // Volume RO
-    maskAndDrawText(p2, fontRegular, `${data.volume_ro || '1'}   Rekomendasi Alternatif Kebijakan`, {
-      maskX: 244,
+    maskAndDrawTableCell(p2, fontRegular, `${data.volume_ro || '1'}   Rekomendasi Alternatif Kebijakan`, {
+      maskX: 242,
       maskY: 455,
-      maskW: 300,
-      maskH: 15,
-      fontSize: 9.5,
+      maskW: 304,
+      maskH: 18,
+      fontSize: 9,
     });
 
     // Dasar Hukum
@@ -563,117 +771,84 @@ export async function generateKAKPdf(
   }
 
   // ==========================================
-  // HALAMAN 3 (RPJMN, RKP, Gap Analysis, RO)
+  // HALAMAN 3 (RPJMN, RKP, Renstra, Gap Analysis, Output RO)
   // ==========================================
   {
     const p3 = pages[2];
 
-    // Cleanly mask the top paragraph (lines 72 to 200) and re-render without markers (10)-(15)
-    const rpjmnNarrative =
+    // Mask entire content area on Page 3 (y=115 to y=775)
+    p3.drawRectangle({
+      x: 90,
+      y: 115,
+      width: 440,
+      height: 660,
+      color: rgb(1, 1, 1),
+    });
+
+    const maxW = 435;
+    const fsSize = 9.2;
+    const lh = 13.5;
+    let currY = 760;
+
+    function drawP3Para(text: string, size = fsSize, lineH = lh, spaceAfter = 7) {
+      const lines = wrapText(text, fontRegular, size, maxW);
+      for (const line of lines) {
+        p3.drawText(line, {
+          x: 92,
+          y: currY,
+          size,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        currY -= lineH;
+      }
+      currY -= spaceAfter;
+    }
+
+    // 1. RPJMN narrative
+    const rpjmnText =
       `antara lain ${data.kl_koordinasi || '……'}.\n` +
       `Program kerja Asisten Deputi ${data.asdep_program_kerja || data.asisten_deputi || '……'} berdasarkan Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2025-2029 pada Prioritas Nasional (PN) ${data.pn_nomor || '……'} yaitu ${data.pn_nama || '……'}. ` +
       `Sasaran utama PN ${data.sasaran_pn_nomor || '……'} yaitu ${data.sasaran_pn_nama || '……'}. ` +
       `Rencana Kerja Pemerintah (RKP) ${data.rkp_tahun || data.tahun_anggaran || '……'} sebagai turunan dari RPJMN 2025-2029 menyebutkan bahwa arah kebijakan dalam rangka mewujudkan sasaran pembangunan PN ${data.pp_nomor || '……'} yaitu ${data.pp_nama || '……'}. ` +
-      `Intervensi kebijakan bidang ${data.intervensi_bidang || '……'} yang menjadi fokus yaitu ${data.intervensi_fokus || '……'}. ` +
+      `Intervensi kebijakan bidang ${data.intervensi_bidang || '……'} yang menjadi fokus yaitu ${data.intervensi_fokus || '……'}.\n` +
       `Program dan indikator merujuk RPJMN yang dikawal di tahun ${data.indikator_tahun || data.tahun_anggaran || '……'} ("Indikator berdasarkan Lampiran III RPJMN 2025-2029") diantaranya yaitu:`;
+    drawP3Para(rpjmnText, fsSize, lh, 5);
 
-    maskAndDrawMultiline(p3, fontRegular, rpjmnNarrative, {
-      maskX: 92,
-      maskY: 618,
-      maskW: 435,
-      maskH: 155,
-      fontSize: 9.2,
-      lineHeight: 13.5,
-    });
-
-    // Indikator RPJMN list (y=562 to 615)
+    // 2. Indikator RPJMN list
     if (data.indikator_rpjmn_list) {
-      maskAndDrawMultiline(p3, fontRegular, data.indikator_rpjmn_list, {
-        maskX: 92,
-        maskY: 558,
-        maskW: 435,
-        maskH: 58,
-        fontSize: 9,
-        lineHeight: 12.5,
-      });
+      drawP3Para(data.indikator_rpjmn_list, fsSize, lh, 7);
     }
 
-    // Renstra Kemenko PMK …… menyatakan bahwa:
-    maskAndDrawText(p3, fontRegular, data.renstra_periode || '2025-2029', {
-      maskX: 253,
-      maskY: 509,
-      maskW: 60,
-      maskH: 15,
-      fontSize: 9.5,
-    });
+    // 3. Renstra sentence (Restored without omission)
+    const renstraText =
+      `Adapun program dan indikator lainnya merujuk renstra Kemenko PMK ${data.renstra_periode || '2025-2029'} yang telah ditetapkan penjelasan prioritas lainnya yang merupakan mandat peraturan ("Indikator yang diampu melalui RO xxx dan telah tercantum dalam Perjanjian Kinerja") yaitu ……`;
+    drawP3Para(renstraText, fsSize, lh, 7);
 
-    // Gap Analysis Narasi (y=375 to 505)
-    if (data.gap_analysis_narasi) {
-      maskAndDrawMultiline(p3, fontRegular, data.gap_analysis_narasi, {
-        maskX: 92,
-        maskY: 375,
-        maskW: 435,
-        maskH: 130,
-        fontSize: 9.2,
-        lineHeight: 13.5,
-      });
-    }
+    // 4. Gap analysis (Clean flow without instructional remnants)
+    const gapText =
+      `Data terbaru terkait program ${data.kegiatan_nama || data.asdep_program_kerja || data.asisten_deputi || '……'} menyatakan bahwa ${data.gap_analysis_narasi || '……'}`;
+    drawP3Para(gapText, fsSize, lh, 7);
 
-    // Program prioritas lainnya
-    maskAndDrawText(p3, fontRegular, data.program_prioritas_deputi || data.deputi_bidang || '', {
-      maskX: 184,
-      maskY: 357,
-      maskW: 100,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p3, fontRegular, data.program_prioritas_uraian || '', {
-      maskX: 120,
-      maskY: 338,
-      maskW: 404,
-      maskH: 15,
-      fontSize: 9.2,
-    });
+    // 5. Program prioritas lainnya
+    const progPrioText =
+      `Asisten Deputi ${data.program_prioritas_deputi || data.asisten_deputi || '……'} memiliki program prioritas lainnya yang harus dikoordinasikan yaitu ${data.program_prioritas_uraian || '……'}.`;
+    drawP3Para(progPrioText, fsSize, lh, 7);
 
-    // Output rencana kerja Asisten Deputi …… tahun anggaran ….
-    maskAndDrawText(p3, fontRegular, `${data.ro_rencana_asdep || data.asisten_deputi || '……'} yang akan dihasilkan pada rencana kerja tahun anggaran ${data.tahun_anggaran || '2026'} adalah:`, {
-      maskX: 92,
-      maskY: 281,
-      maskW: 435,
-      maskH: 15,
-      fontSize: 9.5,
-    });
+    // 6. Output intro
+    const outputIntro =
+      `Berdasarkan penjelasan di atas maka terkait dengan tugas dan fungsi Asisten Deputi ${data.ro_rencana_asdep || data.asisten_deputi || '……'} , output yang akan dihasilkan pada rencana kerja tahun anggaran ${data.tahun_anggaran || '2026'} adalah:`;
+    drawP3Para(outputIntro, fsSize, lh, 5);
 
-    // Rekomendasi 1, 2, 3
+    // 7. RO list
     if (data.ro_1_fokus_tujuan) {
-      maskAndDrawMultiline(p3, fontRegular, `1) ${data.ro_1_fokus_tujuan}`, {
-        maskX: 92,
-        maskY: 220,
-        maskW: 435,
-        maskH: 58,
-        fontSize: 9.2,
-        lineHeight: 13,
-      });
+      drawP3Para(`1) ${data.ro_1_fokus_tujuan}`, fsSize, lh, 4);
     }
     if (data.ro_2_fokus_tujuan) {
-      maskAndDrawMultiline(p3, fontRegular, `2) ${data.ro_2_fokus_tujuan}`, {
-        maskX: 92,
-        maskY: 165,
-        maskW: 435,
-        maskH: 52,
-        fontSize: 9.2,
-        lineHeight: 13,
-      });
+      drawP3Para(`2) ${data.ro_2_fokus_tujuan}`, fsSize, lh, 4);
     }
     if (data.ro_3_fokus_tujuan) {
-      maskAndDrawMultiline(p3, fontRegular, `3) ${data.ro_3_fokus_tujuan}`, {
-        maskX: 92,
-        maskY: 145,
-        maskW: 435,
-        maskH: 18,
-        fontSize: 9.2,
-        lineHeight: 13,
-      });
+      drawP3Para(`3) ${data.ro_3_fokus_tujuan}`, fsSize, lh, 4);
     }
   }
 
@@ -692,6 +867,22 @@ export async function generateKAKPdf(
       fontSize: 9.5,
     });
 
+    // Mask yellow guide prompt in RB header without clipping 'yaitu'
+    p4.drawRectangle({
+      x: 283,
+      y: 711,
+      width: 245,
+      height: 16,
+      color: rgb(1, 1, 1),
+    });
+    p4.drawText(':', {
+      x: 281.5,
+      y: 713.5,
+      size: 9.5,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+
     // Narasi Indikator RB (mask the yellow box and guide points)
     if (data.rb_indikator_list) {
       maskAndDrawMultiline(p4, fontRegular, data.rb_indikator_list, {
@@ -704,58 +895,60 @@ export async function generateKAKPdf(
       });
     }
 
-    // PUG
-    maskAndDrawText(p4, fontRegular, data.pug_asdep_1 || data.asisten_deputi || '', {
-      maskX: 190,
-      maskY: 500,
-      maskW: 100,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p4, fontRegular, data.pug_bidang || '', {
-      maskX: 389,
-      maskY: 443,
-      maskW: 80,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p4, fontRegular, data.pug_kesenjangan || '', {
-      maskX: 473,
-      maskY: 443,
-      maskW: 65,
-      maskH: 15,
-      fontSize: 9.2,
-    });
-    maskAndDrawText(p4, fontRegular, data.pug_faktor || '', {
-      maskX: 211,
-      maskY: 424,
-      maskW: 180,
-      maskH: 15,
-      fontSize: 9.2,
-    });
-    maskAndDrawText(p4, fontRegular, data.pug_asdep_2 || data.asisten_deputi || '', {
-      maskX: 206,
-      maskY: 405,
-      maskW: 90,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p4, fontRegular, data.pug_intervensi || '', {
-      maskX: 378,
-      maskY: 405,
-      maskW: 150,
-      maskH: 15,
-      fontSize: 9.2,
+    // 2.3 Pengarusutamaan Gender (PUG) - unified clean narrative, no overlap!
+    p4.drawRectangle({
+      x: 90,
+      y: 348,
+      width: 440,
+      height: 170,
+      color: rgb(1, 1, 1),
     });
 
-    // MR Asdep
-    maskAndDrawText(p4, fontRegular, data.mr_asdep || data.asisten_deputi || '', {
-      maskX: 433,
-      maskY: 243,
-      maskW: 85,
-      maskH: 15,
-      fontSize: 9.5,
+    const pugNarrative =
+      `Asisten Deputi ${data.pug_asdep_1 || data.asisten_deputi || '……'} telah mengintegrasikan perspektif gender dalam pelaksanaan program dan kegiatan melalui penerapan Anggaran Responsif Gender (ARG) dan penyusunan Gender Analysis Pathway (GAP). ` +
+      `Berdasarkan hasil analisis gender, masih terdapat kesenjangan dalam pelaksanaan kebijakan bidang ${data.pug_bidang || '……'}, antara lain ${data.pug_kesenjangan || '……'} yang dipengaruhi oleh faktor ${data.pug_faktor || '……'}. ` +
+      `Untuk mengatasi kesenjangan tersebut, Kemenko PMK melalui Asisten Deputi ${data.pug_asdep_2 || data.asisten_deputi || '……'} melakukan intervensi melalui ${data.pug_intervensi || '……'}. ` +
+      `Diharapkan program dan kegiatan yang dilaksanakan dapat mendukung terwujudnya pembangunan manusia dan kebudayaan yang inklusif dan tepat sasaran. GAP secara lebih rinci dituangkan dalam matriks sebagaimana dimuat dalam lampiran KAK ini.`;
+
+    const pugLines = wrapText(pugNarrative, fontRegular, 9.2, 435);
+    let p4y = 512;
+    for (const line of pugLines) {
+      p4.drawText(line, {
+        x: 92,
+        y: p4y,
+        size: 9.2,
+        font: fontRegular,
+        color: rgb(0, 0, 0),
+      });
+      p4y -= 13.5;
+    }
+
+    // 2.4 Manajemen Risiko - clean narrative, no leftover yellow instructions
+    p4.drawRectangle({
+      x: 90,
+      y: 185,
+      width: 440,
+      height: 132,
+      color: rgb(1, 1, 1),
     });
+
+    const mrNarrative =
+      `Dalam memastikan tercapainya output dan memaksimalkan dampak positif program, perlu dilakukan manajemen risiko untuk mencegah kegagalan, melindungi sumber daya, dan ketepatan waktu pencapaian target serta efektivitas anggaran. ` +
+      `Risiko yang ada dalam pelaksanaan program pada Asisten Deputi ${data.mr_asdep || data.asisten_deputi || '……'} yang perlu dikendalikan melalui penguatan koordinasi lintas sektor, monitoring dan evaluasi, serta penegasan peran dan tanggung jawab stakeholder. ` +
+      `Matriks profil risiko terlampir pada lampiran 2 KAK ini.`;
+
+    const mrLines = wrapText(mrNarrative, fontRegular, 9.2, 435);
+    let mry = 312;
+    for (const line of mrLines) {
+      p4.drawText(line, {
+        x: 92,
+        y: mry,
+        size: 9.2,
+        font: fontRegular,
+        color: rgb(0, 0, 0),
+      });
+      mry -= 13.5;
+    }
 
     // Penerima Manfaat
     maskAndDrawText(p4, fontRegular, data.manfaat_internal || '', {
@@ -823,9 +1016,9 @@ export async function generateKAKPdf(
 
     // Tahun tahapan
     maskAndDrawText(p5, fontRegular, data.tahapan_tahun || data.tahun_anggaran || '2026', {
-      maskX: 433,
+      maskX: 431,
       maskY: 459,
-      maskW: 45,
+      maskW: 30,
       maskH: 15,
       fontSize: 9.5,
     });
@@ -907,12 +1100,12 @@ export async function generateKAKPdf(
       });
     }
 
-    maskAndDrawText(p6, fontRegular, `Alasan pemilihan lokasi : ${data.t1_alasan_lokasi || '-'}`, {
-      maskX: 148,
-      maskY: 595,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
+    maskAndDrawTableCell(p6, fontRegular, `Alasan pemilihan lokasi : ${data.t1_alasan_lokasi || '-'}`, {
+      maskX: 135,
+      maskY: 590,
+      maskW: 395,
+      maskH: 22,
+      fontSize: 8.5,
     });
 
     // Tahap 2: Sinkronisasi, Koordinasi & Pengendalian
@@ -974,12 +1167,12 @@ export async function generateKAKPdf(
       });
     }
 
-    maskAndDrawText(p6, fontRegular, `Alasan pemilihan lokasi : ${data.t2_alasan_lokasi || '-'}`, {
-      maskX: 148,
-      maskY: 96,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
+    maskAndDrawTableCell(p6, fontRegular, `Alasan pemilihan lokasi : ${data.t2_alasan_lokasi || '-'}`, {
+      maskX: 135,
+      maskY: 90,
+      maskW: 395,
+      maskH: 22,
+      fontSize: 8.5,
     });
   }
 
@@ -1048,12 +1241,12 @@ export async function generateKAKPdf(
       });
     }
 
-    maskAndDrawText(p7, fontRegular, `Alasan pemilihan lokasi : ${data.t3_alasan_lokasi || '-'}`, {
-      maskX: 148,
-      maskY: 256,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
+    maskAndDrawTableCell(p7, fontRegular, `Alasan pemilihan lokasi : ${data.t3_alasan_lokasi || '-'}`, {
+      maskX: 135,
+      maskY: 250,
+      maskW: 395,
+      maskH: 22,
+      fontSize: 8.5,
     });
 
     // Tahap 4: Penyusunan Rekomendasi Kebijakan Pendahuluan (Awal Hal 7)
@@ -1134,12 +1327,12 @@ export async function generateKAKPdf(
       });
     }
 
-    maskAndDrawText(p8, fontRegular, `Alasan pemilihan lokasi : ${data.t4_alasan_lokasi || '-'}`, {
-      maskX: 148,
-      maskY: 417,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
+    maskAndDrawTableCell(p8, fontRegular, `Alasan pemilihan lokasi : ${data.t4_alasan_lokasi || '-'}`, {
+      maskX: 135,
+      maskY: 411,
+      maskW: 395,
+      maskH: 22,
+      fontSize: 8.5,
     });
 
     // Anggaran Rp.xxxxx
