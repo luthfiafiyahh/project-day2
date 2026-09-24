@@ -463,38 +463,56 @@ export const StepContainer: React.FC<Props> = ({
               placeholder="2025-2029"
             />
 
+            <TextField
+              label="Indikator Renstra Kemenko PMK (Opsional)"
+              description="Indikator yang diampu melalui RO xxx dan tercantum dalam Perjanjian Kinerja"
+              value={data.renstra_indikator_opsional || ''}
+              onChange={(val) => onChange('renstra_indikator_opsional', val)}
+              placeholder="Persentase Penurunan Kesenjangan Aksesibilitas dan Perlindungan Sosial Inklusif sebesar 85%"
+            />
+
             <TextAreaField
-              label="Narasi Gap Analysis / Isu Strategis di Lapangan (Halaman 5)"
-              description="Jelaskan kesenjangan kondisi saat ini vs kondisi yang diharapkan, didukung data statistik atau fakta empiris"
+              label="Narasi Data Terbaru & Gap Analysis (Halaman 5 / KAK Hal. 3)"
+              description="Memuat narasi: 1) Isu strategis & capaian target SKP; 2) Data indikator kewilayahan; 3) Gap analysis kondisi terkini vs target RKP & RPJMN; 4) Konsentrasi kewilayahan"
               required
               rows={5}
               value={data.gap_analysis_narasi}
               onChange={(val) => onChange('gap_analysis_narasi', val)}
-              placeholder="Berdasarkan data terkini, masih terdapat 34% penyandang disabilitas yang belum terintegrasi ke dalam data tunggal perlindungan sosial nasional..."
+              placeholder="1) Isu-isu strategis... 2) Data indikator... 3) Gap analysis... 4) Konsentrasi kewilayahan..."
             />
 
             <div className="border-t border-slate-100 pt-4 space-y-4">
               <h4 className="font-semibold text-xs text-slate-700 uppercase tracking-wider">
-                Rencana 3 Alternatif Rincian Output (RO) Terkait
+                Rencana Output Terkait (RO 1 s.d. 4)
               </h4>
-              <TextField
-                label="Fokus RO 1 (Utama)"
+              <TextAreaField
+                label="RO 1: Rekomendasi Alternatif Kebijakan"
+                description="Sebutkan nama rekomendasi, tujuan, fokus, dan harapan kebijakan"
                 required
+                rows={3}
                 value={data.ro_1_fokus_tujuan}
                 onChange={(val) => onChange('ro_1_fokus_tujuan', val)}
-                placeholder="Fokus pada harmonisasi regulasi standar pelayanan inklusif"
+                placeholder="Rekomendasi Alternatif Kebijakan...&#10;Rekomendasi alternatif kebijakan ini bertujuan untuk... Rekomendasi difokuskan pada... Melalui kebijakan ini diharapkan..."
               />
-              <TextField
-                label="Fokus RO 2 (Pendukung)"
+              <TextAreaField
+                label="RO 2: Rekomendasi Alternatif Kebijakan"
+                description="Sebutkan nama rekomendasi, tujuan, fokus, dan harapan kebijakan"
+                rows={3}
                 value={data.ro_2_fokus_tujuan}
                 onChange={(val) => onChange('ro_2_fokus_tujuan', val)}
-                placeholder="Fokus pada penguatan kapasitas pendamping sosial daerah"
+                placeholder="Rekomendasi Alternatif Kebijakan...&#10;Rekomendasi alternatif kebijakan ini bertujuan untuk... Rekomendasi difokuskan pada... Melalui kebijakan ini diharapkan..."
               />
               <TextField
-                label="Fokus RO 3 (Monitoring)"
+                label="RO 3: Rekomendasi Alternatif Kebijakan"
                 value={data.ro_3_fokus_tujuan}
                 onChange={(val) => onChange('ro_3_fokus_tujuan', val)}
-                placeholder="Fokus pada pemantauan lapangan implementasi di 10 provinsi prioritas"
+                placeholder="Rekomendasi Alternatif Kebijakan Harmonisasi Tata Kelola Kelembagaan..."
+              />
+              <TextField
+                label="RO 4: Koordinasi (Opsional)"
+                value={data.ro_4_opsional || ''}
+                onChange={(val) => onChange('ro_4_opsional', val)}
+                placeholder="Koordinasi Penanganan Kelompok Rentan dan PMKS Lintas Sektor (Opsional)"
               />
             </div>
           </div>

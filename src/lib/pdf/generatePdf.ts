@@ -1,5 +1,5 @@
 import { PDFDocument, rgb, StandardFonts, PDFPage, PDFFont } from 'pdf-lib';
-import type { KAKData, RiskItem } from '../../types/kak';
+import type { KAKData } from '../../types/kak';
 import { angkaKeTerbilang, formatRupiah } from './terbilang';
 
 export interface GeneratePdfOptions {
@@ -786,11 +786,11 @@ export async function generateKAKPdf(
     });
 
     const maxW = 435;
-    const fsSize = 9.2;
-    const lh = 13.5;
+    const fsSize = 8.85;
+    const lh = 11.9;
     let currY = 760;
 
-    function drawP3Para(text: string, size = fsSize, lineH = lh, spaceAfter = 7) {
+    function drawP3Para(text: string, size = fsSize, lineH = lh, spaceAfter = 3.5) {
       const lines = wrapText(text, fontRegular, size, maxW);
       for (const line of lines) {
         p3.drawText(line, {
@@ -813,546 +813,830 @@ export async function generateKAKPdf(
       `Rencana Kerja Pemerintah (RKP) ${data.rkp_tahun || data.tahun_anggaran || '……'} sebagai turunan dari RPJMN 2025-2029 menyebutkan bahwa arah kebijakan dalam rangka mewujudkan sasaran pembangunan PN ${data.pp_nomor || '……'} yaitu ${data.pp_nama || '……'}. ` +
       `Intervensi kebijakan bidang ${data.intervensi_bidang || '……'} yang menjadi fokus yaitu ${data.intervensi_fokus || '……'}.\n` +
       `Program dan indikator merujuk RPJMN yang dikawal di tahun ${data.indikator_tahun || data.tahun_anggaran || '……'} ("Indikator berdasarkan Lampiran III RPJMN 2025-2029") diantaranya yaitu:`;
-    drawP3Para(rpjmnText, fsSize, lh, 5);
+    drawP3Para(rpjmnText, fsSize, lh, 3);
 
     // 2. Indikator RPJMN list
     if (data.indikator_rpjmn_list) {
-      drawP3Para(data.indikator_rpjmn_list, fsSize, lh, 7);
+      drawP3Para(data.indikator_rpjmn_list, fsSize, lh, 3.5);
     }
 
-    // 3. Renstra sentence (Restored without omission)
+    // 3. Renstra sentence (diisi contoh data untuk bagian opsional sesuai permintaan)
+    const renstraOpsional =
+      data.renstra_indikator_opsional ||
+      'Persentase Penurunan Kesenjangan Aksesibilitas dan Perlindungan Sosial Inklusif sebesar 85%';
     const renstraText =
-      `Adapun program dan indikator lainnya merujuk renstra Kemenko PMK ${data.renstra_periode || '2025-2029'} yang telah ditetapkan penjelasan prioritas lainnya yang merupakan mandat peraturan ("Indikator yang diampu melalui RO xxx dan telah tercantum dalam Perjanjian Kinerja") yaitu ……`;
-    drawP3Para(renstraText, fsSize, lh, 7);
+      `Adapun program dan indikator lainnya merujuk renstra Kemenko PMK ${data.renstra_periode || '2025-2029'} yang telah ditetapkan penjelasan prioritas lainnya yang merupakan mandat peraturan ("Indikator yang diampu melalui RO xxx dan telah tercantum dalam Perjanjian Kinerja") yaitu ${renstraOpsional} (Opsional)`;
+    drawP3Para(renstraText, fsSize, lh, 3.5);
 
-    // 4. Gap analysis (Clean flow without instructional remnants)
+    // 4. Gap analysis (narasi berisi poin 1 s/d 4 diisi contoh data konkret)
+    const gapDefault =
+      '1) Isu-isu strategis yang melatarbelakangi usulan rencana SKP mencakup keterbatasan fasilitas publik dan belum optimalnya jaminan perlindungan sosial adaptif bagi kelompok rentan, di mana kondisi eksisting menunjukkan capaian pemenuhan hak disabilitas baru mencapai 65% dari target nasional 85%; 2) Data indikator kewilayahan mencatat bahwa 62% fasilitas publik di tingkat kabupaten/kota belum memenuhi standar ramah disabilitas dan lansia; 3) Gap analysis mengindikasikan perlunya akselerasi integrasi data tunggal sosial ekonomi (Regsosek) guna mencapai target RKP 2026 dan RPJMN 2025-2029; 4) Konsentrasi kewilayahan difokuskan pada 120 kabupaten/kota prioritas di wilayah percontohan Jawa, Bali, dan Indonesia Timur.';
+    const gapContent = data.gap_analysis_narasi || gapDefault;
     const gapText =
-      `Data terbaru terkait program ${data.kegiatan_nama || data.asdep_program_kerja || data.asisten_deputi || '……'} menyatakan bahwa ${data.gap_analysis_narasi || '……'}`;
-    drawP3Para(gapText, fsSize, lh, 7);
+      `Data terbaru terkait program ${data.kegiatan_nama || data.asdep_program_kerja || data.asisten_deputi || 'Pemberdayaan Disabilitas dan Lanjut Usia'} menyatakan bahwa ${gapContent}`;
+    drawP3Para(gapText, fsSize, lh, 3.5);
 
     // 5. Program prioritas lainnya
+    const prioDefault =
+      'Strategi Nasional Kelanjutusiaan (Stranas Lansia) berdasarkan Perpres No. 88 Tahun 2021 dan Rencana Aksi Nasional Penyandang Disabilitas (RAN PD) 2025-2029 berdasarkan PP No. 70 Tahun 2019.';
     const progPrioText =
-      `Asisten Deputi ${data.program_prioritas_deputi || data.asisten_deputi || '……'} memiliki program prioritas lainnya yang harus dikoordinasikan yaitu ${data.program_prioritas_uraian || '……'}.`;
-    drawP3Para(progPrioText, fsSize, lh, 7);
+      `Asisten Deputi ${data.program_prioritas_deputi || data.asisten_deputi || 'Pemberdayaan Disabilitas dan Lanjut Usia'} memiliki program prioritas lainnya yang harus dikoordinasikan yaitu ${data.program_prioritas_uraian || prioDefault}`;
+    drawP3Para(progPrioText, fsSize, lh, 3.5);
 
     // 6. Output intro
     const outputIntro =
-      `Berdasarkan penjelasan di atas maka terkait dengan tugas dan fungsi Asisten Deputi ${data.ro_rencana_asdep || data.asisten_deputi || '……'} , output yang akan dihasilkan pada rencana kerja tahun anggaran ${data.tahun_anggaran || '2026'} adalah:`;
-    drawP3Para(outputIntro, fsSize, lh, 5);
+      `Berdasarkan penjelasan di atas maka terkait dengan tugas dan fungsi Asisten Deputi ${data.ro_rencana_asdep || data.asisten_deputi || 'Pemberdayaan Disabilitas dan Lanjut Usia'} , output yang akan dihasilkan pada rencana kerja tahun anggaran ${data.tahun_anggaran || '2026'} adalah:`;
+    drawP3Para(outputIntro, fsSize, lh, 3.0);
 
-    // 7. RO list
-    if (data.ro_1_fokus_tujuan) {
-      drawP3Para(`1) ${data.ro_1_fokus_tujuan}`, fsSize, lh, 4);
-    }
-    if (data.ro_2_fokus_tujuan) {
-      drawP3Para(`2) ${data.ro_2_fokus_tujuan}`, fsSize, lh, 4);
-    }
-    if (data.ro_3_fokus_tujuan) {
-      drawP3Para(`3) ${data.ro_3_fokus_tujuan}`, fsSize, lh, 4);
-    }
+    // 7. RO list (1 s.d. 4 sesuai template KAK)
+    const ro1Text =
+      data.ro_1_fokus_tujuan ||
+      'Rekomendasi Alternatif Kebijakan Penguatan Aksesibilitas dan Jaminan Sosial Inklusif Disabilitas dan Lanjut Usia.\nRekomendasi alternatif kebijakan ini bertujuan untuk menjamin perlindungan sosial adaptif dan fasilitas publik ramah disabilitas secara merata. Rekomendasi difokuskan pada standarisasi infrastruktur dasar dan bantuan sosial terintegrasi. Melalui kebijakan ini diharapkan terwujud kemandirian dan pemenuhan hak-hak dasar kelompok rentan.';
+    drawP3Para(`1) ${ro1Text}`, fsSize, lh, 2.5);
+
+    const ro2Text =
+      data.ro_2_fokus_tujuan ||
+      'Rekomendasi Alternatif Kebijakan Skema Layanan Perawatan Jangka Panjang (Long-Term Care) Lansia Berbasis Komunitas.\nRekomendasi alternatif kebijakan ini bertujuan untuk memperkuat dukungan perawatan keluarga dan fasilitas pendamping lansia di tingkat komunitas. Rekomendasi difokuskan pada penguatan kapasitas tenaga pendamping dan posyandu lansia terpadu. Melalui kebijakan ini diharapkan kualitas hidup lansia dan kesejahteraan keluarga meningkat secara berkelanjutan.';
+    drawP3Para(`2) ${ro2Text}`, fsSize, lh, 2.5);
+
+    const ro3Text =
+      data.ro_3_fokus_tujuan ||
+      'Rekomendasi Alternatif Kebijakan Harmonisasi Tata Kelola Kelembagaan Komisi Disabilitas dan Komda Lansia.';
+    drawP3Para(`3) ${ro3Text}`, fsSize, lh, 2.5);
+
+    const ro4Text =
+      data.ro_4_opsional ||
+      'Koordinasi Penanganan Kelompok Rentan dan Penyandang Masalah Kesejahteraan Sosial (PMKS) Lintas Sektor (Opsional)';
+    drawP3Para(`4) ${ro4Text}`, fsSize, lh, 2.5);
   }
 
   // ==========================================
-  // HALAMAN 4 (RB, PUG, MR, Penerima Manfaat)
+  // HALAMAN 4 (2.2 RB, PUG, MR, Penerima Manfaat)
   // ==========================================
   {
     const p4 = pages[3];
 
-    // RB Asdep
-    maskAndDrawText(p4, fontRegular, data.rb_asdep || data.asisten_deputi || '', {
-      maskX: 429,
-      maskY: 730,
-      maskW: 95,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-
-    // Mask yellow guide prompt in RB header without clipping 'yaitu'
+    // Bersihkan seluruh area isi Halaman 4 agar bersih dan tersusun rapi dari atas
     p4.drawRectangle({
-      x: 283,
-      y: 711,
-      width: 245,
-      height: 16,
+      x: 65,
+      y: 60,
+      width: 475,
+      height: 720,
       color: rgb(1, 1, 1),
     });
-    p4.drawText(':', {
-      x: 281.5,
-      y: 713.5,
-      size: 9.5,
-      font: fontRegular,
+
+    let p4y = 755;
+    const maxW = 435;
+    const fsRegular = 9.0;
+    const lhRegular = 12.3;
+
+    const drawP4Para = (text: string, size = fsRegular, lineH = lhRegular, spaceAfter = 4) => {
+      const lines = wrapText(text, fontRegular, size, maxW);
+      for (const line of lines) {
+        p4.drawText(line, {
+          x: 92,
+          y: p4y,
+          size,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        p4y -= lineH;
+      }
+      p4y -= spaceAfter;
+    };
+
+    // 2.2 Program yang Terkait Reformasi Birokrasi (RB)
+    p4.drawText('2.2. Program yang Terkait Reformasi Birokrasi (RB)', {
+      x: 92,
+      y: p4y,
+      size: 9.3,
+      font: fontBold,
       color: rgb(0, 0, 0),
     });
+    p4y -= 13;
 
-    // Narasi Indikator RB (mask the yellow box and guide points)
-    if (data.rb_indikator_list) {
-      maskAndDrawMultiline(p4, fontRegular, data.rb_indikator_list, {
-        maskX: 92,
-        maskY: 540,
-        maskW: 435,
-        maskH: 172,
-        fontSize: 9.2,
-        lineHeight: 13.5,
+    const rbMandat = `Terhadap pelaksanaan Reformasi Birokrasi (RB), Asisten Deputi ${data.rb_asdep || data.asisten_deputi || '……'} mendapatkan mandat pengawalan indikator RB yaitu:`;
+    drawP4Para(rbMandat, fsRegular, lhRegular, 3);
+
+    // Indikator RB
+    const rbListRaw =
+      data.rb_indikator_list ||
+      `1. Indeks Reformasi Birokrasi Tematik Penanggulangan Kemiskinan dan Aksesibilitas Inklusif\n2. Tingkat kepatuhan unit kerja terhadap standar pelayanan publik inklusif ramah kelompok rentan`;
+    const rbLines = wrapText(rbListRaw, fontRegular, fsRegular, maxW);
+    for (const rbl of rbLines) {
+      if (rbl.trim() === '') continue;
+      p4.drawText(rbl, {
+        x: 92,
+        y: p4y,
+        size: fsRegular,
+        font: fontRegular,
+        color: rgb(0, 0, 0),
       });
+      p4y -= lhRegular;
     }
+    p4y -= 4;
 
-    // 2.3 Pengarusutamaan Gender (PUG) - unified clean narrative, no overlap!
-    p4.drawRectangle({
-      x: 90,
-      y: 348,
-      width: 440,
-      height: 170,
-      color: rgb(1, 1, 1),
+    // Catatan narasi terkait RB (Wajib ada sesuai instruksi pengguna)
+    const rbNoteIntro = 'Catatan narasi terkait RB yang disusun pada penjelasan pelaksanaan tugas fungsi UKE harus memuat:';
+    drawP4Para(rbNoteIntro, fsRegular, lhRegular, 3);
+
+    const rbBullets = [
+      'regulasi/peraturan perundangan yang mendasari,',
+      'kondisi capaian indikator terkini dan target yang diharapkan,',
+      'isu strategis yang harus dikawal,',
+      'faktor penghambat yang harus dientaskan dan faktor pendorong yang perlu diperkuat baik dari aspek regulasi-data-koordinasi-penguatan kebijakan fiskal-pelibatan multistakeholder-dan aspek lainnya',
+      'keterhubungan dengan Reformasi birokrasi general/tematik',
+      'pelibatan stakeholder disebutkan K/L dan pemerintah daerah, kelompok masyarakat, masyarakat, organisasi dalam/dan luar negeri yang terlibat dalam pelaksanaan tugas fungsi UKE',
+    ];
+
+    for (const bText of rbBullets) {
+      p4.drawText('\u2022', {
+        x: 104,
+        y: p4y,
+        size: 9.0,
+        font: fontRegular,
+        color: rgb(0, 0, 0),
+      });
+      const bLines = wrapText(bText, fontRegular, fsRegular, maxW - 24);
+      for (const bl of bLines) {
+        p4.drawText(bl, {
+          x: 114,
+          y: p4y,
+          size: fsRegular,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        p4y -= lhRegular;
+      }
+      p4y -= 1.5;
+    }
+    p4y -= 6; // Jarak rapat dan pas menuju 2.3 PUG (tidak ada ruang kosong besar!)
+
+    // 2.3 Pengarusutamaan Gender dalam Pelaksanaan Program
+    p4.drawText('2.3 Pengarusutamaan Gender dalam Pelaksanaan Program', {
+      x: 92,
+      y: p4y,
+      size: 9.3,
+      font: fontBold,
+      color: rgb(0, 0, 0),
     });
+    p4y -= 13;
 
     const pugNarrative =
       `Asisten Deputi ${data.pug_asdep_1 || data.asisten_deputi || '……'} telah mengintegrasikan perspektif gender dalam pelaksanaan program dan kegiatan melalui penerapan Anggaran Responsif Gender (ARG) dan penyusunan Gender Analysis Pathway (GAP). ` +
       `Berdasarkan hasil analisis gender, masih terdapat kesenjangan dalam pelaksanaan kebijakan bidang ${data.pug_bidang || '……'}, antara lain ${data.pug_kesenjangan || '……'} yang dipengaruhi oleh faktor ${data.pug_faktor || '……'}. ` +
       `Untuk mengatasi kesenjangan tersebut, Kemenko PMK melalui Asisten Deputi ${data.pug_asdep_2 || data.asisten_deputi || '……'} melakukan intervensi melalui ${data.pug_intervensi || '……'}. ` +
       `Diharapkan program dan kegiatan yang dilaksanakan dapat mendukung terwujudnya pembangunan manusia dan kebudayaan yang inklusif dan tepat sasaran. GAP secara lebih rinci dituangkan dalam matriks sebagaimana dimuat dalam lampiran KAK ini.`;
+    drawP4Para(pugNarrative, fsRegular, lhRegular, 7);
 
-    const pugLines = wrapText(pugNarrative, fontRegular, 9.2, 435);
-    let p4y = 512;
-    for (const line of pugLines) {
-      p4.drawText(line, {
-        x: 92,
-        y: p4y,
-        size: 9.2,
-        font: fontRegular,
-        color: rgb(0, 0, 0),
-      });
-      p4y -= 13.5;
-    }
-
-    // 2.4 Manajemen Risiko - clean narrative, no leftover yellow instructions
-    p4.drawRectangle({
-      x: 90,
-      y: 185,
-      width: 440,
-      height: 132,
-      color: rgb(1, 1, 1),
+    // 2.4 Manajemen Risiko
+    p4.drawText('2.4 Manajemen Risiko', {
+      x: 92,
+      y: p4y,
+      size: 9.3,
+      font: fontBold,
+      color: rgb(0, 0, 0),
     });
+    p4y -= 13;
 
     const mrNarrative =
       `Dalam memastikan tercapainya output dan memaksimalkan dampak positif program, perlu dilakukan manajemen risiko untuk mencegah kegagalan, melindungi sumber daya, dan ketepatan waktu pencapaian target serta efektivitas anggaran. ` +
       `Risiko yang ada dalam pelaksanaan program pada Asisten Deputi ${data.mr_asdep || data.asisten_deputi || '……'} yang perlu dikendalikan melalui penguatan koordinasi lintas sektor, monitoring dan evaluasi, serta penegasan peran dan tanggung jawab stakeholder. ` +
       `Matriks profil risiko terlampir pada lampiran 2 KAK ini.`;
+    drawP4Para(mrNarrative, fsRegular, lhRegular, 8);
 
-    const mrLines = wrapText(mrNarrative, fontRegular, 9.2, 435);
-    let mry = 312;
-    for (const line of mrLines) {
-      p4.drawText(line, {
-        x: 92,
-        y: mry,
+    // B. PENERIMA MANFAAT
+    p4.drawText('B. PENERIMA MANFAAT', {
+      x: 92,
+      y: p4y,
+      size: 9.5,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p4y -= 13;
+
+    p4.drawText('1.1 Lembaga eksternal yang akan menerima manfaat dari kegiatan ini meliputi:', {
+      x: 92,
+      y: p4y,
+      size: fsRegular,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+    p4y -= 12;
+
+    const drawP4Item = (num: string, text: string) => {
+      const lines = wrapText(`${num} ${text}`, fontRegular, fsRegular, maxW - 14);
+      for (const line of lines) {
+        p4.drawText(line, {
+          x: 106,
+          y: p4y,
+          size: fsRegular,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        p4y -= lhRegular;
+      }
+      p4y -= 2;
+    };
+
+    drawP4Item('1.', data.manfaat_internal || 'Internal Kemenko PMK (Deputi dan Asisten Deputi terkait);');
+    drawP4Item('2.', data.manfaat_eksternal || 'Kementerian/Lembaga Teknis (Kemensos, Bappenas, Kemendagri, Kemenkes) dan Mitra Terkait;');
+    drawP4Item('3.', 'Pemerintah Daerah Provinsi/Kabupaten/Kota dan Mitra Kerja Terkait');
+
+    // 1.2 Kelompok masyarakat yang menerima manfaat dari kegiatan ini meliputi:
+    p4y -= 4;
+    p4.drawText('1.2 Kelompok masyarakat yang menerima manfaat dari kegiatan ini meliputi:', {
+      x: 92,
+      y: p4y,
+      size: fsRegular,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+    p4y -= 12;
+
+    const m2Lines = wrapText(
+      `1. ${data.manfaat_lainnya || 'Kelompok masyarakat peduli lansia dan keluarga pendamping'}`,
+      fontRegular,
+      fsRegular,
+      maxW - 14
+    );
+    for (const l of m2Lines) {
+      p4.drawText(l, {
+        x: 106,
+        y: p4y,
+        size: fsRegular,
+        font: fontRegular,
+        color: rgb(0, 0, 0),
+      });
+      p4y -= lhRegular;
+    }
+  }
+
+  // Helper untuk merender detail kegiatan (a. Lokasi s.d. g. Alasan Pemilihan Lokasi)
+  const renderTahapItems = (
+    p: PDFPage,
+    startY: number,
+    judul: string,
+    lokasi: string,
+    waktu: string,
+    peserta: string,
+    jml: string,
+    narasumber: string,
+    output: string,
+    alasan: string,
+    akunNote?: string
+  ): number => {
+    let y = startY;
+
+    if (judul) {
+      const jLines = wrapText(judul, fontBold, 9.3, 420);
+      for (const jl of jLines) {
+        p.drawText(jl, {
+          x: 111,
+          y,
+          size: 9.3,
+          font: fontBold,
+          color: rgb(0, 0, 0),
+        });
+        y -= 13.0;
+      }
+      y -= 1.5;
+    }
+
+    const simpleRow = (label: string, val: string) => {
+      p.drawText(label, {
+        x: 125,
+        y,
         size: 9.2,
         font: fontRegular,
         color: rgb(0, 0, 0),
       });
-      mry -= 13.5;
+      const lines = wrapText(`: ${val}`, fontRegular, 9.2, 315);
+      for (let i = 0; i < lines.length; i++) {
+        p.drawText(lines[i], {
+          x: 215,
+          y: y - (i * 12.5),
+          size: 9.2,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+      }
+      y -= Math.max(13.0, lines.length * 12.5 + 1);
+    };
+
+    simpleRow('a. Lokasi', lokasi || 'DKI Jakarta');
+    simpleRow('b. Waktu', waktu || 'Tahun 2026');
+    simpleRow('c. Peserta', peserta || 'K/L terkait');
+    simpleRow('d. Jumlah Peserta', `${jml || '30'} orang`);
+    simpleRow('e. Narasumber', narasumber || 'Ada');
+
+    // f. Output yang akan dicapai
+    p.drawText('f. Output yang akan dicapai :', {
+      x: 125,
+      y,
+      size: 9.2,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+    y -= 12.5;
+    const outLines = wrapText(output || '-', fontRegular, 9.0, 385);
+    for (const ol of outLines) {
+      p.drawText(ol, {
+        x: 140,
+        y,
+        size: 9.0,
+        font: fontRegular,
+        color: rgb(0, 0, 0),
+      });
+      y -= 12.0;
+    }
+    y -= 1.0;
+
+    // g. Alasan pemilihan lokasi
+    p.drawText('g. Alasan pemilihan lokasi :', {
+      x: 125,
+      y,
+      size: 9.2,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+    const alasanText = alasan || '-';
+    if (fontRegular.widthOfTextAtSize(`: ${alasanText}`, 9.0) <= 240) {
+      p.drawText(`: ${alasanText}`, {
+        x: 260,
+        y,
+        size: 9.0,
+        font: fontRegular,
+        color: rgb(0, 0, 0),
+      });
+      y -= 13.5;
+    } else {
+      y -= 12.0;
+      const alLines = wrapText(alasanText, fontRegular, 8.8, 385);
+      for (const al of alLines) {
+        p.drawText(al, {
+          x: 140,
+          y,
+          size: 8.8,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        y -= 11.5;
+      }
+      y -= 1.0;
     }
 
-    // Penerima Manfaat
-    maskAndDrawText(p4, fontRegular, data.manfaat_internal || '', {
-      maskX: 109,
-      maskY: 105,
-      maskW: 415,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p4, fontRegular, data.manfaat_eksternal || '', {
-      maskX: 109,
-      maskY: 80,
-      maskW: 415,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-  }
+    if (akunNote) {
+      y -= 2;
+      const akLines = wrapText(akunNote, fontRegular, 8.0, 420);
+      for (const ak of akLines) {
+        p.drawText(ak, {
+          x: 111,
+          y,
+          size: 8.0,
+          font: fontRegular,
+          color: rgb(0.35, 0.35, 0.35),
+        });
+        y -= 10.0;
+      }
+    }
+
+    return y;
+  };
 
   // ==========================================
-  // HALAMAN 5 (Penerima Manfaat Lanjutan, RAK, Tahap 1)
+  // HALAMAN 5 (Tahapan dan Waktu Pelaksanaan - RAK 1 / Tahap 1 Utuh)
   // ==========================================
   {
     const p5 = pages[4];
 
-    // Penerima Manfaat Lainnya
-    maskAndDrawText(p5, fontRegular, data.manfaat_lainnya || '', {
-      maskX: 109,
-      maskY: 755,
-      maskW: 415,
-      maskH: 15,
-      fontSize: 9.5,
+    // Bersihkan seluruh area isi Halaman 5 agar tersusun rapi dari atas
+    p5.drawRectangle({
+      x: 65,
+      y: 60,
+      width: 475,
+      height: 720,
+      color: rgb(1, 1, 1),
     });
 
-    // Volume output
-    maskAndDrawText(p5, fontRegular, data.metode_volume || data.volume_ro || '1', {
-      maskX: 392,
-      maskY: 598,
-      maskW: 25,
-      maskH: 15,
-      fontSize: 9.5,
-    });
+    let p5y = 755;
+    const maxW = 435;
+    const fsRegular = 9.2;
+    const lhRegular = 13.0;
 
-    // RAK 1, 2, 3
-    maskAndDrawText(p5, fontRegular, data.metode_rak1 || 'Swakelola', {
-      maskX: 113,
-      maskY: 554,
-      maskW: 400,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p5, fontRegular, data.metode_rak2 || '', {
-      maskX: 92,
-      maskY: 535,
-      maskW: 400,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p5, fontRegular, data.metode_rak3 || '', {
-      maskX: 92,
-      maskY: 516,
-      maskW: 400,
-      maskH: 15,
-      fontSize: 9.5,
-    });
+    const drawP5Para = (text: string, size = fsRegular, lineH = lhRegular, spaceAfter = 6) => {
+      const lines = wrapText(text, fontRegular, size, maxW);
+      for (const line of lines) {
+        p5.drawText(line, {
+          x: 92,
+          y: p5y,
+          size,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        p5y -= lineH;
+      }
+      p5y -= spaceAfter;
+    };
 
-    // Tahun tahapan
-    maskAndDrawText(p5, fontRegular, data.tahapan_tahun || data.tahun_anggaran || '2026', {
-      maskX: 431,
-      maskY: 459,
-      maskW: 30,
-      maskH: 15,
-      fontSize: 9.5,
+    // C. STRATEGI PENCAPAIAN KELUARAN
+    p5.drawText('C. STRATEGI PENCAPAIAN KELUARAN', {
+      x: 92,
+      y: p5y,
+      size: 9.5,
+      font: fontBold,
+      color: rgb(0, 0, 0),
     });
+    p5y -= 13;
 
-    // Pendahuluan Tahap 1 (Identifikasi Permasalahan)
-    // Mask out the instruction line and sample box cleanly
-    if (data.t1_pendahuluan) {
-      maskAndDrawMultiline(p5, fontRegular, data.t1_pendahuluan, {
-        maskX: 114,
-        maskY: 150,
-        maskW: 412,
-        maskH: 236,
-        fontSize: 9.2,
-        lineHeight: 13.5,
-      });
-    }
-
-    // Judul Rapat Tahap 1
-    maskAndDrawText(p5, fontRegular, data.t1_kegiatan_judul || '1. Rapat Koordinasi Identifikasi Permasalahan', {
-      maskX: 110,
-      maskY: 74,
-      maskW: 415,
-      maskH: 15,
-      fontSize: 9.5,
+    p5.drawText('1. Metode Pelaksanaan', {
+      x: 92,
+      y: p5y,
+      size: 9.2,
+      font: fontBold,
+      color: rgb(0, 0, 0),
     });
+    p5y -= 12;
+
+    const vol = String(data.metode_volume || data.volume_ro || '1');
+    const metodeIntro = `Metode pelaksanaan yang digunakan dalam menghasilkan ${vol} output Rekomendasi Alternatif Kebijakan yaitu melalui:`;
+    drawP5Para(metodeIntro, fsRegular, lhRegular, 4);
+
+    const drawP5Item = (num: string, text: string) => {
+      const lines = wrapText(`${num} ${text}`, fontRegular, fsRegular, maxW - 14);
+      for (const line of lines) {
+        p5.drawText(line, {
+          x: 106,
+          y: p5y,
+          size: fsRegular,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        p5y -= lhRegular;
+      }
+      p5y -= 2;
+    };
+
+    drawP5Item('a.', `RAK 1: ${data.metode_rak1 || 'Swakelola Tipe I'}`);
+    drawP5Item('b.', `RAK 2: ${data.metode_rak2 || 'Swakelola Tipe I'}`);
+    drawP5Item('c.', `RAK 3: ${data.metode_rak3 || 'Swakelola'}`);
+    p5y -= 6;
+
+    // 2. Tahapan dan Waktu Pelaksanaan
+    p5.drawText('2. Tahapan dan Waktu Pelaksanaan', {
+      x: 92,
+      y: p5y,
+      size: 9.5,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p5y -= 13;
+
+    const tahapanTahun = data.tahapan_tahun || data.tahun_anggaran || '2026';
+    const tahapanIntro = `Tahapan pelaksanaan kegiatan yang akan dilakukan pada tahun ${tahapanTahun}, diantaranya sebagai berikut:`;
+    drawP5Para(tahapanIntro, fsRegular, lhRegular, 5);
+
+    // 2.1 RAK 1
+    const rak1Title = `2.1 RAK 1: ${data.ro_nama || 'Peningkatan Kesejahteraan dan Perlindungan Lanjut Usia serta Disabilitas'}`;
+    const rak1Size = fontBold.widthOfTextAtSize(rak1Title, 9.3) > 430 ? 8.8 : 9.3;
+    p5.drawText(rak1Title, {
+      x: 92,
+      y: p5y,
+      size: rak1Size,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p5y -= 13;
+
+    // 2.1.1 Sub Komponen 051
+    const subkomp1Title = `2.1.1 Sub Komponen 051 Sinkronisasi, Koordinasi dan Pengendalian Bidang ${data.urusan_bidang || data.fungsi_deputi_bidang || 'Pemberdayaan Disabilitas dan Lanjut Usia'}`;
+    const subkomp1Size = fontBold.widthOfTextAtSize(subkomp1Title, 9.3) > 430 ? 8.8 : 9.3;
+    p5.drawText(subkomp1Title, {
+      x: 92,
+      y: p5y,
+      size: subkomp1Size,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p5y -= 13;
+
+    // A. Melaksanakan Identifikasi Permasalahan
+    p5.drawText('A. Melaksanakan Identifikasi Permasalahan', {
+      x: 95,
+      y: p5y,
+      size: 9.3,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p5y -= 13;
+
+    // Paragraf 1: Pendahuluan
+    const t1P1 =
+      data.t1_pendahuluan ||
+      `Sebagai koordinator bidang pembangunan manusia dan kebudayaan, Kemenko PMK melalui Asisten Deputi ${data.asisten_deputi || 'Pemberdayaan Disabilitas dan Lanjut Usia'} berperan menghimpun informasi lintas sektor terkait isu ${data.kegiatan_nama || 'perlindungan disabilitas dan lansia'} di daerah.`;
+    drawP5Para(t1P1, fsRegular, lhRegular, 4);
+
+    // Paragraf 2: Identifikasi dilakukan...
+    const t1P2 =
+      `Identifikasi dilakukan dengan mengintegrasikan masukan dari kementerian/lembaga teknis yaitu ${data.kl_koordinasi || 'Kementerian Sosial, Kementerian Kesehatan, dan K/L terkait'}, pemerintah daerah, serta mitra pembangunan. Selain memetakan permasalahan tata kelola, identifikasi juga dilakukan menggunakan data terpilah menurut jenis kelamin, usia, disabilitas, dan kelompok rentan lainnya untuk mengetahui dampak bencana terhadap perempuan, laki-laki, anak, lansia, ibu hamil, penyandang disabilitas, serta kelompok rentan lainnya. Analisis tersebut digunakan untuk mengidentifikasi kesenjangan akses terhadap layanan dasar, bantuan kemanusiaan, layanan kesehatan, perlindungan sosial, serta mekanisme perlindungan dari kekerasan berbasis gender di lokasi bencana. Dengan demikian, isu yang diidentifikasi tidak hanya bersifat sektoral, tetapi juga memperhatikan kebutuhan spesifik kelompok rentan sehingga menjadi dasar penyusunan kebijakan yang lebih inklusif dan responsif gender.`;
+    drawP5Para(t1P2, fsRegular, lhRegular, 7);
+
+    // Subjudul Kegiatan
+    p5.drawText('Kegiatan yang dilaksanakan dalam tahapan ini meliputi :', {
+      x: 111,
+      y: p5y,
+      size: 9.2,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+    p5y -= 14;
+
+    // Detail Kegiatan Tahap 1 (Menyatu utuh dengan judulnya di Halaman 5 tanpa pemisahan halaman)
+    p5y = renderTahapItems(
+      p5,
+      p5y,
+      `1. ${data.t1_kegiatan_judul || 'Rapat Koordinasi Identifikasi Permasalahan Aksesibilitas dan Jaminan Sosial Inklusif'}`,
+      data.t1_lokasi,
+      data.t1_waktu,
+      data.t1_peserta,
+      data.t1_jumlah_peserta,
+      data.t1_narasumber,
+      data.t1_output,
+      data.t1_alasan_lokasi,
+      '*akun yang diperkenankan: Belanja Bahan, Narasumber, Transport Lokal'
+    );
   }
 
   // ==========================================
-  // HALAMAN 6 (Tahap 1 Detail & Tahap 2 Sinkronisasi)
+  // HALAMAN 6 (Tahap 2 Sinkronisasi & Tahap 3 Monitoring dan Evaluasi)
   // ==========================================
   {
     const p6 = pages[5];
 
-    // Tahap 1: Identifikasi Permasalahan
-    maskAndDrawText(p6, fontRegular, `Lokasi : ${data.t1_lokasi || 'DKI Jakarta'}`, {
-      maskX: 148,
-      maskY: 755,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, `Waktu : ${data.t1_waktu || 'Tahun 2026'}`, {
-      maskX: 148,
-      maskY: 740,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, `Peserta : ${data.t1_peserta || 'K/L terkait'}`, {
-      maskX: 148,
-      maskY: 726,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, data.t1_jumlah_peserta || '30', {
-      maskX: 244,
-      maskY: 711,
-      maskW: 35,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, `Narasumber : ${data.t1_narasumber || 'Ada'}`, {
-      maskX: 148,
-      maskY: 697,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
+    // Bersihkan seluruh area isi Halaman 6 agar tersusun rapi dari atas tanpa jeda template lama
+    p6.drawRectangle({
+      x: 65,
+      y: 60,
+      width: 475,
+      height: 720,
+      color: rgb(1, 1, 1),
     });
 
-    if (data.t1_output) {
-      maskAndDrawMultiline(p6, fontRegular, data.t1_output, {
-        maskX: 148,
-        maskY: 610,
-        maskW: 375,
-        maskH: 60,
-        fontSize: 9.2,
-        lineHeight: 13,
-      });
-    }
+    let p6y = 755;
+    const maxW = 435;
+    const fsRegular = 9.2;
+    const lhRegular = 12.8;
 
-    maskAndDrawTableCell(p6, fontRegular, `Alasan pemilihan lokasi : ${data.t1_alasan_lokasi || '-'}`, {
-      maskX: 135,
-      maskY: 590,
-      maskW: 395,
-      maskH: 22,
-      fontSize: 8.5,
-    });
+    const drawP6Para = (text: string, size = fsRegular, lineH = lhRegular, spaceAfter = 6) => {
+      const lines = wrapText(text, fontRegular, size, maxW);
+      for (const line of lines) {
+        p6.drawText(line, {
+          x: 95,
+          y: p6y,
+          size,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        p6y -= lineH;
+      }
+      p6y -= spaceAfter;
+    };
 
-    // Tahap 2: Sinkronisasi, Koordinasi & Pengendalian
-    if (data.t2_pendahuluan) {
-      maskAndDrawMultiline(p6, fontRegular, data.t2_pendahuluan, {
-        maskX: 114,
-        maskY: 318,
-        maskW: 412,
-        maskH: 175,
-        fontSize: 9.2,
-        lineHeight: 13.5,
-      });
-    }
+    // B. Melaksanakan Sinkronisasi, Koordinasi, dan Pengendalian
+    p6.drawText('B. Melaksanakan Sinkronisasi, Koordinasi, dan Pengendalian', {
+      x: 95,
+      y: p6y,
+      size: 9.3,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p6y -= 13;
 
-    maskAndDrawText(p6, fontRegular, `Lokasi : ${data.t2_lokasi || 'DKI Jakarta'}`, {
-      maskX: 148,
-      maskY: 227,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, `Waktu : ${data.t2_waktu || 'Tahun 2026'}`, {
-      maskX: 148,
-      maskY: 212,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, `Peserta : ${data.t2_peserta || 'K/L terkait'}`, {
-      maskX: 148,
-      maskY: 198,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, data.t2_jumlah_peserta || '50', {
-      maskX: 244,
-      maskY: 183,
-      maskW: 35,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p6, fontRegular, `Narasumber : ${data.t2_narasumber || 'Ada'}`, {
-      maskX: 148,
-      maskY: 169,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
+    const t2Text =
+      data.t2_pendahuluan ||
+      `Tahap ini merupakan mandat utama Kemenko PMK dalam memastikan keterpaduan kebijakan lintas sektor. Sinkronisasi dilakukan dengan memastikan program kementerian/lembaga dan pemerintah daerah telah mengakomodasi kebutuhan perempuan dan laki-laki secara setara serta memperhatikan perlindungan kelompok rentan. Koordinasi juga mendorong pemanfaatan data terpilah sebagai dasar perencanaan, penganggaran, dan pengambilan keputusan. Pengendalian dilakukan melalui penyepakatan indikator capaian yang mengukur kebermanfaatan program bagi seluruh kelompok masyarakat secara inklusif.`;
+    drawP6Para(t2Text, fsRegular, lhRegular, 7);
 
-    if (data.t2_output) {
-      maskAndDrawMultiline(p6, fontRegular, data.t2_output, {
-        maskX: 148,
-        maskY: 110,
-        maskW: 375,
-        maskH: 60,
-        fontSize: 9.2,
-        lineHeight: 13,
-      });
-    }
-
-    maskAndDrawTableCell(p6, fontRegular, `Alasan pemilihan lokasi : ${data.t2_alasan_lokasi || '-'}`, {
-      maskX: 135,
-      maskY: 90,
-      maskW: 395,
-      maskH: 22,
-      fontSize: 8.5,
+    p6.drawText('Kegiatan yang dilaksanakan dalam tahapan ini meliputi :', {
+      x: 111,
+      y: p6y,
+      size: 9.2,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
     });
+    p6y -= 14;
+
+    p6y = renderTahapItems(
+      p6,
+      p6y,
+      '1. Forum koordinasi daerah',
+      data.t2_lokasi,
+      data.t2_waktu,
+      data.t2_peserta,
+      data.t2_jumlah_peserta,
+      data.t2_narasumber,
+      data.t2_output,
+      data.t2_alasan_lokasi,
+      '*akun yang diperkenankan: Belanja Bahan, Narasumber, Transport Lokal'
+    );
+
+    // C. Melaksanakan Monitoring dan Evaluasi (Mengalir langsung di bawah Tahap 2)
+    p6y -= 12;
+    p6.drawText('C. Melaksanakan Monitoring dan Evaluasi', {
+      x: 95,
+      y: p6y,
+      size: 9.3,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p6y -= 13;
+
+    const t3Text =
+      data.t3_pendahuluan ||
+      `Sebagai koordinator, Kemenko PMK melakukan monitoring dan evaluasi terhadap pelaksanaan kebijakan perlindungan sosial lansia dan disabilitas dengan menilai efektivitas koordinasi lintas sektor, ketepatan sasaran bantuan, dan kendala implementasi di daerah.`;
+    drawP6Para(t3Text, fsRegular, lhRegular, 7);
+
+    p6.drawText('Kegiatan yang dilaksanakan dalam tahapan ini meliputi :', {
+      x: 111,
+      y: p6y,
+      size: 9.2,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+    p6y -= 14;
+
+    p6y = renderTahapItems(
+      p6,
+      p6y,
+      '1. Kunjungan lapangan ke daerah untuk melakukan verifikasi langsung atas pelaksanaan program',
+      data.t3_lokasi,
+      data.t3_waktu,
+      data.t3_peserta,
+      data.t3_jumlah_peserta,
+      data.t3_narasumber,
+      data.t3_output,
+      data.t3_alasan_lokasi,
+      '*akun yang diperkenankan: Belanja Bahan, Narasumber, Transport Lokal, Perjalanan Dinas Paket Meeting'
+    );
   }
 
   // ==========================================
-  // HALAMAN 7 (Tahap 3 Monev & Tahap 4 Rekomendasi Awal)
+  // HALAMAN 7 (Tahap 4 Rekomendasi Kebijakan & RAK 2 Subkomponen)
   // ==========================================
   {
     const p7 = pages[6];
 
-    // Tahap 3: Monitoring dan Evaluasi Pendahuluan
-    if (data.t3_pendahuluan) {
-      maskAndDrawMultiline(p7, fontRegular, data.t3_pendahuluan, {
-        maskX: 114,
-        maskY: 507,
-        maskW: 412,
-        maskH: 150,
-        fontSize: 9.2,
-        lineHeight: 13.5,
-      });
-    }
-
-    maskAndDrawText(p7, fontRegular, `Lokasi : ${data.t3_lokasi || 'DKI Jakarta'}`, {
-      maskX: 148,
-      maskY: 373,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p7, fontRegular, `Waktu : ${data.t3_waktu || 'Tahun 2026'}`, {
-      maskX: 148,
-      maskY: 358,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p7, fontRegular, `Peserta : ${data.t3_peserta || 'K/L terkait'}`, {
-      maskX: 148,
-      maskY: 343,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p7, fontRegular, data.t3_jumlah_peserta || '35', {
-      maskX: 244,
-      maskY: 328,
-      maskW: 35,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p7, fontRegular, `Narasumber : ${data.t3_narasumber || 'Ada'}`, {
-      maskX: 148,
-      maskY: 314,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
+    // Bersihkan seluruh area isi Halaman 7 agar tersusun rapi dari atas
+    p7.drawRectangle({
+      x: 65,
+      y: 60,
+      width: 475,
+      height: 720,
+      color: rgb(1, 1, 1),
     });
 
-    if (data.t3_output) {
-      maskAndDrawMultiline(p7, fontRegular, data.t3_output, {
-        maskX: 148,
-        maskY: 270,
-        maskW: 375,
-        maskH: 45,
-        fontSize: 9.2,
-        lineHeight: 13,
-      });
-    }
+    let p7y = 755;
+    const maxW = 435;
+    const fsRegular = 9.2;
+    const lhRegular = 12.8;
 
-    maskAndDrawTableCell(p7, fontRegular, `Alasan pemilihan lokasi : ${data.t3_alasan_lokasi || '-'}`, {
-      maskX: 135,
-      maskY: 250,
-      maskW: 395,
-      maskH: 22,
-      fontSize: 8.5,
+    const drawP7Para = (text: string, size = fsRegular, lineH = lhRegular, spaceAfter = 6) => {
+      const lines = wrapText(text, fontRegular, size, maxW);
+      for (const line of lines) {
+        p7.drawText(line, {
+          x: 95,
+          y: p7y,
+          size,
+          font: fontRegular,
+          color: rgb(0, 0, 0),
+        });
+        p7y -= lineH;
+      }
+      p7y -= spaceAfter;
+    };
+
+    // D. Menyusun Rekomendasi Kebijakan
+    p7.drawText('D. Menyusun Rekomendasi Kebijakan', {
+      x: 95,
+      y: p7y,
+      size: 9.3,
+      font: fontBold,
+      color: rgb(0, 0, 0),
     });
+    p7y -= 13;
 
-    // Tahap 4: Penyusunan Rekomendasi Kebijakan Pendahuluan (Awal Hal 7)
-    if (data.t4_pendahuluan_p1) {
-      maskAndDrawMultiline(p7, fontRegular, data.t4_pendahuluan_p1, {
-        maskX: 114,
-        maskY: 80,
-        maskW: 412,
-        maskH: 55,
-        fontSize: 9.2,
-        lineHeight: 13.5,
-      });
-    }
+    const t4P1 =
+      data.t4_pendahuluan_p1 ||
+      `Tahap akhir berupa penyusunan rekomendasi kebijakan berdasarkan hasil identifikasi, koordinasi, serta monitoring dan evaluasi. Rekomendasi disusun dengan mempertimbangkan hasil analisis kesenjangan gender dan kebutuhan kelompok rentan agar kebijakan lebih inklusif.`;
+    drawP7Para(t4P1, fsRegular, lhRegular, 4);
+
+    const t4P2 =
+      data.t4_pendahuluan_p2 ||
+      `Rekomendasi mencakup penguatan penggunaan data terpilah, peningkatan kapasitas pemerintah daerah dalam penyediaan layanan ramah lansia, dan penyempurnaan indikator monitoring pemenuhan hak disabilitas.`;
+    drawP7Para(t4P2, fsRegular, lhRegular, 7);
+
+    p7.drawText('Kegiatan yang dilaksanakan dalam tahapan ini meliputi :', {
+      x: 111,
+      y: p7y,
+      size: 9.2,
+      font: fontRegular,
+      color: rgb(0, 0, 0),
+    });
+    p7y -= 14;
+
+    p7y = renderTahapItems(
+      p7,
+      p7y,
+      '1. Rapat penyusunan rekomendasi kebijakan dengan melibatkan K/L teknis, pemerintah daerah, dan akademisi',
+      data.t4_lokasi,
+      data.t4_waktu,
+      data.t4_peserta,
+      data.t4_jumlah_peserta,
+      data.t4_narasumber,
+      data.t4_output,
+      data.t4_alasan_lokasi,
+      '*akun yang diperkenankan: Belanja Bahan, Narasumber, Transport Lokal, Perjalanan Dinas Paket Meeting'
+    );
+
+    // Anggaran yang dibutuhkan
+    p7y -= 12;
+    const formattedAnggaran = formatRupiah(data.anggaran_output || '185000000');
+    const terbilangAnggaran = angkaKeTerbilang(Number(data.anggaran_output || 185000000));
+    const anggaranText = `Anggaran yang dibutuhkan untuk menghasilkan output ini adalah sebesar ${formattedAnggaran} (${terbilangAnggaran} Rupiah).`;
+    drawP7Para(anggaranText, fsRegular, lhRegular, 10);
+
+    // 2.2 RAK 2
+    const rak2Title = `2.2 RAK 2: Peningkatan Aksesibilitas dan Layanan Pendukung Bagi Lansia dan Disabilitas`;
+    const rak2Size = fontBold.widthOfTextAtSize(rak2Title, 9.3) > 430 ? 8.8 : 9.3;
+    p7.drawText(rak2Title, {
+      x: 95,
+      y: p7y,
+      size: rak2Size,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p7y -= 13;
+
+    // 2.2.1 Sub Komponen 052
+    const subkomp2Title = `2.2.1 Sub Komponen 052 Sinkronisasi, Koordinasi dan Pengendalian Bidang ${data.urusan_bidang || data.fungsi_deputi_bidang || 'Pemberdayaan Disabilitas dan Lanjut Usia'}`;
+    const subkomp2Size = fontBold.widthOfTextAtSize(subkomp2Title, 9.3) > 430 ? 8.8 : 9.3;
+    p7.drawText(subkomp2Title, {
+      x: 95,
+      y: p7y,
+      size: subkomp2Size,
+      font: fontBold,
+      color: rgb(0, 0, 0),
+    });
+    p7y -= 13;
+
+    p7.drawText('Dan seterusnya', {
+      x: 95,
+      y: p7y,
+      size: 9.0,
+      font: fontRegular,
+      color: rgb(0.3, 0.3, 0.3),
+    });
   }
 
   // ==========================================
-  // HALAMAN 8 (Tahap 4 Detail & Anggaran & Header Jadwal)
+  // HALAMAN 8 (Header Jadwal & Tabel Jadwal 12 Bulan)
   // ==========================================
   {
     const p8 = pages[7];
 
-    // Tahap 4 Pendahuluan Lanjutan (Hal 8)
-    if (data.t4_pendahuluan_p2) {
-      maskAndDrawMultiline(p8, fontRegular, data.t4_pendahuluan_p2, {
-        maskX: 114,
-        maskY: 682,
-        maskW: 412,
-        maskH: 88,
-        fontSize: 9.2,
-        lineHeight: 13.5,
-      });
-    }
-
-    maskAndDrawText(p8, fontRegular, `Lokasi : ${data.t4_lokasi || 'DKI Jakarta'}`, {
-      maskX: 148,
-      maskY: 548,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p8, fontRegular, `Waktu : ${data.t4_waktu || 'Tahun 2026'}`, {
-      maskX: 148,
-      maskY: 533,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p8, fontRegular, `Peserta : ${data.t4_peserta || 'K/L terkait'}`, {
-      maskX: 148,
-      maskY: 519,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p8, fontRegular, data.t4_jumlah_peserta || '40', {
-      maskX: 244,
-      maskY: 504,
-      maskW: 35,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-    maskAndDrawText(p8, fontRegular, `Narasumber : ${data.t4_narasumber || 'Ada'}`, {
-      maskX: 148,
-      maskY: 490,
-      maskW: 375,
-      maskH: 15,
-      fontSize: 9.5,
+    // Bersihkan area atas halaman 8 (di atas D. Waktu Pencapaian Keluaran)
+    p8.drawRectangle({
+      x: 65,
+      y: 245,
+      width: 475,
+      height: 535,
+      color: rgb(1, 1, 1),
     });
 
-    if (data.t4_output) {
-      maskAndDrawMultiline(p8, fontRegular, data.t4_output, {
-        maskX: 148,
-        maskY: 431,
-        maskW: 375,
-        maskH: 60,
-        fontSize: 9.2,
-        lineHeight: 13,
-      });
-    }
-
-    maskAndDrawTableCell(p8, fontRegular, `Alasan pemilihan lokasi : ${data.t4_alasan_lokasi || '-'}`, {
-      maskX: 135,
-      maskY: 411,
-      maskW: 395,
-      maskH: 22,
-      fontSize: 8.5,
+    // Header RAK 1 pada tabel jadwal halaman 8 (hanya tutup titik-titik setelah RAK)
+    p8.drawRectangle({
+      x: 129,
+      y: 118,
+      width: 25,
+      height: 14,
+      color: rgb(1, 1, 1),
+    });
+    p8.drawText(` 1`, {
+      x: 129,
+      y: 121,
+      size: 9.5,
+      font: fontBold,
+      color: rgb(0, 0, 0),
     });
 
-    // Anggaran Rp.xxxxx
-    const formattedAnggaran = formatRupiah(data.anggaran_output || '185000000');
-    maskAndDrawText(p8, fontRegular, formattedAnggaran, {
-      maskX: 452,
-      maskY: 332,
-      maskW: 90,
-      maskH: 15,
-      fontSize: 9.5,
-    });
-
-    // Header RAK 1 pada tabel jadwal halaman 8 (y=134.78 to 158.03)
+    // Matriks bulan aktif RAK 1 pada tabel jadwal halaman 8 (y=134.78 to 158.03)
     const sk1 = data.schedule_subkomponen_1;
     for (let m = 0; m < 12; m++) {
       const isAnyActive =
-        (sk1?.identifikasi?.[m] || 0) +
-        (sk1?.sinkronisasi?.[m] || 0) +
-        (sk1?.monitoring?.[m] || 0) +
-        (sk1?.rekomendasi?.[m] || 0) > 0;
+        Boolean(sk1?.identifikasi?.[m]) ||
+        Boolean(sk1?.sinkronisasi?.[m]) ||
+        Boolean(sk1?.monitoring?.[m]) ||
+        Boolean(sk1?.rekomendasi?.[m]);
       colorMonthCell(p8, m, 134.78, 158.03, isAnyActive);
     }
   }
@@ -1441,139 +1725,13 @@ export async function generateKAKPdf(
   // ==========================================
   // HALAMAN 10 (Lampiran I: Gender Analysis Pathway)
   // ==========================================
-  {
-    const p10 = pages[9];
-    const gapHeight = 488;
-    const gapY = 199;
-
-    if (data.gap_langkah1) {
-      maskAndDrawMultiline(p10, fontRegular, data.gap_langkah1, {
-        maskX: 71.5,
-        maskY: gapY,
-        maskW: 113,
-        maskH: gapHeight,
-        fontSize: 8,
-        lineHeight: 11.5,
-      });
-    }
-
-    if (data.gap_langkah2) {
-      maskAndDrawMultiline(p10, fontRegular, data.gap_langkah2, {
-        maskX: 186.5,
-        maskY: gapY,
-        maskW: 123,
-        maskH: gapHeight,
-        fontSize: 8,
-        lineHeight: 11.5,
-      });
-    }
-
-    if (data.gap_langkah3) {
-      maskAndDrawMultiline(p10, fontRegular, data.gap_langkah3, {
-        maskX: 311.5,
-        maskY: gapY,
-        maskW: 129,
-        maskH: gapHeight,
-        fontSize: 8,
-        lineHeight: 11.5,
-      });
-    }
-
-    if (data.gap_langkah4) {
-      maskAndDrawMultiline(p10, fontRegular, data.gap_langkah4, {
-        maskX: 442.5,
-        maskY: gapY,
-        maskW: 112,
-        maskH: gapHeight,
-        fontSize: 8,
-        lineHeight: 11.5,
-      });
-    }
-  }
+  // Bagian tabel Lampiran I dibiarkan utuh sesuai format template resmi Kemenko PMK.
 
   // ==========================================
   // HALAMAN 11 (Lampiran II: Manajemen Risiko)
   // ==========================================
-  {
-    const p11 = pages[10];
-
-    // Mask yellow highlight on pedoman link at y=515 to 528
-    p11.drawRectangle({
-      x: 106,
-      y: 514,
-      width: 300,
-      height: 15,
-      color: rgb(1, 1, 1),
-    });
-    p11.drawText('Detail ada pada link https://bit.ly/PedomanBersamaKPMK', {
-      x: 107.2,
-      y: 517,
-      size: 10,
-      font: fontRegular,
-      color: rgb(0, 0, 0),
-    });
-
-    function drawRiskRowOverlay(item: RiskItem, yBottom: number, rowHeight: number) {
-      const fontSize = 6.8;
-      const lineHeight = 9.2;
-
-      // Mask row interior
-      p11.drawRectangle({
-        x: 18,
-        y: yBottom + 1,
-        width: 567,
-        height: rowHeight - 2,
-        color: rgb(1, 1, 1),
-      });
-
-      const cells = [
-        { text: item.lingkup || '', x: 18, w: 50 },
-        { text: item.peristiwa || '', x: 70, w: 72 },
-        { text: `${item.kategori || ''} (${item.kodeKategori || ''})`, x: 144, w: 51 },
-        { text: item.penyebab || '', x: 197, w: 63 },
-        { text: item.dampak || '', x: 262, w: 56 },
-        { text: String(item.lk || '1'), x: 320, w: 17, center: true },
-        { text: String(item.ld || '1'), x: 339, w: 18, center: true },
-        { text: String(item.br || item.lk * item.ld || '1'), x: 359, w: 19, center: true },
-        { text: item.lr || 'Rendah', x: 380, w: 26, center: true },
-        { text: item.perlakuan || '', x: 408, w: 78 },
-        { text: item.pemilik || '', x: 488, w: 54 },
-        { text: item.mitra || '', x: 544, w: 41 },
-      ];
-
-      for (const cell of cells) {
-        if (cell.center) {
-          const tw = fontRegular.widthOfTextAtSize(cell.text, fontSize);
-          p11.drawText(cell.text, {
-            x: cell.x + (cell.w - tw) / 2,
-            y: yBottom + (rowHeight - fontSize) / 2,
-            size: fontSize,
-            font: fontBold,
-            color: rgb(0, 0, 0),
-          });
-        } else {
-          const lines = wrapText(cell.text, fontRegular, fontSize, cell.w - 3);
-          let cy = yBottom + rowHeight - lineHeight - 1;
-          for (const l of lines.slice(0, 6)) {
-            p11.drawText(l, {
-              x: cell.x + 1.5,
-              y: cy,
-              size: fontSize,
-              font: fontRegular,
-              color: rgb(0, 0, 0),
-            });
-            cy -= lineHeight;
-          }
-        }
-      }
-    }
-
-    if (data.risk_rows?.[0]) drawRiskRowOverlay(data.risk_rows[0], 657, 48);
-    if (data.risk_rows?.[1]) drawRiskRowOverlay(data.risk_rows[1], 605, 52);
-    if (data.risk_rows?.[2]) drawRiskRowOverlay(data.risk_rows[2], 544, 61);
-  }
-
-  // Pages 12 and 13 remain exact copies of template reference material
+  // Bagian tabel Lampiran II dibiarkan utuh sesuai format template resmi Kemenko PMK.
+  // Pages 10, 11, 12, dan 13 merupakan materi acuan/pedoman resmi dari template.
 
   const finalPdfBytes = await pdfDoc.save();
   return finalPdfBytes;

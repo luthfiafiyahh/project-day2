@@ -9,6 +9,7 @@ import {
   Edit3,
   Loader2,
   Sparkles,
+  FileText,
 } from 'lucide-react';
 
 interface Props {
@@ -20,6 +21,8 @@ interface Props {
   onImportJson: (file: File) => void;
   onDownloadPdf: () => void;
   isGeneratingPdf: boolean;
+  onDownloadDocx: () => void;
+  isGeneratingDocx: boolean;
   lastSaved: Date | null;
 }
 
@@ -32,6 +35,8 @@ export const Navbar: React.FC<Props> = ({
   onImportJson,
   onDownloadPdf,
   isGeneratingPdf,
+  onDownloadDocx,
+  isGeneratingDocx,
   lastSaved,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -151,6 +156,26 @@ export const Navbar: React.FC<Props> = ({
               </button>
             </div>
 
+            {/* Download Word (DOCX) Button */}
+            <button
+              onClick={onDownloadDocx}
+              disabled={isGeneratingDocx}
+              title="Unduh dokumen KAK dalam format Microsoft Word (.docx)"
+              className="flex items-center gap-2 px-3.5 py-2 bg-sky-50 hover:bg-sky-100 text-sky-800 border border-sky-200 text-xs font-bold rounded-xl shadow-xs transition active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {isGeneratingDocx ? (
+                <>
+                  <Loader2 className="w-4 h-4 animate-spin text-sky-600" />
+                  <span className="hidden sm:inline">Menyiapkan Word...</span>
+                </>
+              ) : (
+                <>
+                  <FileText className="w-4 h-4 text-sky-600" />
+                  <span className="hidden sm:inline">Unduh Word</span>
+                </>
+              )}
+            </button>
+
             {/* Download PDF Primary Button */}
             <button
               onClick={onDownloadPdf}
@@ -165,7 +190,7 @@ export const Navbar: React.FC<Props> = ({
               ) : (
                 <>
                   <Download className="w-4 h-4 text-amber-300" />
-                  <span>Unduh PDF KAK</span>
+                  <span>Unduh PDF</span>
                 </>
               )}
             </button>

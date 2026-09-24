@@ -56,13 +56,15 @@ export const defaultKAKData: KAKData = {
 
   // 7. Renstra & Gap Analysis & Output Kerja
   renstra_periode: '2025-2029',
-  gap_analysis_narasi: 'Berdasarkan data terkini, masih terdapat 34% penyandang disabilitas yang belum terintegrasi ke dalam data tunggal sosial ekonomi nasional (Regsosek). Fasilitas pelayanan publik di 62% kabupaten/kota belum memenuhi standar aksesibilitas fisik dan sensorik bagi lansia dan disabilitas.',
-  program_prioritas_deputi: 'Peningkatan Kesejahteraan Sosial',
-  program_prioritas_uraian: 'Strategi Nasional Kelanjutusiaan (Stranas Lansia) dan Rencana Aksi Nasional Penyandang Disabilitas (RAN PD) 2025-2029.',
+  renstra_indikator_opsional: 'Persentase Penurunan Kesenjangan Aksesibilitas dan Perlindungan Sosial Inklusif sebesar 85%',
+  gap_analysis_narasi: '1) Isu-isu strategis yang melatarbelakangi usulan rencana SKP mencakup keterbatasan fasilitas publik dan belum optimalnya jaminan perlindungan sosial adaptif bagi kelompok rentan, di mana kondisi eksisting menunjukkan capaian pemenuhan hak disabilitas baru mencapai 65% dari target nasional 85%; 2) Data indikator kewilayahan mencatat bahwa 62% fasilitas publik di tingkat kabupaten/kota belum memenuhi standar ramah disabilitas dan lansia; 3) Gap analysis mengindikasikan perlunya akselerasi integrasi data tunggal sosial ekonomi (Regsosek) guna mencapai target RKP 2026 dan RPJMN 2025-2029; 4) Konsentrasi kewilayahan difokuskan pada 120 kabupaten/kota prioritas di wilayah percontohan Jawa, Bali, dan Indonesia Timur.',
+  program_prioritas_deputi: 'Pemberdayaan Disabilitas dan Lanjut Usia',
+  program_prioritas_uraian: 'Strategi Nasional Kelanjutusiaan (Stranas Lansia) berdasarkan Perpres No. 88 Tahun 2021 dan Rencana Aksi Nasional Penyandang Disabilitas (RAN PD) 2025-2029 berdasarkan PP No. 70 Tahun 2019.',
   ro_rencana_asdep: 'Pemberdayaan Disabilitas dan Lanjut Usia',
-  ro_1_fokus_tujuan: 'Rekomendasi Alternatif Kebijakan Penguatan Aksesibilitas dan Jaminan Sosial Inklusif Disabilitas dan Lanjut Usia. Bertujuan menjamin perlindungan sosial adaptif dan fasilitas publik ramah disabilitas secara merata.',
-  ro_2_fokus_tujuan: 'Rekomendasi Skema Layanan Perawatan Jangka Panjang (Long-Term Care) Lansia Berbasis Komunitas.',
-  ro_3_fokus_tujuan: '',
+  ro_1_fokus_tujuan: 'Rekomendasi Alternatif Kebijakan Penguatan Aksesibilitas dan Jaminan Sosial Inklusif Disabilitas dan Lanjut Usia.\nRekomendasi alternatif kebijakan ini bertujuan untuk menjamin perlindungan sosial adaptif dan fasilitas publik ramah disabilitas secara merata. Rekomendasi difokuskan pada standarisasi infrastruktur dasar dan bantuan sosial terintegrasi. Melalui kebijakan ini diharapkan terwujud kemandirian dan pemenuhan hak-hak dasar kelompok rentan.',
+  ro_2_fokus_tujuan: 'Rekomendasi Alternatif Kebijakan Skema Layanan Perawatan Jangka Panjang (Long-Term Care) Lansia Berbasis Komunitas.\nRekomendasi alternatif kebijakan ini bertujuan untuk memperkuat dukungan perawatan keluarga dan fasilitas pendamping lansia di tingkat komunitas. Rekomendasi difokuskan pada penguatan kapasitas tenaga pendamping dan posyandu lansia terpadu. Melalui kebijakan ini diharapkan kualitas hidup lansia dan kesejahteraan keluarga meningkat secara berkelanjutan.',
+  ro_3_fokus_tujuan: 'Rekomendasi Alternatif Kebijakan Harmonisasi Tata Kelola Kelembagaan Komisi Disabilitas dan Komda Lansia.',
+  ro_4_opsional: 'Koordinasi Penanganan Kelompok Rentan dan Penyandang Masalah Kesejahteraan Sosial (PMKS) Lintas Sektor (Opsional)',
 
   // 8. Reformasi Birokrasi (RB) & Gender (PUG) & MR
   rb_asdep: 'Pemberdayaan Disabilitas dan Lanjut Usia',
@@ -255,6 +257,7 @@ export const emptyKAKData: KAKData = {
   indikator_tahun: '',
   indikator_rpjmn_list: '',
   renstra_periode: '',
+  renstra_indikator_opsional: '',
   gap_analysis_narasi: '',
   program_prioritas_deputi: '',
   program_prioritas_uraian: '',
@@ -262,6 +265,7 @@ export const emptyKAKData: KAKData = {
   ro_1_fokus_tujuan: '',
   ro_2_fokus_tujuan: '',
   ro_3_fokus_tujuan: '',
+  ro_4_opsional: '',
   rb_asdep: '',
   rb_indikator_list: '',
   pug_asdep_1: '',

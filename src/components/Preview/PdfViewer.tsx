@@ -8,10 +8,13 @@ import {
   ExternalLink,
   Loader2,
   AlertCircle,
+  FileText,
 } from 'lucide-react';
 
 interface Props {
   data: KAKData;
+  onDownloadDocx?: () => void;
+  isGeneratingDocx?: boolean;
 }
 
 const PAGE_LABELS = [
@@ -30,7 +33,7 @@ const PAGE_LABELS = [
   { page: 13, label: 'Hal 13: Lampiran Referensi (2/2)' },
 ];
 
-export const PdfViewer: React.FC<Props> = ({ data }) => {
+export const PdfViewer: React.FC<Props> = ({ data, onDownloadDocx, isGeneratingDocx }) => {
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const [pdfBytes, setPdfBytes] = useState<Uint8Array | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -130,6 +133,27 @@ export const PdfViewer: React.FC<Props> = ({ data }) => {
               <ExternalLink className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Buka Tab Baru</span>
             </a>
+          )}
+
+          {onDownloadDocx && (
+            <button
+              onClick={onDownloadDocx}
+              disabled={isGeneratingDocx}
+              title="Unduh dokumen KAK dalam format Microsoft Word (.docx)"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-sky-900/60 hover:bg-sky-800 text-sky-200 border border-sky-700/60 rounded-lg transition disabled:opacity-50"
+            >
+              {isGeneratingDocx ? (
+                <>
+                  <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                  <span className="hidden sm:inline">Menyiapkan Word...</span>
+                </>
+              ) : (
+                <>
+                  <FileText className="w-3.5 h-3.5 text-sky-400" />
+                  <span className="hidden sm:inline">Unduh Word</span>
+                </>
+              )}
+            </button>
           )}
 
           <button

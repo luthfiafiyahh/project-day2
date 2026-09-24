@@ -78,6 +78,7 @@ export interface KAKData {
 
   // 7. Renstra & Gap Analysis & Output Kerja
   renstra_periode: string;
+  renstra_indikator_opsional?: string;
   gap_analysis_narasi: string;
   program_prioritas_deputi: string;
   program_prioritas_uraian: string;
@@ -85,6 +86,7 @@ export interface KAKData {
   ro_1_fokus_tujuan: string;
   ro_2_fokus_tujuan: string;
   ro_3_fokus_tujuan: string;
+  ro_4_opsional?: string;
 
   // 8. Reformasi Birokrasi (RB) & Gender (PUG) & MR
   rb_asdep: string;

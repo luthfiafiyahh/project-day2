@@ -10,6 +10,7 @@ import {
   importDataFromJson,
 } from './lib/storage';
 import { generatePdf, downloadKAKPdf } from './lib/pdf/generatePdf';
+import { generateKAKDocx, downloadKAKDocx } from './lib/docx/generateDocx';
 
 // Components
 import { Navbar } from './components/Layout/Navbar';
@@ -25,6 +26,7 @@ export function App() {
   const [currentStep, setCurrentStep] = useState<number>(1);
   const [activeTab, setActiveTab] = useState<'form' | 'preview'>('form');
   const [isGeneratingPdf, setIsGeneratingPdf] = useState<boolean>(false);
+  const [isGeneratingDocx, setIsGeneratingDocx] = useState<boolean>(false);
   const [lastSaved, setLastSaved] = useState<Date | null>(null);
 
   // Modals state
@@ -124,6 +126,21 @@ export function App() {
     }
   };
 
+  // Download Word (DOCX)
+  const handleDownloadDocx = async () => {
+    try {
+      setIsGeneratingDocx(true);
+      const blob = await generateKAKDocx(data);
+      const fileName = `KAK-${data.tahun_anggaran || '2026'}-${(data.asisten_deputi || 'KemenkoPMK').replace(/\s+/g, '_')}.docx`;
+      downloadKAKDocx(blob, fileName);
+    } catch (err: any) {
+      console.error('Download Word error:', err);
+      alert('Gagal membuat dokumen Word: ' + (err?.message || 'Error tidak diketahui'));
+    } finally {
+      setIsGeneratingDocx(false);
+    }
+  };
+
   // Navigation handlers
   const handleNext = () => {
     if (currentStep < FORM_STEPS.length) {
@@ -154,6 +171,8 @@ export function App() {
         onImportJson={handleImportJson}
         onDownloadPdf={handleDownloadPdf}
         isGeneratingPdf={isGeneratingPdf}
+        onDownloadDocx={handleDownloadDocx}
+        isGeneratingDocx={isGeneratingDocx}
         lastSaved={lastSaved}
       />
 
@@ -191,7 +210,11 @@ export function App() {
       ) : (
         /* PDF Live Preview Tab */
         <main className="flex-1">
-          <PdfViewer data={data} />
+          <PdfViewer
+            data={data}
+            onDownloadDocx={handleDownloadDocx}
+            isGeneratingDocx={isGeneratingDocx}
+          />
         </main>
       )}
 
