@@ -1,3 +1,5 @@
+import { renderKAKDocxBuffer } from '../src/server/pdfService';
+
 export default async function handler(req: any, res: any) {
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -15,34 +17,35 @@ export default async function handler(req: any, res: any) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const converterUrl = process.env.CONVERTER_API_URL || process.env.LIBREOFFICE_API_URL;
-  if (converterUrl) {
-    try {
-      const payload = typeof req.body === 'string' ? req.body : JSON.stringify(req.body);
-      const response = await fetch(converterUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: payload,
-      });
+  try {
+    const data = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+    const docxBuf = await renderKAKDocxBuffer(data);
 
-      if (!response.ok) {
-        const text = await response.text();
-        return res.status(response.status).json({ error: `Converter error: ${text}` });
-      }
+    // 1. Coba konversi via custom converter jika diset pengguna
+    const customConverter = process.env.CONVERTER_API_URL || process.env.LIBREOFFICE_API_URL;
+    const converterEndpoint = customConverter || 'https://demo.gotenberg.dev/forms/libreoffice/convert';
 
-      const buffer = await response.arrayBuffer();
-      res.setHeader('Content-Type', 'application/pdf');
-      return res.status(200).send(Buffer.from(buffer));
-    } catch (err: any) {
-      console.error('Remote converter error:', err);
-      return res.status(502).json({ error: `Gagal menghubungi remote converter: ${err.message}` });
+    const formData = new FormData();
+    const blob = new Blob([docxBuf as unknown as BlobPart], {
+      type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    });
+    formData.append('files', blob, 'kak_document.docx');
+
+    const convertRes = await fetch(converterEndpoint, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!convertRes.ok) {
+      const errText = await convertRes.text();
+      throw new Error(`Gagal konversi ke PDF (${convertRes.status}): ${errText}`);
     }
-  }
 
-  return res.status(503).json({
-    error:
-      'Layanan konversi PDF LibreOffice membutuhkan backend engine. Di localhost (komputer lokal) layanan ini otomatis aktif menggunakan LibreOffice lokal. Untuk Vercel production, silakan hubungkan CONVERTER_API_URL ke microservice Docker converter.',
-  });
+    const pdfArrayBuffer = await convertRes.arrayBuffer();
+    res.setHeader('Content-Type', 'application/pdf');
+    return res.status(200).send(Buffer.from(pdfArrayBuffer));
+  } catch (err: any) {
+    console.error('API /api/generate-pdf error:', err);
+    return res.status(500).json({ error: err.message || 'Gagal memproses dokumen PDF' });
+  }
 }

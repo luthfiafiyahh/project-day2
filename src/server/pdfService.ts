@@ -21,7 +21,10 @@ function cleanRupiahNumber(val: string): string {
 }
 
 export async function renderKAKDocxBuffer(data: KAKData): Promise<Buffer> {
-  const templatePath = path.resolve(process.cwd(), 'templates/template_kak.docx');
+  let templatePath = path.resolve(process.cwd(), 'templates/template_kak.docx');
+  if (!fs.existsSync(templatePath)) {
+    templatePath = path.resolve(process.cwd(), 'public/template_kak.docx');
+  }
   if (!fs.existsSync(templatePath)) {
     throw new Error(`Template KAK DOCX not found at ${templatePath}`);
   }
@@ -207,8 +210,8 @@ export async function renderKAKDocxBuffer(data: KAKData): Promise<Buffer> {
 
           let newTc = tcXml.replace(/<w:shd\b[^>]*\/>/g, '');
           if (isActive) {
-            if (newTc.includes('<w:tcPr>')) {
-              newTc = newTc.replace('<w:tcPr>', '<w:tcPr><w:shd w:fill="93c47d" w:val="clear"/>');
+            if (newTc.includes('</w:tcPr>')) {
+              newTc = newTc.replace('</w:tcPr>', '<w:shd w:fill="93c47d" w:val="clear"/></w:tcPr>');
             } else {
               newTc = newTc.replace(
                 '<w:tc>',

@@ -206,8 +206,8 @@ export async function generateKAKDocx(data: KAKData): Promise<Blob> {
 
           let newTc = tcXml.replace(/<w:shd\b[^>]*\/>/g, '');
           if (isActive) {
-            if (newTc.includes('<w:tcPr>')) {
-              newTc = newTc.replace('<w:tcPr>', '<w:tcPr><w:shd w:fill="93c47d" w:val="clear"/>');
+            if (newTc.includes('</w:tcPr>')) {
+              newTc = newTc.replace('</w:tcPr>', '<w:shd w:fill="93c47d" w:val="clear"/></w:tcPr>');
             } else {
               newTc = newTc.replace(
                 '<w:tc>',
@@ -223,10 +223,13 @@ export async function generateKAKDocx(data: KAKData): Promise<Blob> {
     renderedZip.file('word/document.xml', docXml);
   }
 
-  const outBlob = renderedZip.generate({
-    type: 'blob',
-    mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  const u8 = renderedZip.generate({
+    type: 'uint8array',
     compression: 'DEFLATE',
+  });
+
+  const outBlob = new Blob([u8 as unknown as BlobPart], {
+    type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
   });
 
   return outBlob;
