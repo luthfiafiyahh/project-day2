@@ -13,7 +13,7 @@ def remove_element(p):
         parent.remove(p_elem)
 
 def set_cell_text_preserve_style(cell, new_text):
-    """Replace all text in a table cell while keeping the first paragraph and run formatting."""
+    """Replace all text in a table cell while keeping the first paragraph, run formatting, and preserving any drawings."""
     if not cell.paragraphs:
         cell.text = new_text
         return
@@ -22,23 +22,30 @@ def set_cell_text_preserve_style(cell, new_text):
         p_elem = extra_p._p
         if p_elem.getparent() is not None:
             p_elem.getparent().remove(p_elem)
-    if not p.runs:
-        p.add_run(new_text)
-        return
-    first_run = p.runs[0]
-    first_run.text = new_text
-    for r in p.runs[1:]:
-        r.text = ""
+    set_para_text_preserve_style(p, new_text)
 
 def set_para_text_preserve_style(p, new_text):
-    """Replace all text in a paragraph while keeping paragraph format and first run format."""
-    if not p.runs:
+    """Replace all text in a paragraph while keeping paragraph format, first run format, and preserving any drawings/images."""
+    runs = list(p.runs)
+    if not runs:
         p.add_run(new_text)
         return
-    first_run = p.runs[0]
-    first_run.text = new_text
-    for r in p.runs[1:]:
-        r.text = ""
+    
+    first_text_run = None
+    for r in runs:
+        if not (r._r.xpath('.//w:drawing') or r._r.xpath('.//w:pict')):
+            first_text_run = r
+            break
+            
+    if first_text_run is None:
+        first_text_run = p.add_run(new_text)
+    else:
+        first_text_run.text = new_text
+        
+    for r in runs:
+        if r._r != first_text_run._r:
+            if not (r._r.xpath('.//w:drawing') or r._r.xpath('.//w:pict')):
+                r.text = ""
 
 def prepare_template():
     source_path = "Copy of Format Digitalisasi KAK.docx"
@@ -229,11 +236,6 @@ def prepare_template():
     set_para_text_preserve_style(doc.paragraphs[177], "{ttd_nama}")
     set_para_text_preserve_style(doc.paragraphs[178], "NIP. {ttd_nip}")
 
-    # Optimize spacing in signature area
-    for p in doc.paragraphs[170:179]:
-        p.paragraph_format.space_before = docx.shared.Pt(0)
-        p.paragraph_format.space_after = docx.shared.Pt(2)
-
     # --- 10. TABLE 2 (Lampiran I GAP) ---
     t2 = doc.tables[2]
     set_cell_text_preserve_style(t2.rows[2].cells[0], "{gap_langkah1}")
@@ -243,17 +245,19 @@ def prepare_template():
 
     # --- REMOVE UNUSED INSTRUCTION / PLACEHOLDER PARAGRAPHS COMPLETELY ---
     delete_indices = [
-        176, 175, # Extra signature blank paragraphs (keep 174 as the signing gap)
         165, # Dan seterusnya
         160, 159, # Dst..
         150, # Sebutkan kegiatan...
         147, # Buat kalimat pendahuluan...
+        144, # *akun yang diperkenankan Tahap 4
         143, 142, # Dst..
         133, # Sebutkan kegiatan...
         130, # Buat kalimat pendahuluan...
+        127, # *akun yang diperkenankan Tahap 3
         126, 125, # Dst..
         116, # Sebutkan kegiatan...
         113, # Buat kalimat pendahuluan...
+        110, # *akun yang diperkenankan Tahap 2
         109, 108, # Dst..
         99,  # Sebutkan kegiatan...
         96,  # Buat kalimat pendahuluan...
@@ -268,6 +272,12 @@ def prepare_template():
     for idx in sorted(delete_indices, reverse=True):
         if idx < len(doc.paragraphs):
             remove_element(doc.paragraphs[idx])
+
+    # Dynamic removal of any remaining instruction paragraphs
+    for p in list(doc.paragraphs):
+        p_text_lower = p.text.lower().strip()
+        if "akun yang diperkenankan" in p_text_lower or p_text_lower in ["dst..", "dst", "dan seterusnya"]:
+            remove_element(p)
 
     # Save to intermediate path
     temp_saved = "templates/temp_unstripped.docx"
