@@ -1,4 +1,4 @@
-import { renderKAKDocxBuffer } from '../src/server/pdfService';
+import { renderKAKDocxBuffer } from './pdfService.ts';
 
 export default async function handler(req: any, res: any) {
   res.setHeader('Access-Control-Allow-Credentials', 'true');
@@ -21,7 +21,6 @@ export default async function handler(req: any, res: any) {
     const data = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     const docxBuf = await renderKAKDocxBuffer(data);
 
-    // 1. Coba konversi via custom converter jika diset pengguna, atau demo Gotenberg
     const customConverter = process.env.CONVERTER_API_URL || process.env.LIBREOFFICE_API_URL;
     const converterEndpoint = customConverter || 'https://demo.gotenberg.dev/forms/libreoffice/convert';
 
