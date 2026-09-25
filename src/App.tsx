@@ -20,6 +20,7 @@ import { FooterNav } from './components/Layout/FooterNav';
 import { PdfViewer } from './components/Preview/PdfViewer';
 import { ResetModal } from './components/Modals/ResetModal';
 import { DraftPromptModal } from './components/Modals/DraftPromptModal';
+import { AIChatAssistant } from './components/AI/AIChatAssistant';
 
 export function App() {
   const [data, setData] = useState<KAKData>(defaultKAKData);
@@ -234,6 +235,9 @@ export function App() {
         onDiscard={handleDiscardDraft}
         onLoadSample={handleConfirmLoadSample}
       />
+
+      {/* AI Floating Assistant */}
+      <AIChatAssistant currentData={data} />
     </div>
   );
 }
