@@ -24,10 +24,15 @@ export async function generateKAKPdf(
   if (!response.ok) {
     let errorDetail = '';
     try {
-      const errJson = await response.json();
-      errorDetail = errJson.error || errJson.message || '';
+      const rawText = await response.text();
+      try {
+        const errJson = JSON.parse(rawText);
+        errorDetail = errJson.error || errJson.message || rawText;
+      } catch {
+        errorDetail = rawText;
+      }
     } catch {
-      errorDetail = await response.text();
+      errorDetail = response.statusText;
     }
     throw new Error(
       `Gagal membuat PDF (${response.status}): ${errorDetail || 'Layanan konversi LibreOffice tidak merespon.'}`

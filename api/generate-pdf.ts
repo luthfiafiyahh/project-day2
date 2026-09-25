@@ -21,12 +21,13 @@ export default async function handler(req: any, res: any) {
     const data = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     const docxBuf = await renderKAKDocxBuffer(data);
 
-    // 1. Coba konversi via custom converter jika diset pengguna
+    // 1. Coba konversi via custom converter jika diset pengguna, atau demo Gotenberg
     const customConverter = process.env.CONVERTER_API_URL || process.env.LIBREOFFICE_API_URL;
     const converterEndpoint = customConverter || 'https://demo.gotenberg.dev/forms/libreoffice/convert';
 
     const formData = new FormData();
-    const blob = new Blob([docxBuf as unknown as BlobPart], {
+    const uint8 = new Uint8Array(docxBuf);
+    const blob = new Blob([uint8], {
       type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     });
     formData.append('files', blob, 'kak_document.docx');
@@ -34,6 +35,7 @@ export default async function handler(req: any, res: any) {
     const convertRes = await fetch(converterEndpoint, {
       method: 'POST',
       body: formData,
+      signal: AbortSignal.timeout(45000),
     });
 
     if (!convertRes.ok) {

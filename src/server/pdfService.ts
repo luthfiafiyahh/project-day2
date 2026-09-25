@@ -6,6 +6,7 @@ import { execFile } from 'child_process';
 import { promisify } from 'util';
 import type { KAKData } from '../types/kak.ts';
 import { formatRupiah, angkaKeTerbilang } from '../lib/pdf/terbilang.ts';
+import { TEMPLATE_KAK_BASE64 } from './templateBase64.ts';
 
 const execFileAsync = promisify(execFile);
 
@@ -20,15 +21,31 @@ function cleanRupiahNumber(val: string): string {
   return formatRupiah(clean).replace(/^Rp\s*/i, '');
 }
 
+function setCellShading(tcXml: string, isGreen: boolean): string {
+  const fillColor = isGreen ? '93c47d' : 'ffffff';
+  const shdTag = `<w:shd w:fill="${fillColor}" w:val="clear"/>`;
+  if (/<w:tcPr\s*\/>/.test(tcXml)) {
+    return tcXml.replace(/<w:tcPr\s*\/>/, `<w:tcPr>${shdTag}</w:tcPr>`);
+  }
+  if (tcXml.includes('</w:tcPr>')) {
+    const withoutShd = tcXml.replace(/<w:shd\b[^>]*\/>/g, '');
+    return withoutShd.replace('</w:tcPr>', `${shdTag}</w:tcPr>`);
+  }
+  return tcXml.replace(/(<w:tc\b[^>]*>)/, `$1<w:tcPr>${shdTag}</w:tcPr>`);
+}
+
 export async function renderKAKDocxBuffer(data: KAKData): Promise<Buffer> {
+  let content: string | Buffer;
   let templatePath = path.resolve(process.cwd(), 'templates/template_kak.docx');
   if (!fs.existsSync(templatePath)) {
     templatePath = path.resolve(process.cwd(), 'public/template_kak.docx');
   }
-  if (!fs.existsSync(templatePath)) {
-    throw new Error(`Template KAK DOCX not found at ${templatePath}`);
+  if (fs.existsSync(templatePath)) {
+    content = fs.readFileSync(templatePath, 'binary');
+  } else {
+    // Fallback to embedded base64 template for Vercel serverless runtime
+    content = Buffer.from(TEMPLATE_KAK_BASE64, 'base64');
   }
-  const content = fs.readFileSync(templatePath, 'binary');
 
   const zip = new PizZip(content);
   const doc = new Docxtemplater(zip, {
@@ -36,17 +53,18 @@ export async function renderKAKDocxBuffer(data: KAKData): Promise<Buffer> {
     linebreaks: true,
   });
 
-  const tahun = data.tahun_anggaran || '2026';
-  const asdep = data.asisten_deputi || '';
-  const rawNominal = data.anggaran_output || data.biaya_total_nominal || '185000000';
+  const d = data || ({} as KAKData);
+  const tahun = d.tahun_anggaran || '2026';
+  const asdep = d.asisten_deputi || '';
+  const rawNominal = d.anggaran_output || d.biaya_total_nominal || '185000000';
   const cleanNominalStr = rawNominal.replace(/[^0-9]/g, '');
   const formattedNominal = formatRupiah(cleanNominalStr);
   const terbilangNominal =
-    data.biaya_total_terbilang || `${formattedNominal} (${angkaKeTerbilang(cleanNominalStr)} Rupiah)`;
+    d.biaya_total_terbilang || `${formattedNominal} (${angkaKeTerbilang(cleanNominalStr)} Rupiah)`;
   const nominalOnlyNum = cleanRupiahNumber(cleanNominalStr);
 
   const templateData = {
-    ...data,
+    ...d,
     asisten_deputi: sanitizeString(asdep),
     tahun_anggaran: sanitizeString(tahun),
     deputi_bidang: sanitizeString(data.deputi_bidang),
@@ -208,18 +226,7 @@ export async function renderKAKDocxBuffer(data: KAKData): Promise<Buffer> {
           const monthIdx = curCol - 2;
           const isActive = Boolean(config.months[monthIdx]);
 
-          let newTc = tcXml.replace(/<w:shd\b[^>]*\/>/g, '');
-          if (isActive) {
-            if (newTc.includes('</w:tcPr>')) {
-              newTc = newTc.replace('</w:tcPr>', '<w:shd w:fill="93c47d" w:val="clear"/></w:tcPr>');
-            } else {
-              newTc = newTc.replace(
-                '<w:tc>',
-                '<w:tc><w:tcPr><w:shd w:fill="93c47d" w:val="clear"/></w:tcPr>'
-              );
-            }
-          }
-          return newTc;
+          return setCellShading(tcXml, isActive);
         });
       });
     });

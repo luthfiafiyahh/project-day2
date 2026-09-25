@@ -2,6 +2,7 @@ import PizZip from 'pizzip';
 import Docxtemplater from 'docxtemplater';
 import type { KAKData } from '../../types/kak';
 import { formatRupiah, angkaKeTerbilang } from '../pdf/terbilang';
+import { TEMPLATE_KAK_BASE64 } from '../../server/templateBase64';
 
 function cleanLeadingNumber(text: string): string {
   if (!text) return '';
@@ -14,17 +15,42 @@ function cleanRupiahNumber(val: string): string {
   return formatRupiah(clean).replace(/^Rp\s*/i, '');
 }
 
+function setCellShading(tcXml: string, isGreen: boolean): string {
+  const fillColor = isGreen ? '93c47d' : 'ffffff';
+  const shdTag = `<w:shd w:fill="${fillColor}" w:val="clear"/>`;
+  if (/<w:tcPr\s*\/>/.test(tcXml)) {
+    return tcXml.replace(/<w:tcPr\s*\/>/, `<w:tcPr>${shdTag}</w:tcPr>`);
+  }
+  if (tcXml.includes('</w:tcPr>')) {
+    const withoutShd = tcXml.replace(/<w:shd\b[^>]*\/>/g, '');
+    return withoutShd.replace('</w:tcPr>', `${shdTag}</w:tcPr>`);
+  }
+  return tcXml.replace(/(<w:tc\b[^>]*>)/, `$1<w:tcPr>${shdTag}</w:tcPr>`);
+}
+
 /**
  * Membuat Dokumen Word (.docx) Resmi dari Data KAK secara Client-Side di Browser
  * Menggunakan template resmi Kemenko PMK (/template_kak.docx) melalui docxtemplater & pizzip.
  */
 export async function generateKAKDocx(data: KAKData): Promise<Blob> {
-  // 1. Muat template Word resmi dari folder public
-  const res = await fetch('/template_kak.docx');
-  if (!res.ok) {
-    throw new Error(`Gagal memuat template Word (/template_kak.docx): ${res.statusText}`);
+  // 1. Muat template Word resmi dari folder public atau fallback ke base64
+  let arrayBuffer: ArrayBuffer;
+  try {
+    const res = await fetch('/template_kak.docx');
+    if (!res.ok) {
+      throw new Error(`Gagal memuat template Word (/template_kak.docx): ${res.statusText}`);
+    }
+    arrayBuffer = await res.arrayBuffer();
+  } catch (err) {
+    console.warn('Fallback menggunakan template docx base64 terenkapsulasi:', err);
+    const binStr = atob(TEMPLATE_KAK_BASE64);
+    const len = binStr.length;
+    const u8 = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+      u8[i] = binStr.charCodeAt(i);
+    }
+    arrayBuffer = u8.buffer;
   }
-  const arrayBuffer = await res.arrayBuffer();
 
   const zip = new PizZip(arrayBuffer);
   const doc = new Docxtemplater(zip, {
@@ -204,18 +230,7 @@ export async function generateKAKDocx(data: KAKData): Promise<Blob> {
           const monthIdx = curCol - 2;
           const isActive = Boolean(config.months[monthIdx]);
 
-          let newTc = tcXml.replace(/<w:shd\b[^>]*\/>/g, '');
-          if (isActive) {
-            if (newTc.includes('</w:tcPr>')) {
-              newTc = newTc.replace('</w:tcPr>', '<w:shd w:fill="93c47d" w:val="clear"/></w:tcPr>');
-            } else {
-              newTc = newTc.replace(
-                '<w:tc>',
-                '<w:tc><w:tcPr><w:shd w:fill="93c47d" w:val="clear"/></w:tcPr>'
-              );
-            }
-          }
-          return newTc;
+          return setCellShading(tcXml, isActive);
         });
       });
     });
